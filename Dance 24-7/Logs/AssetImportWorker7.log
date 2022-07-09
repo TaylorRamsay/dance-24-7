@@ -1,0 +1,310 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.2f1 (d6360bedb9a0) revision 14038539'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.17763) 64bit EnterpriseS' Language: 'en' Physical Memory: 32694 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker7
+-projectPath
+C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7
+-logFile
+Logs/AssetImportWorker7.log
+-srvPort
+57955
+Successfully changed project path to: C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7
+C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 112.92 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 Ti (ID=0x2182)
+    Vendor:   NVIDIA
+    VRAM:     5991 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006500 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 120.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.767 seconds
+Domain Reload Profiling:
+	ReloadAssembly (768ms)
+		BeginReloadAssembly (87ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (563ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (124ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (347ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (121ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008074 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.094 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1095ms)
+		BeginReloadAssembly (119ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (856ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (258ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (413ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (275ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3578 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (185.3 KB). Loaded Objects now: 4048.
+Memory consumption went from 143.2 MB to 143.0 MB.
+Total: 3.970500 ms (FindLiveObjects: 0.368100 ms CreateObjectMapping: 0.098700 ms MarkObjects: 3.330000 ms  DeleteObjects: 0.172100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1929413.016905 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_025x1x4.fbx
+  artifactKey: Guid(49ee76c603c83184ca07a967cfe33695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_025x1x4.fbx using Guid(49ee76c603c83184ca07a967cfe33695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e9b35d3d429acdf437adf67db27a25f') in 0.162356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Bend_025x3x2.fbx
+  artifactKey: Guid(0aef380844a5d6c4d941b658e2b6d290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Bend_025x3x2.fbx using Guid(0aef380844a5d6c4d941b658e2b6d290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd167fc2befc593f38f2cf0f3e653857e') in 0.049835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Side_Destroyed_T1_025x1x1.fbx
+  artifactKey: Guid(bb4f508829c1dce499f1da35a43e94fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Side_Destroyed_T1_025x1x1.fbx using Guid(bb4f508829c1dce499f1da35a43e94fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d668da66c48030cd4453e1e6e90b247') in 0.018766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Bend_025x2x4.fbx
+  artifactKey: Guid(9daa74f742aecef41bcf122c3a440c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Bend_025x2x4.fbx using Guid(9daa74f742aecef41bcf122c3a440c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13efcd04c003120e4ea92c7ff92160c1') in 0.019552 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Destoryed_End_025x3x3.fbx
+  artifactKey: Guid(bb1bdd23d2907304d8779cec54eb99f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Destoryed_End_025x3x3.fbx using Guid(bb1bdd23d2907304d8779cec54eb99f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57b0e445d8349ce8a57cb8c08445cef') in 0.018561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Destroyed_025x1x1.fbx
+  artifactKey: Guid(c5b521fdacd9a5c4e8012b8cdf4842ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Destroyed_025x1x1.fbx using Guid(c5b521fdacd9a5c4e8012b8cdf4842ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b726ad310490fad59fa798db41a3c4cf') in 0.018333 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Window_End_T2_025x3x2.fbx
+  artifactKey: Guid(e58ac7b87471e3f449d53fe682aba346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Window_End_T2_025x3x2.fbx using Guid(e58ac7b87471e3f449d53fe682aba346) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97e2446a5daa3dcca9c4ada560f75626') in 0.019319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_025x3x3.fbx
+  artifactKey: Guid(36158795094eba3488ba4a9287c26277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_025x3x3.fbx using Guid(36158795094eba3488ba4a9287c26277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cda2a5fcf5180c700a87457a805b479d') in 0.019093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Window_T2_025x3x3.fbx
+  artifactKey: Guid(38cb1f27bd1b99242b3115dc7de10f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Window_T2_025x3x3.fbx using Guid(38cb1f27bd1b99242b3115dc7de10f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008067c0af31b69685a24fd910644759') in 0.017889 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Side_Destroyed_T1_025x1x2.fbx
+  artifactKey: Guid(a58c965351be2db4d8cf472e2340215f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Side_Destroyed_T1_025x1x2.fbx using Guid(a58c965351be2db4d8cf472e2340215f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d6ab6cd997108762b509c14e1c8d7e0') in 0.019394 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Destoryed_End_025x3x2.fbx
+  artifactKey: Guid(a3d6ecd2db5a6034790e602a5e9c6067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Destoryed_End_025x3x2.fbx using Guid(a3d6ecd2db5a6034790e602a5e9c6067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ce2d70d7cd48ccf2f4b324f59cad5e2') in 0.019756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Window_T1_025x3x2.fbx
+  artifactKey: Guid(f259d9f6db888c14fb58f13c6f4355dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Window_T1_025x3x2.fbx using Guid(f259d9f6db888c14fb58f13c6f4355dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcfb3bc49c185f798ca3917f4d253a99') in 0.018310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Blockout/Models/Walls/Wall_Bend_025x2x1.fbx
+  artifactKey: Guid(967a1ed7ee4e4ab449b6fed0cf8faf2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Walls/Wall_Bend_025x2x1.fbx using Guid(967a1ed7ee4e4ab449b6fed0cf8faf2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6171739efa138fa5feb8f81646574251') in 0.019235 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.690395 seconds.
+  path: Assets/Blockout/Models/Update_1/Block_05x025x2.fbx
+  artifactKey: Guid(37b6d7faef17ef4488b525479c56ac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Block_05x025x2.fbx using Guid(37b6d7faef17ef4488b525479c56ac76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c33d98bbd11cc33480dc1c5cdeff127') in 0.034230 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Blockout/Models/Update_1/Wires_Haging_Large_5_Alt_2.fbx
+  artifactKey: Guid(3c74c055d7530dd4f8ee8885a90e6b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Wires_Haging_Large_5_Alt_2.fbx using Guid(3c74c055d7530dd4f8ee8885a90e6b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01059d31d000416104e36ff0838f862c') in 0.055475 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Blockout/Models/Update_1/Fence_Basic_3_Destroyed_3.fbx
+  artifactKey: Guid(e56de6e6cee38594dbc8ac22e3bd39d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Fence_Basic_3_Destroyed_3.fbx using Guid(e56de6e6cee38594dbc8ac22e3bd39d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb69144951ada854ca88dc0317f79d69') in 0.045515 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Blockout/Models/Update_1/Wires_Haging_Large_3.fbx
+  artifactKey: Guid(7b4fba972fe5ae94aac6bcd4d5c514c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Wires_Haging_Large_3.fbx using Guid(7b4fba972fe5ae94aac6bcd4d5c514c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea6fe44520723511df27c503fccceb36') in 0.044892 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Blockout/Models/Update_1/Block_Corner_T5_1x025x1.fbx
+  artifactKey: Guid(03a2bb9f577b9d74f962df08718683f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Block_Corner_T5_1x025x1.fbx using Guid(03a2bb9f577b9d74f962df08718683f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d47f332bef2b13622bc5f68c1fe6bd2') in 0.060037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Blockout/Models/Update_1/Block_Wall_Pillar_T2_1x025x1.fbx
+  artifactKey: Guid(fbb21661514fc7f4fad2db7d24826ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Block_Wall_Pillar_T2_1x025x1.fbx using Guid(fbb21661514fc7f4fad2db7d24826ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6acb49a717eaa25d29f8bb9d3a60403e') in 0.018318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Blockout/Models/Update_1/Block_Wall_Pillar_T1_1x025x1.fbx
+  artifactKey: Guid(2b3488f1200d28546b1ba4732329765d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Block_Wall_Pillar_T1_1x025x1.fbx using Guid(2b3488f1200d28546b1ba4732329765d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32470e8473db97910c29afe9fa6853f3') in 0.020342 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Blockout/Models/Update_1/Block_Corner_T1_1x025x1.fbx
+  artifactKey: Guid(70e6fb4ae75f5104fa6473402591b369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Block_Corner_T1_1x025x1.fbx using Guid(70e6fb4ae75f5104fa6473402591b369) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7485dd3e67f4e8188b1f38dfdc0f030') in 0.018897 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Blockout/Models/Update_1/Breezeblock_Cracked_1.fbx
+  artifactKey: Guid(5c6bfd8a28ad6cd409a86e873c12e19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Breezeblock_Cracked_1.fbx using Guid(5c6bfd8a28ad6cd409a86e873c12e19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99acf8b21b84d41a692ce45fe71ac50d') in 0.018987 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Blockout/Models/Update_1/Block_Wall_Pillar_T3_1x025x1.fbx
+  artifactKey: Guid(74fa63c1ad6bac5459b0a2bf63272fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Block_Wall_Pillar_T3_1x025x1.fbx using Guid(74fa63c1ad6bac5459b0a2bf63272fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7225fa2821d8941dbe29440bf9c8bfa') in 0.020532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Blockout/Models/Update_1/Tool_Box_1.fbx
+  artifactKey: Guid(d4fdb132080ce714da62f8377eb909f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Blockout/Models/Update_1/Tool_Box_1.fbx using Guid(d4fdb132080ce714da62f8377eb909f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b387603f411b8d3d122332811a87b4e8') in 0.018753 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

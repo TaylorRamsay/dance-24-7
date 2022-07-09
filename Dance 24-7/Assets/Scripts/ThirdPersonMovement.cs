@@ -9,7 +9,7 @@ public class ThirdPersonMovement : MonoBehaviour
     float MoveY = 0;
     float MoveZ = 0;
 
-    float Speed = 5;
+    float Speed = 8;
 
     // Start is called before the first frame update
     void Start()
