@@ -8,7 +8,9 @@ public class ThirdPersonMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
 
-    public float speed = 6f;
+    public float speed;
+    public float walkSpeed = 6f;
+    public float runSpeed = 10f;
 
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
@@ -18,6 +20,14 @@ public class ThirdPersonMovement : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = runSpeed;
+        } else
+        {
+            speed = walkSpeed;
+        }
 
         if(direction.magnitude >= 0.1f)
         {
