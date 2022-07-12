@@ -356,6 +356,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CopyPosition.cs"
 "Assets/Scripts/PlayAudio.cs"
+"Assets/Scripts/PlayerCollision.cs"
 "Assets/Scripts/RestartScene.cs"
 "Assets/Scripts/ThirdPersonMovement.cs"
 -langversion:9.0

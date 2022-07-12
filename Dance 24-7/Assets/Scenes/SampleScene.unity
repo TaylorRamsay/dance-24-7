@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 19266928}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,8 +258,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101084279}
-  m_LocalRotation: {x: 0.18283857, y: 0.000000021974962, z: -0.000000004086761, w: 0.983143}
-  m_LocalPosition: {x: 0, y: -0.00000047683716, z: 0}
+  m_LocalRotation: {x: 0.18283857, y: -0.000000008458164, z: 0.000000001572995, w: 0.983143}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -323,6 +323,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_1x1x1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1916851760937628, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4474712263105832, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -379,6 +383,10 @@ PrefabInstance:
     - target: {fileID: 1481057897741648, guid: 463b1d0af15d9d04b9d06fbe1d50d5a3, type: 3}
       propertyPath: m_Name
       value: Tube_8x8x4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481057897741648, guid: 463b1d0af15d9d04b9d06fbe1d50d5a3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4581974340669422, guid: 463b1d0af15d9d04b9d06fbe1d50d5a3, type: 3}
       propertyPath: m_RootOrder
@@ -673,9 +681,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 738107290}
     m_Modifications:
+    - target: {fileID: 1500995573670604, guid: 2cba268cefb022c4bbda1f7a3d8b5968, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1740704823133864, guid: 2cba268cefb022c4bbda1f7a3d8b5968, type: 3}
       propertyPath: m_Name
       value: Bush_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740704823133864, guid: 2cba268cefb022c4bbda1f7a3d8b5968, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4825765323918928, guid: 2cba268cefb022c4bbda1f7a3d8b5968, type: 3}
       propertyPath: m_RootOrder
@@ -754,6 +770,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1847675064}
+  - {fileID: 269475013}
   m_Father: {fileID: 1358470605}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -807,6 +824,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238652076}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &269475012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 269475013}
+  m_Layer: 0
+  m_Name: groundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &269475013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269475012}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 238652077}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &291266088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -817,6 +865,10 @@ PrefabInstance:
     - target: {fileID: 1299613699309148, guid: 570c3dec22603a448810f71055d3cea6, type: 3}
       propertyPath: m_Name
       value: Floor_5x-025x5 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299613699309148, guid: 570c3dec22603a448810f71055d3cea6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4824774553823918, guid: 570c3dec22603a448810f71055d3cea6, type: 3}
       propertyPath: m_RootOrder
@@ -1112,6 +1164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: instrumentRack
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 01ac8686452d8914fafd998ad9a91a34, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 01ac8686452d8914fafd998ad9a91a34, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1177,6 +1233,10 @@ PrefabInstance:
     - target: {fileID: 1299613699309148, guid: 570c3dec22603a448810f71055d3cea6, type: 3}
       propertyPath: m_Name
       value: Floor_5x-025x5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299613699309148, guid: 570c3dec22603a448810f71055d3cea6, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4824774553823918, guid: 570c3dec22603a448810f71055d3cea6, type: 3}
       propertyPath: m_RootOrder
@@ -1244,6 +1304,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e5e3de1b934a06e458b076022810f2c3, type: 3}
       propertyPath: m_Name
       value: Barrel_Old
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e5e3de1b934a06e458b076022810f2c3, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e5e3de1b934a06e458b076022810f2c3, type: 3}
       propertyPath: m_RootOrder
@@ -1409,8 +1473,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720078463}
-  m_LocalRotation: {x: 0.16497283, y: -0.000000030810565, z: 0.000000005153519, w: 0.98629814}
-  m_LocalPosition: {x: 0, y: -0.00000047683716, z: 0}
+  m_LocalRotation: {x: 0.16497284, y: 0.000000016970619, z: -0.000000002838585, w: 0.98629814}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1628,7 +1692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 738107290}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EnvironmentObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1667,6 +1731,10 @@ PrefabInstance:
     - target: {fileID: 1490278834174040, guid: 1976cdd445dd80947895b855e3377d1a, type: 3}
       propertyPath: m_Name
       value: Slope_2x1x2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1490278834174040, guid: 1976cdd445dd80947895b855e3377d1a, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4134712133963556, guid: 1976cdd445dd80947895b855e3377d1a, type: 3}
       propertyPath: m_RootOrder
@@ -1770,6 +1838,10 @@ PrefabInstance:
     - target: {fileID: 1574683427170650, guid: 2a823cb3b91fda64da40945889269af8, type: 3}
       propertyPath: m_Name
       value: Stairs_Spiral_Open_T1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574683427170650, guid: 2a823cb3b91fda64da40945889269af8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4270452873833800, guid: 2a823cb3b91fda64da40945889269af8, type: 3}
       propertyPath: m_RootOrder
@@ -1894,7 +1966,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.18283859, y: 0.000000022351113, z: -0.000000004015848, w: 0.983143}
+  m_LocalRotation: {x: 0.18283859, y: -0.00000000915107, z: 0.0000000014436777, w: 0.983143}
   m_LocalPosition: {x: 0, y: 4.05, z: -9.470001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2201,6 +2273,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_1x1x1
       objectReference: {fileID: 0}
+    - target: {fileID: 1916851760937628, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4474712263105832, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2316,6 +2392,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_Open_2x3x6
       objectReference: {fileID: 0}
+    - target: {fileID: 1002574973721766, guid: 5af5c1c96dd9ca54dad9a923a9e54565, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4494832422415488, guid: 5af5c1c96dd9ca54dad9a923a9e54565, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2371,7 +2451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1218187609}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlatformStairs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2432,8 +2512,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243133068}
-  m_LocalRotation: {x: -0.007832182, y: 2.2300102e-30, z: 1.3692892e-31, w: 0.99996936}
-  m_LocalPosition: {x: 0, y: -4.11, z: 5.640003}
+  m_LocalRotation: {x: 0.2006912, y: 0.000000020926871, z: -0.000000004287061, w: 0.97965455}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2779,6 +2859,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_Spiral_Open_T2
       objectReference: {fileID: 0}
+    - target: {fileID: 1784353853183586, guid: adddfba1ac4f53d43833b898748182cb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4377369790421398, guid: adddfba1ac4f53d43833b898748182cb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2842,6 +2926,7 @@ GameObject:
   - component: {fileID: 1358470607}
   - component: {fileID: 1358470606}
   - component: {fileID: 1358470608}
+  - component: {fileID: 1358470609}
   m_Layer: 0
   m_Name: tpsPlayer
   m_TagString: Player
@@ -2885,6 +2970,13 @@ MonoBehaviour:
   walkSpeed: 6
   runSpeed: 10
   turnSmoothTime: 0.1
+  gravity: -9.81
+  jumpHeight: 2
+  groundCheck: {fileID: 269475013}
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!143 &1358470607
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2916,6 +3008,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   keyRestart: 114
+--- !u!114 &1358470609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358470604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4edeb9838c0c5584f840d217e4ae72ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1375765588
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2926,6 +3030,10 @@ PrefabInstance:
     - target: {fileID: 1916851760937628, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
       propertyPath: m_Name
       value: Block_1x1x1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916851760937628, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4474712263105832, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
       propertyPath: m_RootOrder
@@ -2983,6 +3091,10 @@ PrefabInstance:
     - target: {fileID: 1916851760937628, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
       propertyPath: m_Name
       value: Block_1x1x1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916851760937628, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4474712263105832, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
       propertyPath: m_RootOrder
@@ -3360,6 +3472,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_1x4x2
       objectReference: {fileID: 0}
+    - target: {fileID: 1517753348694382, guid: 03e346b2ac44b784cba1bcd9d09140ca, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4869913216536340, guid: 03e346b2ac44b784cba1bcd9d09140ca, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3574,6 +3690,10 @@ PrefabInstance:
     - target: {fileID: 1916851760937628, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
       propertyPath: m_Name
       value: Block_1x1x1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916851760937628, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4474712263105832, guid: 3315ee48ccc2bce4fa73c4b39288def4, type: 3}
       propertyPath: m_RootOrder
@@ -4008,6 +4128,10 @@ PrefabInstance:
     - target: {fileID: 1117658706320664, guid: fd0180833dcd5024b8247f916482e4d9, type: 3}
       propertyPath: m_Name
       value: Tube_90_Corner_10x8x10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1117658706320664, guid: fd0180833dcd5024b8247f916482e4d9, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4548269209751908, guid: fd0180833dcd5024b8247f916482e4d9, type: 3}
       propertyPath: m_RootOrder
