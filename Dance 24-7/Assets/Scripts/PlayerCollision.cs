@@ -32,4 +32,13 @@ public class PlayerCollision : MonoBehaviour
         // Apply the push
         body.velocity = pushDir * pushPower;
     }
+
+    void OnCollisionEnter(Collision col)
+    {
+        
+        if (col.collider.CompareTag("Guitar"))
+        {
+            FindObjectOfType<AudioManager>().Play("GuitarSound");
+        }
+    }
 }

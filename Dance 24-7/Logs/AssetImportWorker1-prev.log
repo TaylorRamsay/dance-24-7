@@ -15,7 +15,7 @@ C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50487
+56884
 Successfully changed project path to: C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7
 C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 103.23 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 106.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.2f1 (d6360bedb9a0)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -63,92 +63,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006417 seconds.
+Registered in 0.007496 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 104.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 113.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.684 seconds
+- Completed reload, in  0.773 seconds
 Domain Reload Profiling:
-	ReloadAssembly (684ms)
-		BeginReloadAssembly (85ms)
+	ReloadAssembly (774ms)
+		BeginReloadAssembly (87ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (485ms)
-			LoadAssemblies (82ms)
+		EndReloadAssembly (562ms)
+			LoadAssemblies (84ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (101ms)
+			SetupTypeCache (114ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (304ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (353ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (11ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (104ms)
+				RefreshPlugins (114ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (143ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.008088 seconds.
+Registered in 0.008911 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.113 seconds
+- Completed reload, in  1.175 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1114ms)
+	ReloadAssembly (1176ms)
 		BeginReloadAssembly (125ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (867ms)
-			LoadAssemblies (96ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (924ms)
+			LoadAssemblies (103ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (263ms)
+			SetupTypeCache (279ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (420ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (440ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (280ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (293ms)
 				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.15 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3578 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (185.3 KB). Loaded Objects now: 4048.
+Unloading 3579 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (185.1 KB). Loaded Objects now: 4049.
 Memory consumption went from 143.2 MB to 143.0 MB.
-Total: 3.795000 ms (FindLiveObjects: 0.380900 ms CreateObjectMapping: 0.092100 ms MarkObjects: 3.140800 ms  DeleteObjects: 0.180000 ms)
+Total: 3.447000 ms (FindLiveObjects: 0.347800 ms CreateObjectMapping: 0.087600 ms MarkObjects: 2.858200 ms  DeleteObjects: 0.152400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -161,84 +161,59 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 2081670.230968 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Crate_1x1x1_Large.prefab
-  artifactKey: Guid(176037adc9421ee46b7227b21f073208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Crate_1x1x1_Large.prefab using Guid(176037adc9421ee46b7227b21f073208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86bf5178e97c8c06f77170e342574d6e') in 0.124963 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Wires_Haging_Large_1.prefab
-  artifactKey: Guid(4556e3c10d85c8346847437027667232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Wires_Haging_Large_1.prefab using Guid(4556e3c10d85c8346847437027667232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb700a49880fca9e25803313086e41d7') in 0.021752 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Pallet_Closed.prefab
-  artifactKey: Guid(4156cbba0bca59d47ac859baf0e3502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Pallet_Closed.prefab using Guid(4156cbba0bca59d47ac859baf0e3502d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b58e47c9a363377b655e6dbd0d5bbfd') in 0.016758 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Shipping_Container.prefab
-  artifactKey: Guid(788bf2b2b96572f4da161aa978d360c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Shipping_Container.prefab using Guid(788bf2b2b96572f4da161aa978d360c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ffe1bd0b532d5693a4d7d6b2aa9010') in 0.036696 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Barricade_Broke_1.prefab
-  artifactKey: Guid(a74203224f143b24ca9a15a80c6d7feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Barricade_Broke_1.prefab using Guid(a74203224f143b24ca9a15a80c6d7feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcc35bfedb2fbf947a6f0428b922d428') in 0.037152 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Breezeblock_Cracked_2.prefab
-  artifactKey: Guid(58a73ae6fb6a071479c83d7a30d2726b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Breezeblock_Cracked_2.prefab using Guid(58a73ae6fb6a071479c83d7a30d2726b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ded0866ce160eb48a1003bdfdee298ca') in 0.017861 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Barricade_Broke_2.prefab
-  artifactKey: Guid(309b16dc7a0c492429187704258ca5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Barricade_Broke_2.prefab using Guid(309b16dc7a0c492429187704258ca5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1806d6d4734d4768e3685d8a51e569a6') in 0.015563 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Wall_Box_With_Swing_Door_2.prefab
-  artifactKey: Guid(52dab349a73eae54bb9f030ee8689afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Wall_Box_With_Swing_Door_2.prefab using Guid(52dab349a73eae54bb9f030ee8689afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8960214d2328fbea5033c01d190b74cc') in 0.015750 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Tire_1.prefab
-  artifactKey: Guid(06c321a703a138e44b064bf827e78c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Tire_1.prefab using Guid(06c321a703a138e44b064bf827e78c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1c420ccc26c66271b51a5fb057643a') in 0.015740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Wall_Box_With_Swing_Door_3.prefab
-  artifactKey: Guid(e398dc49f18315d4a91cd5c8f007781f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Wall_Box_With_Swing_Door_3.prefab using Guid(e398dc49f18315d4a91cd5c8f007781f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c454724649e7dee8f2638a1508dce1f') in 0.015137 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Fence_Basic_1_Destroyed_2.prefab
-  artifactKey: Guid(fb9aa1d2e5949f74281bbb9abcc6ef43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Fence_Basic_1_Destroyed_2.prefab using Guid(fb9aa1d2e5949f74281bbb9abcc6ef43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e4283c9059507ff73ac7a2fb6d96dd1') in 0.015682 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Skip_1.prefab
-  artifactKey: Guid(86e59d579c1432e4a9b0697e84670969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Skip_1.prefab using Guid(86e59d579c1432e4a9b0697e84670969) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae08f2cc0897a92f919222e41284d00') in 0.016963 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Blockout/Prefabs/Dynamic/Fence_Basic_1.prefab
-  artifactKey: Guid(bc23d85d9b1ce1a4d96c6a0450c1a504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Blockout/Prefabs/Dynamic/Fence_Basic_1.prefab using Guid(bc23d85d9b1ce1a4d96c6a0450c1a504) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643fd087aa31c0374976999f8943501b') in 0.016189 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007770 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.162 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1162ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (896ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (281ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (416ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (274ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3562 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (152.7 KB). Loaded Objects now: 4064.
+Memory consumption went from 141.9 MB to 141.8 MB.
+Total: 3.920500 ms (FindLiveObjects: 0.428500 ms CreateObjectMapping: 0.120000 ms MarkObjects: 3.212200 ms  DeleteObjects: 0.158200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
