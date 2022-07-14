@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Guitar
+  - Instruments
   layers:
   - Default
   - TransparentFX

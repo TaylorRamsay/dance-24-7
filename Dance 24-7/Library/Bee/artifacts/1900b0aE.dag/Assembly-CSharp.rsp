@@ -354,14 +354,16 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/AudioManager.cs"
-"Assets/Scripts/AudioOnCollision.cs"
-"Assets/Scripts/CopyPosition.cs"
-"Assets/Scripts/PlayAudio.cs"
-"Assets/Scripts/PlayerCollision.cs"
+"Assets/Scripts/Audio Scripts/AudioManager.cs"
+"Assets/Scripts/Audio Scripts/AudioOnCollision.cs"
+"Assets/Scripts/Audio Scripts/PlayAudio.cs"
+"Assets/Scripts/Audio Scripts/Sound.cs"
+"Assets/Scripts/NPC Scripts/FollowPlayer.cs"
+"Assets/Scripts/NPC Scripts/NPC.cs"
+"Assets/Scripts/Player Scripts/CopyPosition.cs"
+"Assets/Scripts/Player Scripts/PlayerCollision.cs"
+"Assets/Scripts/Player Scripts/ThirdPersonMovement.cs"
 "Assets/Scripts/RestartScene.cs"
-"Assets/Scripts/Sound.cs"
-"Assets/Scripts/ThirdPersonMovement.cs"
 -langversion:9.0
 
 /deterministic
