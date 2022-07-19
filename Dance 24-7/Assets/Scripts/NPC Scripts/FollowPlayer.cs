@@ -23,7 +23,7 @@ public class FollowPlayer : MonoBehaviour
             
             if (targetDistance >= maxDistance)
             {
-                followSpeed = playerMovement.speed / 300;
+                followSpeed = playerMovement.speed / 100;
                 transform.position = Vector3.MoveTowards(transform.position, player.transform.position, followSpeed); 
             }
             else

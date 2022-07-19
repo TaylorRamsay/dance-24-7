@@ -6,6 +6,7 @@ public class NPC : MonoBehaviour
 {
     public GameObject player;
     public ThirdPersonMovement playerMovement;
+    public float speedModifier = 100;
     public GameObject npc;
     public float targetDistance;
     public float maxDistance = 3;
@@ -23,7 +24,7 @@ public class NPC : MonoBehaviour
 
             if (targetDistance >= maxDistance)
             {
-                followSpeed = playerMovement.speed / 300;
+                followSpeed = playerMovement.speed / speedModifier;
                 transform.position = Vector3.MoveTowards(transform.position, player.transform.position, followSpeed);
             }
             else
@@ -42,6 +43,6 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-        FollowPlayer();
+        //FollowPlayer();
     }
 }
