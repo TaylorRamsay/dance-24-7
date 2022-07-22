@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d742afdb-3844-44d4-a5f7-75cb48644271}">
+		<property name="assetPath">
+			<value>BGM/Chira Stems/Chira - Shaker.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>48</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{36034c5b-3ccb-40d4-9c7e-ac5b77871ae5}</destination>
+		</relationship>
+	</object>
+</objects>

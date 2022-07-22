@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{1d1d6d60-8ac3-4c4b-ba2c-def8e9763b1f}">
+		<property name="assetPath">
+			<value>BGM/p65 Stems/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{36034c5b-3ccb-40d4-9c7e-ac5b77871ae5}</destination>
+		</relationship>
+	</object>
+</objects>

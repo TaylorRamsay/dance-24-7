@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="EncodableAsset" id="{04c244b7-3c22-4c9f-bbd8-b44fa11be153}">
+		<property name="assetPath">
+			<value>BGM/OKm1 Stems/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{36034c5b-3ccb-40d4-9c7e-ac5b77871ae5}</destination>
+		</relationship>
+	</object>
+</objects>
