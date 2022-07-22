@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{ae13e906-feb6-4f97-841d-c70ff2eedd9f}">
+		<property name="assetPath">
+			<value>BGM/p65.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>44.307709750566893</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{36034c5b-3ccb-40d4-9c7e-ac5b77871ae5}</destination>
+		</relationship>
+	</object>
+</objects>

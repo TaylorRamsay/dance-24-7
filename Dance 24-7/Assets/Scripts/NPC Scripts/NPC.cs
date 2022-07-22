@@ -11,29 +11,7 @@ public class NPC : MonoBehaviour
     public float targetDistance;
     public float maxDistance = 3;
     public float followSpeed;
-    public RaycastHit search;
-
-
-    void FollowPlayer()
-    {
-        transform.LookAt(player.transform);
-
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out search))
-        {
-            targetDistance = search.distance;
-
-            if (targetDistance >= maxDistance)
-            {
-                followSpeed = playerMovement.speed / speedModifier;
-                transform.position = Vector3.MoveTowards(transform.position, player.transform.position, followSpeed);
-            }
-            else
-            {
-                followSpeed = 0;
-
-            }
-        }
-    }
+    public bool isFollowing = false;
 
     void Start()
     {
@@ -43,6 +21,6 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-        //FollowPlayer();
+
     }
 }

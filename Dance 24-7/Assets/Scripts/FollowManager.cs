@@ -35,18 +35,15 @@ public class FollowManager : MonoBehaviour
         }
     }
 
-    // 
     void Follow()
     {
-
-        for (int i = 0; i < followersSize; i++)
+        List<NPC> followers = playerMovement.bandMembers;
+        for (int i = 0; i < playerMovement.bandMembers.Count; i++)
         {
             // is writing a separate function to handle the NPC that directly follows the player redundant?
             if (i == 0)
             {
-
                 PlayerFollower(followers[i]);
-
             } else
             {
                 followers[i].transform.LookAt(followers[i - 1].transform);
@@ -62,7 +59,6 @@ public class FollowManager : MonoBehaviour
                     else
                     {
                         followers[i].followSpeed = 0;
-
                     }
                 }
             }
@@ -76,8 +72,6 @@ public class FollowManager : MonoBehaviour
 
     void Update()
     {
-        // Populate followers list
-
         Follow();
     }
 }

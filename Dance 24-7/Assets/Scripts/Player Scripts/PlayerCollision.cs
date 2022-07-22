@@ -38,7 +38,7 @@ public class PlayerCollision : MonoBehaviour
         
         if (col.collider.CompareTag("Instruments"))
         {
-            FindObjectOfType<AudioManager>().Play("collisionSound");
+            //FindObjectOfType<AudioManager>().Play("collisionSound");
         }
     }
 }

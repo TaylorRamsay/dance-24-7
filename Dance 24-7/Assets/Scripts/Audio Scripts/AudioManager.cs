@@ -1,41 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
-using System;
+using FMODUnity;
+using FMOD.Studio;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public EventReference EventReference;
 
-    public Sound[] sounds;
-
-    // Awake functions similarly to the Start method but is called before Start method
-    void Awake()
+    private static FMOD.Studio.EventInstance Music;
+    void Play()
     {
-        foreach (Sound s in sounds)
-        {
-            s.source = gameObject.AddComponent<AudioSource>();
-            s.source.clip = s.clip;
-            s.source.volume = s.volume;
-            s.source.pitch = s.pitch;
-            s.source.loop = s.loop;
-        }
+        
     }
 
     void Start()
     {
-        Play("Chira");
+        Music = FMODUnity.RuntimeManager.CreateInstance("event:/Music/Chira");
+        Music.start();
+
     }
 
-    // Finds a sound (name) in the sounds array and plays it
-    public void Play (string name)
+
+    void Update()
     {
-        Sound s = Array.Find(sounds, sound => sound.name == name);
-        if (s == null)
-        {
-            Debug.LogWarning("Sound: " + name + " not found!");
-            return;
-        }
-        s.source.Play();
+        
     }
-    
 }

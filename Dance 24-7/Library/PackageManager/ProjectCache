@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637930094387846034
-    m_Hash: 956281653
+      ticks: 637938607232639981
+    m_Hash: 1404049538
   m_LockFileStatus:
     m_FilePath: C:/Users/CDK345/Documents/GitHub/dance-24-7/Dance 24-7/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637930094387846034
-    m_Hash: 2525672213
+      ticks: 637938607797636857
+    m_Hash: 595287276
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/CDK345/Documents/GitHub/dance-24-7/Dance 24-7/Packages
-m_EditorVersion: 2021.3.2f1 (d6360bedb9a0)
+m_EditorVersion: 2021.3.6f1 (7da38d85baf6)
 m_ResolvedPackages:
 - packageId: com.unity.cinemachine@2.8.6
   testable: 0
@@ -105,7 +105,6 @@ m_ResolvedPackages:
     - 2.9.0-pre.1
     - 2.9.0-pre.6
     compatible:
-    - 2.8.4
     - 2.8.6
     - 2.9.0-pre.1
     - 2.9.0-pre.6
@@ -153,14 +152,14 @@ m_ResolvedPackages:
     revision: 5e26d3cd08865a98219c0d2d3a8cc689018dd75b
     path: 
   unityLifecycle:
-    version: 2.8.4
+    version: 2.8.6
     nextVersion: 
-- packageId: com.unity.collab-proxy@1.15.16
+- packageId: com.unity.collab-proxy@1.15.18
   testable: 0
   isDirectDependency: 1
-  version: 1.15.16
+  version: 1.15.18
   source: 1
-  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.collab-proxy@1.15.16
+  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.collab-proxy@1.15.18
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -178,16 +177,16 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 1.15.16
+    - 1.15.18
     compatible:
-    - 1.15.16
-    verified: 1.15.16
+    - 1.15.18
+    verified: 1.15.18
   dependencies:
   - name: com.unity.services.core
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.3.1
+    version: 1.4.0
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -223,10 +222,10 @@ m_ResolvedPackages:
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 714a2838c2d55add3d0accf539488f96caa757b2
+    revision: 611215dcd30048fa921b4be160048bad4022d65f
     path: 
   unityLifecycle:
-    version: 1.15.16
+    version: 1.15.18
     nextVersion: 
 - packageId: com.unity.feature.development@1.0.1
   testable: 0
@@ -272,7 +271,7 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
-    version: 2.0.14
+    version: 2.0.16
   - name: com.unity.test-framework
     version: 1.1.31
   - name: com.unity.ext.nunit
@@ -282,7 +281,7 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
-    version: 3.0.13
+    version: 3.0.15
   - name: com.unity.ide.vscode
     version: 1.2.5
   - name: com.unity.editorcoroutines
@@ -314,12 +313,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.1
     nextVersion: 
-- packageId: com.unity.ide.rider@3.0.13
+- packageId: com.unity.ide.rider@3.0.15
   testable: 0
   isDirectDependency: 1
-  version: 3.0.13
+  version: 3.0.15
   source: 1
-  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.ide.rider@3.0.13
+  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.ide.rider@3.0.15
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -336,10 +335,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 3.0.13
+    - 3.0.15
     compatible:
-    - 3.0.13
-    verified: 3.0.13
+    - 3.0.15
+    verified: 3.0.15
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -362,17 +361,17 @@ m_ResolvedPackages:
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
-    revision: 26f15837ac7ebf5038274dcc39e2b79da5fcdc93
+    revision: b61ff0378932fdf03b5891e09c91728337de674c
     path: 
   unityLifecycle:
-    version: 3.0.13
+    version: 3.0.15
     nextVersion: 
-- packageId: com.unity.ide.visualstudio@2.0.14
+- packageId: com.unity.ide.visualstudio@2.0.16
   testable: 0
   isDirectDependency: 1
-  version: 2.0.14
+  version: 2.0.16
   source: 1
-  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.ide.visualstudio@2.0.14
+  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.ide.visualstudio@2.0.16
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -389,10 +388,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 2.0.14
+    - 2.0.16
     compatible:
-    - 2.0.14
-    verified: 2.0.14
+    - 2.0.16
+    verified: 2.0.16
   dependencies:
   - name: com.unity.test-framework
     version: 1.1.9
@@ -421,10 +420,10 @@ m_ResolvedPackages:
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
-    revision: f1e8af5df9e2507088a8622d173c9a7d5a03a882
+    revision: c01855ef6461b821ab0226135e96a4ee86de96be
     path: 
   unityLifecycle:
-    version: 2.0.14
+    version: 2.0.16
     nextVersion: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
@@ -746,12 +745,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.0
     nextVersion: 
-- packageId: com.unity.visualscripting@1.7.6
+- packageId: com.unity.visualscripting@1.7.8
   testable: 0
   isDirectDependency: 1
-  version: 1.7.6
+  version: 1.7.8
   source: 1
-  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.visualscripting@1.7.6
+  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.visualscripting@1.7.8
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -777,10 +776,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 1.7.6
+    - 1.7.8
     compatible:
-    - 1.7.6
-    verified: 1.7.6
+    - 1.7.8
+    verified: 1.7.8
   dependencies:
   - name: com.unity.ugui
     version: 1.0.0
@@ -811,10 +810,10 @@ m_ResolvedPackages:
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.visualscripting.git
-    revision: 64599611822e37717efdd2fa1a0576e1984155fc
+    revision: 775a560e6602f51ff05aca02264f8bed4d415fd3
     path: 
   unityLifecycle:
-    version: 1.7.6
+    version: 1.7.8
     nextVersion: 
 - packageId: com.unity.modules.ai@1.0.0
   testable: 0
@@ -2778,12 +2777,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.1
     nextVersion: 
-- packageId: com.unity.services.core@1.3.1
+- packageId: com.unity.services.core@1.4.0
   testable: 0
   isDirectDependency: 0
-  version: 1.3.1
+  version: 1.4.0
   source: 1
-  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.services.core@1.3.1
+  resolvedPath: C:\Users\CDK345\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.services.core@1.4.0
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -2802,10 +2801,10 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
-    - 1.3.1
+    - 1.4.0
     compatible:
-    - 1.3.1
-    verified: 1.3.1
+    - 1.4.0
+    verified: 1.4.0
   dependencies:
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
@@ -2836,10 +2835,10 @@ m_ResolvedPackages:
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: a1cf55a5ba0e2555d508263fa48837ff56c4654a
+    revision: 92e281deb97a96f7b32464b6874de73a17c140ff
     path: 
   unityLifecycle:
-    version: 1.3.1
+    version: 1.4.0
     nextVersion: 
 - packageId: com.unity.settings-manager@1.0.3
   testable: 0

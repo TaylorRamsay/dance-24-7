@@ -25,12 +25,36 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-
     Vector3 velocity;
     bool isGrounded;
 
+
+    // Recruit Variables
+    public List<NPC> bandMembers;
+    public Transform bandMemberCheck;
+    public float checkDistance = 0.6f;
+    public LayerMask bandMember;
+    public static Collider[] nearbyBandMember;
+
+    void RecruitBandMember()
+    {
+        nearbyBandMember = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
+
+        if (nearbyBandMember.Length > 0 && !nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing)
+        {
+            // display "Press E to recruit band member" button prompt
+
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                bandMembers.Add(nearbyBandMember[0].gameObject.GetComponent<NPC>());
+                nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing = true;
+            }
+        }
+    }
+
     void Update()
     {
+        RecruitBandMember();
         
         // ====== GRAVITY + JUMP HANDLING ====== //
         // Creates a sphere at "groundCheck.position" with radius "groundDistance" to check for collision with objects specified as "groundMask"
