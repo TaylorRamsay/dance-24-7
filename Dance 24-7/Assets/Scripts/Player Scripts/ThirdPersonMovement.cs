@@ -43,7 +43,6 @@ public class ThirdPersonMovement : MonoBehaviour
         if (nearbyBandMember.Length > 0 && !nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing)
         {
             // display "Press E to recruit band member" button prompt
-
             if (Input.GetKeyDown(KeyCode.E))
             {
                 bandMembers.Add(nearbyBandMember[0].gameObject.GetComponent<NPC>());
@@ -52,10 +51,8 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-    void Update()
+    void Jump()
     {
-        RecruitBandMember();
-        
         // ====== GRAVITY + JUMP HANDLING ====== //
         // Creates a sphere at "groundCheck.position" with radius "groundDistance" to check for collision with objects specified as "groundMask"
         // Returns True if collision exists, False if collision does not exist
@@ -65,12 +62,34 @@ public class ThirdPersonMovement : MonoBehaviour
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
+
+            /*if (bandMembers.Count > 0)
+            {
+                for (int i = 0; i < bandMembers.Count; i++)
+                {
+                    bandMembers[i].velocity.y = -2f;
+                }
+            }*/
         }
 
-        if(Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+
+            /*if (bandMembers.Count > 0)
+            {
+                for (int i = 0; i < bandMembers.Count; i++)
+                {
+                    bandMembers[i].velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+                }
+            }*/
         }
+    }
+
+    void Update()
+    {
+        RecruitBandMember();
+        Jump();
 
         // Increments gravity value to player while not grounded, Time.deltaTime to keep frame rate independent
         velocity.y += gravity * Time.deltaTime;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{3ef3ff12-c1f1-40d9-8860-285175130d06}">
+		<property name="name">
+			<value>2mixD</value>
+		</property>
+		<relationship name="folder">
+			<destination>{33f160ff-50e9-43fd-964d-f6efb6cd0fd6}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{75fe0b1d-fe04-43f9-8225-00125deade1b}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{75fe0b1d-fe04-43f9-8225-00125deade1b}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
