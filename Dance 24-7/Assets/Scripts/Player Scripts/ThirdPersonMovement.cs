@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
@@ -18,7 +19,6 @@ public class ThirdPersonMovement : MonoBehaviour
     // Used to hold the velocity at which the player will turn from current facing angle to target angle
     float turnSmoothVelocity;
 
-
     // Gravity + Jump Variables
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
@@ -28,26 +28,35 @@ public class ThirdPersonMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
-
     // Recruit Variables
     public List<NPC> bandMembers;
     public Transform bandMemberCheck;
-    public float checkDistance = 0.6f;
+    public float checkDistance = 1f;
     public LayerMask bandMember;
     public static Collider[] nearbyBandMember;
+    [SerializeField] private TextMeshProUGUI recruitPrompt;
 
+    private void Start()
+    {
+        recruitPrompt.gameObject.SetActive(false);
+    }
     void RecruitBandMember()
     {
         nearbyBandMember = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
 
         if (nearbyBandMember.Length > 0 && !nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing)
         {
+            recruitPrompt.gameObject.SetActive(true);
             // display "Press E to recruit band member" button prompt
             if (Input.GetKeyDown(KeyCode.E))
             {
                 bandMembers.Add(nearbyBandMember[0].gameObject.GetComponent<NPC>());
                 nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing = true;
             }
+        }
+        else
+        {
+            recruitPrompt.gameObject.SetActive(false);
         }
     }
 
@@ -62,27 +71,11 @@ public class ThirdPersonMovement : MonoBehaviour
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
-
-            /*if (bandMembers.Count > 0)
-            {
-                for (int i = 0; i < bandMembers.Count; i++)
-                {
-                    bandMembers[i].velocity.y = -2f;
-                }
-            }*/
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-
-            /*if (bandMembers.Count > 0)
-            {
-                for (int i = 0; i < bandMembers.Count; i++)
-                {
-                    bandMembers[i].velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-                }
-            }*/
         }
     }
 
@@ -126,7 +119,6 @@ public class ThirdPersonMovement : MonoBehaviour
 
             // Multiplying by " * Vector3.forward" turns the rotation into a direction
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-
 
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }

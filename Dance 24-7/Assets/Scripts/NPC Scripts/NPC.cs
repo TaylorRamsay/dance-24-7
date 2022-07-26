@@ -8,7 +8,6 @@ public class NPC : MonoBehaviour
     public GameObject player;
     public ThirdPersonMovement playerMovement;
     public NavMeshAgent navAgent;
-    public float speedModifier = 100;
     public GameObject npc;
     public bool isFollowing = false;
     public GameObject followIdentifier;
@@ -18,7 +17,6 @@ public class NPC : MonoBehaviour
         navAgent = GetComponent<NavMeshAgent>();
         navAgent.stoppingDistance = 5;
         followIdentifier.SetActive(false);
-
     }
 
     void Update()

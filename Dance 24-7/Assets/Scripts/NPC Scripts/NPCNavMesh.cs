@@ -33,6 +33,5 @@ public class NPCNavMesh : MonoBehaviour
     private void Update()
     {
         Follow();
-        //navMeshAgent.destination = player.transform.position;
     }
 }
