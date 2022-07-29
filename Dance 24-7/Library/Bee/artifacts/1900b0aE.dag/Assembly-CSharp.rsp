@@ -115,6 +115,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -335,6 +336,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Services.Core.Environments.ref.dll"
@@ -358,14 +361,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/Audio Scripts/Archived Audio Scripts/AudioManager.cs"
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/AudioOnCollision.cs"
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/OldAudioManager.cs"
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/Sound.cs"
-"Assets/Scripts/Audio Scripts/AudioManager.cs"
-"Assets/Scripts/FollowManager.cs"
-"Assets/Scripts/NPC Scripts/FollowPlayer.cs"
+"Assets/Scripts/Audio Scripts/VisualInfluencer.cs"
 "Assets/Scripts/NPC Scripts/NPC.cs"
-"Assets/Scripts/Player Scripts/CopyPosition.cs"
+"Assets/Scripts/NPC Scripts/NPCNavMesh.cs"
 "Assets/Scripts/Player Scripts/PlayerCollision.cs"
 "Assets/Scripts/Player Scripts/ThirdPersonMovement.cs"
 "Assets/Scripts/RestartScene.cs"

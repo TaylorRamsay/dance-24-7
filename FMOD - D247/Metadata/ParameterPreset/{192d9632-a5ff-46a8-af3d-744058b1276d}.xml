@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{192d9632-a5ff-46a8-af3d-744058b1276d}">
+		<property name="name">
+			<value>vlume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{33f160ff-50e9-43fd-964d-f6efb6cd0fd6}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{044603de-1022-4d1a-ac1a-39a63491c3b3}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{044603de-1022-4d1a-ac1a-39a63491c3b3}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

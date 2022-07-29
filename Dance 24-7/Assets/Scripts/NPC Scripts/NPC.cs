@@ -1,26 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class NPC : MonoBehaviour
 {
     public GameObject player;
     public ThirdPersonMovement playerMovement;
-    public float speedModifier = 100;
+    public NavMeshAgent navAgent;
     public GameObject npc;
-    public float targetDistance;
-    public float maxDistance = 3;
-    public float followSpeed;
     public bool isFollowing = false;
+    public GameObject followIdentifier;
 
     void Start()
     {
-        
+        navAgent = GetComponent<NavMeshAgent>();
+        navAgent.stoppingDistance = 5;
+        followIdentifier.SetActive(false);
     }
-
 
     void Update()
     {
-
+        if (isFollowing)
+        {
+            followIdentifier.SetActive(true);
+            navAgent.speed = playerMovement.speed;
+        }
     }
 }
