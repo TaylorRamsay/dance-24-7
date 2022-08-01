@@ -17,13 +17,13 @@ using System;
 public class VisualInfluencer : MonoBehaviour
 {
     public FMODUnity.StudioEventEmitter track;
-    public string csvPath = @"C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Assets\CVS Music Data\Chira Stem Data\chords.csv";
+    public string csvPath;
     public GameObject currentNPC;
     public Material currentMaterial;
-    public float intesityFactor;
+    public float multiplier = 1;
     private List<float> musicData = new List<float>();
-    public int currTime = 0;
-    public int totalTime = 0;
+    private int currTime = 0;
+    private int totalTime = 0;
     private int index = 0;
 
     void ReadCSV(ref List<float> csvList)
@@ -57,16 +57,18 @@ public class VisualInfluencer : MonoBehaviour
     void Update()
     {
         print("------------Current Visual Influence Info (Chords)---------------");
-        print("Current time:" + currTime + "\n\tTotal time: " + totalTime + "\nList Size: " + musicData.Count);
+        print("Current time:" + currTime + "\n\tTotal time: " + totalTime);
 
         track.EventInstance.getTimelinePosition(out currTime);
         index = (int)(((float)currTime / (float)totalTime) * musicData.Count);
 
         print("Current index: " + index);
+        print("List Size: " + musicData.Count);
         print("Current List Item: " + musicData[index]);
 
         Color glow = currentMaterial.GetColor("_Color");
-        glow *= Mathf.Pow(2.0F, musicData[index]);
+        glow *= (musicData[index] * multiplier);
+        //glow *= Mathf.Pow(2.0F, musicData[index]);
         currentMaterial.SetColor("_EmissionColor", glow);
     }
 }
