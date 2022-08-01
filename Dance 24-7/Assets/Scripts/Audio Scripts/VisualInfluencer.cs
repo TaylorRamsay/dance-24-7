@@ -18,13 +18,18 @@ public class VisualInfluencer : MonoBehaviour
 {
     public FMODUnity.StudioEventEmitter track;
     public string csvPath;
+
     public GameObject currentNPC;
-    public Material currentMaterial;
-    public float multiplier = 1;
+    public Material characterMaterial;
+    public Material instrumentMaterial;
+    private Color characterGlow;
+    private Color instrumentGlow;
+
     private List<float> musicData = new List<float>();
     private int currTime = 0;
     private int totalTime = 0;
     private int index = 0;
+    public float multiplier = 1;
 
     void ReadCSV(ref List<float> csvList)
     {
@@ -33,14 +38,9 @@ public class VisualInfluencer : MonoBehaviour
             var lines = File.ReadLines(csvPath);
             foreach (var line in lines)
             { 
-                if (string.IsNullOrWhiteSpace(line))
+                if (!string.IsNullOrWhiteSpace(line))
                 {
-                    continue;
-                }
-                else
-                {
-                    float c = float.Parse(line);
-                    csvList.Add(c);
+                    csvList.Add(float.Parse(line));
                 }
             }   
         }
@@ -51,7 +51,8 @@ public class VisualInfluencer : MonoBehaviour
     {
         ReadCSV(ref musicData);
         track.EventDescription.getLength(out totalTime);
-        currentMaterial.GetColor("_EmissionColor");
+        characterMaterial.GetColor("_EmissionColor");
+        instrumentMaterial.GetColor("_EmissionColor");
     }
 
     void Update()
@@ -66,9 +67,13 @@ public class VisualInfluencer : MonoBehaviour
         print("List Size: " + musicData.Count);
         print("Current List Item: " + musicData[index]);
 
-        Color glow = currentMaterial.GetColor("_Color");
-        glow *= (musicData[index] * multiplier);
-        //glow *= Mathf.Pow(2.0F, musicData[index]);
-        currentMaterial.SetColor("_EmissionColor", glow);
+        characterGlow = characterMaterial.GetColor("_Color");
+        instrumentGlow = instrumentMaterial.GetColor("_Color");
+
+        characterGlow *= (musicData[index] * multiplier);
+        instrumentGlow *= (musicData[index] * multiplier);
+
+        characterMaterial.SetColor("_EmissionColor", characterGlow);
+        instrumentMaterial.SetColor("_EmissionColor", instrumentGlow);
     }
 }

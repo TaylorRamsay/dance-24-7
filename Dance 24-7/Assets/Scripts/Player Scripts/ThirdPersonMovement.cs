@@ -9,6 +9,11 @@ public class ThirdPersonMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
 
+    // Stats
+    public float hp;
+    public float mp;
+    public float attackPower;
+
     // Player Movement Variables
     public float speed;
     public float walkSpeed = 6f;
@@ -36,14 +41,11 @@ public class ThirdPersonMovement : MonoBehaviour
     public static Collider[] nearbyBandMember;
     [SerializeField] private TextMeshProUGUI recruitPrompt;
 
-    private void Start()
-    {
-        recruitPrompt.gameObject.SetActive(false);
-    }
+
     void RecruitBandMember()
     {
         nearbyBandMember = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
-
+        
         if (nearbyBandMember.Length > 0 && !nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing)
         {
             recruitPrompt.gameObject.SetActive(true);
@@ -59,6 +61,22 @@ public class ThirdPersonMovement : MonoBehaviour
             recruitPrompt.gameObject.SetActive(false);
         }
     }
+
+    void Combat()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            // player attack
+
+
+        } else if (Input.GetMouseButtonDown(1))
+        {
+            // player defend
+
+             
+        }
+    }
+
 
     void Jump()
     {
@@ -77,6 +95,14 @@ public class ThirdPersonMovement : MonoBehaviour
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
+    }
+
+
+
+
+    private void Start()
+    {
+        recruitPrompt.gameObject.SetActive(false);
     }
 
     void Update()

@@ -104,6 +104,7 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll"
@@ -294,13 +295,14 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.VRModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.WindModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll"
--r:"C:/Users/CDK345/Documents/GitHub/dance-24-7/Dance 24-7/Library/PackageCache/com.unity.cinemachine@2.8.6/Runtime/ThirdParty/clipper_library.dll"
--r:"C:/Users/CDK345/Documents/GitHub/dance-24-7/Dance 24-7/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
--r:"C:/Users/CDK345/Documents/GitHub/dance-24-7/Dance 24-7/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7/Library/PackageCache/com.unity.cinemachine@2.8.6/Runtime/ThirdParty/clipper_library.dll"
+-r:"C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/AOT/Newtonsoft.Json.dll"
+-r:"C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/FMODUnity.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/FMODUnityResonance.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/RadicalForge.Blockout.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Analytics.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.Environments.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.Services.Core.ref.dll"
@@ -310,15 +312,13 @@
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.Flow.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aP.dag/UnityEngine.UI.ref.dll"
-"Assets/Scripts/Audio Scripts/2DConverter.cs"
+"Assets/Scripts/Audio Scripts/Archived Audio Scripts/AudioManager.cs"
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/AudioOnCollision.cs"
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/OldAudioManager.cs"
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/Sound.cs"
-"Assets/Scripts/Audio Scripts/AudioManager.cs"
-"Assets/Scripts/FollowManager.cs"
-"Assets/Scripts/NPC Scripts/FollowPlayer.cs"
+"Assets/Scripts/Audio Scripts/VisualInfluencer.cs"
 "Assets/Scripts/NPC Scripts/NPC.cs"
-"Assets/Scripts/Player Scripts/CopyPosition.cs"
+"Assets/Scripts/NPC Scripts/NPCNavMesh.cs"
 "Assets/Scripts/Player Scripts/PlayerCollision.cs"
 "Assets/Scripts/Player Scripts/ThirdPersonMovement.cs"
 "Assets/Scripts/RestartScene.cs"
