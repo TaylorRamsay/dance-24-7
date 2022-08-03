@@ -5,22 +5,22 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637947158958863061
-    m_Hash: 3730530136
+      ticks: 637951421062995099
+    m_Hash: 888458597
   m_LockFileStatus:
     m_FilePath: C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637947158958873076
-    m_Hash: 3364182388
+      ticks: 637951421149377787
+    m_Hash: 2457538399
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7/Packages
-m_EditorVersion: 2021.3.6f1 (7da38d85baf6)
+m_EditorVersion: 2021.3.7f1 (24e8595d6d43)
 m_ResolvedPackages:
 - packageId: com.unity.cinemachine@2.8.6
   testable: 0
@@ -154,12 +154,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 2.8.6
     nextVersion: 
-- packageId: com.unity.collab-proxy@1.15.18
+- packageId: com.unity.collab-proxy@1.17.1
   testable: 0
   isDirectDependency: 1
-  version: 1.15.18
+  version: 1.17.1
   source: 1
-  resolvedPath: C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.collab-proxy@1.15.18
+  resolvedPath: C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.collab-proxy@1.17.1
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -226,6 +226,7 @@ m_ResolvedPackages:
     - 1.15.18
     - 1.17.0
     - 1.17.1
+    - 1.17.2
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -237,9 +238,8 @@ m_ResolvedPackages:
     - 2.1.0-preview.5
     - 2.1.0-preview.6
     compatible:
-    - 1.15.18
-    - 1.17.0
     - 1.17.1
+    - 1.17.2
     - 2.0.0-preview.6
     - 2.0.0-preview.8
     - 2.0.0-preview.15
@@ -250,13 +250,13 @@ m_ResolvedPackages:
     - 2.1.0-preview.3
     - 2.1.0-preview.5
     - 2.1.0-preview.6
-    verified: 1.15.18
+    verified: 1.17.2
   dependencies:
   - name: com.unity.services.core
     version: 1.0.1
   resolvedDependencies:
   - name: com.unity.services.core
-    version: 1.4.0
+    version: 1.4.2
   - name: com.unity.modules.unitywebrequest
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
@@ -286,16 +286,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637888962690000000
+  datePublishedTicks: 637916644700000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
-    revision: 611215dcd30048fa921b4be160048bad4022d65f
+    revision: 2346af88036ac7256d898e0bb536f60220ce6e18
     path: 
   unityLifecycle:
-    version: 1.15.18
+    version: 1.17.1
     nextVersion: 
 - packageId: com.unity.feature.development@1.0.1
   testable: 0
@@ -745,15 +745,17 @@ m_ResolvedPackages:
     - 1.1.29
     - 1.1.30
     - 1.1.31
+    - 1.1.33
     - 2.0.1-exp.1
     - 2.0.1-pre.12
     - 2.0.1-pre.18
     compatible:
     - 1.1.31
+    - 1.1.33
     - 2.0.1-exp.1
     - 2.0.1-pre.12
     - 2.0.1-pre.18
-    verified: 1.1.31
+    verified: 1.1.33
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
@@ -1176,7 +1178,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: tool
   description: 'Visual scripting is a workflow that uses visual, node-based graphs
     to design behaviors rather than write lines of C# script.
 
@@ -3269,12 +3271,12 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.1
     nextVersion: 
-- packageId: com.unity.services.core@1.4.0
+- packageId: com.unity.services.core@1.4.2
   testable: 0
   isDirectDependency: 0
-  version: 1.4.0
+  version: 1.4.2
   source: 1
-  resolvedPath: C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.services.core@1.4.0
+  resolvedPath: C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7\Library\PackageCache\com.unity.services.core@1.4.2
   assetPath: Packages/com.unity.services.core
   name: com.unity.services.core
   displayName: Services Core
@@ -3308,8 +3310,6 @@ m_ResolvedPackages:
     - 1.4.1
     - 1.4.2
     compatible:
-    - 1.4.0
-    - 1.4.1
     - 1.4.2
     verified: 1.4.2
   dependencies:
@@ -3336,16 +3336,16 @@ m_ResolvedPackages:
     capabilities: 7
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637871962570000000
+  datePublishedTicks: 637919618520000000
   documentationUrl: 
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/operate-services-sdk.git
-    revision: 92e281deb97a96f7b32464b6874de73a17c140ff
+    revision: 3964d1641ebec474aa425853985bccbdb89c2a49
     path: 
   unityLifecycle:
-    version: 1.4.0
+    version: 1.4.2
     nextVersion: 
 - packageId: com.unity.settings-manager@1.0.3
   testable: 0
@@ -3418,7 +3418,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: library
   description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
     synced to version 13.0.1.
 
