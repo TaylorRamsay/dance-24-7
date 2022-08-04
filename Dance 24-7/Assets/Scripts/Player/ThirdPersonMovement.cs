@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class ThirdPersonMovement : MonoBehaviour
@@ -38,15 +39,23 @@ public class ThirdPersonMovement : MonoBehaviour
 
     // Combat Variables
     public float hp;
+    public float maxHp;
+    public Image healthBar;
     public float mp;
     public float attackPower;
     public bool isDefending;
 
+    public static Collider[] nearbyEnemy;
     public Transform enemyCheck;
     public float enemyCheckDistance;
     public LayerMask enemy;
-    public static Collider[] nearbyEnemy;
     [SerializeField] private TextMeshProUGUI attackPrompt;
+
+
+    void UpdateHealthBar()
+    {
+        healthBar.fillAmount = Mathf.Clamp(hp / maxHp, 0, 1f);
+    }
 
     void RecruitBandMember()
     {
@@ -119,9 +128,15 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void Update()
     {
+        UpdateHealthBar();
         RecruitBandMember();
         Combat();
         Jump();
+
+        if (hp <= 0)
+        {
+            gameObject.SetActive(false);
+        }
 
         // Increments gravity value to player while not grounded, Time.deltaTime to keep frame rate independent
         velocity.y += gravity * Time.deltaTime;
