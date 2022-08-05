@@ -9,7 +9,7 @@ public class EnemyNPC : MonoBehaviour
     public ThirdPersonMovement playerMovement;
     public NavMeshAgent navAgent;
     public GameObject npc;
-
+    public StatManager stats;
 
     public static Collider[] playerDetector;
     public Transform playerCheck;
@@ -24,17 +24,14 @@ public class EnemyNPC : MonoBehaviour
     public float attackTime;
     private float attackTimer;
 
-    public float hp;
-    public float mp;
-    public float attackPower;
     public float attackDistance;
     public float movementSpeed;
 
-
     void HealthCheck()
     {
-        if (hp <= 0)
+        if (stats.hp <= 0)
         {
+            playerMovement.agroEnemies.Remove(this);
             gameObject.SetActive(false);
         }
     }
@@ -46,18 +43,22 @@ public class EnemyNPC : MonoBehaviour
         attackTimer -= Time.deltaTime;
 
         if (attackTimer <= 0f && attackDetector.Length > 0)
-        {
-            player.GetComponent<ThirdPersonMovement>().hp -= attackPower;
-            attackTimer = attackTime;
+        { 
+                player.GetComponent<StatManager>().hp -= stats.attackPower;
+                attackTimer = attackTime;
         }
     }
+
 
     void CheckForPlayer()
     {
         playerDetector = Physics.OverlapSphere(playerCheck.position, checkDistance, checkLayer);
-
         if (playerDetector.Length > 0)
         {
+            if (!playerMovement.agroEnemies.Contains(this))
+            {
+                playerMovement.agroEnemies.Add(this);
+            }
             pursueTarget = true;
             agro = true;
             agroIdentifier.SetActive(true);
@@ -66,6 +67,7 @@ public class EnemyNPC : MonoBehaviour
 
         } else
         {
+            playerMovement.agroEnemies.Remove(this);
             pursueTarget = false;
             agro = false;
             agroIdentifier.SetActive(false);
@@ -78,7 +80,6 @@ public class EnemyNPC : MonoBehaviour
         navAgent.speed = movementSpeed;
         navAgent.stoppingDistance = 5;
     }
-
 
     void Update()
     {

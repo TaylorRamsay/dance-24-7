@@ -12,11 +12,6 @@ public class NPC : MonoBehaviour
     public bool isFollowing = false;
     public GameObject followIdentifier;
 
-    // Stats
-    public float hp = 20;
-    public float mp = 20;
-    public float attackPower = 10;
-
 
     void Start()
     {

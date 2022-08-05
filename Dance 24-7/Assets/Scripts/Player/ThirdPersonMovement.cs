@@ -9,6 +9,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public CharacterController controller;
     public Transform cam;
+    public StatManager stats;
 
     // Player Movement Variables
     public float speed;
@@ -37,15 +38,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public static Collider[] nearbyBandMember;
     [SerializeField] private TextMeshProUGUI recruitPrompt;
 
-    // Combat Variables
-    public float hp;
-    public float maxHp;
-    public Image healthBar;
-    public float mp;
-    public float attackPower;
-    public bool isDefending;
-
     public static Collider[] nearbyEnemy;
+    public List<EnemyNPC> agroEnemies;
     public Transform enemyCheck;
     public float enemyCheckDistance;
     public LayerMask enemy;
@@ -54,7 +48,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void UpdateHealthBar()
     {
-        healthBar.fillAmount = Mathf.Clamp(hp / maxHp, 0, 1f);
+        stats.healthBar.fillAmount = Mathf.Clamp(stats.hp / stats.maxHp, 0, 1f);
     }
 
     void RecruitBandMember()
@@ -83,7 +77,7 @@ public class ThirdPersonMovement : MonoBehaviour
         nearbyEnemy = Physics.OverlapSphere(enemyCheck.position, enemyCheckDistance, enemy);
         if (nearbyEnemy.Length > 0)
         {
-            nearbyEnemy[0].GetComponent<EnemyNPC>().hp -= attackPower;
+            nearbyEnemy[0].GetComponent<StatManager>().hp -= stats.attackPower;
         }
     }
 
@@ -95,7 +89,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         } else if (Input.GetMouseButtonDown(1))
         {
-            isDefending = true;
+            stats.isDefending = true;
         }
     }
 
@@ -123,8 +117,9 @@ public class ThirdPersonMovement : MonoBehaviour
     private void Start()
     {
         recruitPrompt.gameObject.SetActive(false);
-        isDefending = false;
+        stats.isDefending = false;
     }
+
 
     void Update()
     {
@@ -133,7 +128,7 @@ public class ThirdPersonMovement : MonoBehaviour
         Combat();
         Jump();
 
-        if (hp <= 0)
+        if (stats.hp <= 0)
         {
             gameObject.SetActive(false);
         }
