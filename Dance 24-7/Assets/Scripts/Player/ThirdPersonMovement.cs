@@ -35,10 +35,10 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform bandMemberCheck;
     public float checkDistance = 1f;
     public LayerMask bandMember;
-    public static Collider[] nearbyBandMember;
+    public static Collider[] bandMemberDetector;
     [SerializeField] private TextMeshProUGUI recruitPrompt;
 
-    public static Collider[] nearbyEnemy;
+    public static Collider[] enemyDetector;
     public List<EnemyNPC> agroEnemies;
     public Transform enemyCheck;
     public float enemyCheckDistance;
@@ -53,17 +53,17 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void RecruitBandMember()
     {
-        nearbyBandMember = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
+        bandMemberDetector = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
         
-        if (nearbyBandMember.Length > 0 && !nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing)
+        if (bandMemberDetector.Length > 0 && !bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing)
         {
             // display "Press E to recruit band member" button prompt
             recruitPrompt.gameObject.SetActive(true);
             
             if (Input.GetKeyDown(KeyCode.E))
             {
-                bandMembers.Add(nearbyBandMember[0].gameObject.GetComponent<NPC>());
-                nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing = true;
+                bandMembers.Add(bandMemberDetector[0].gameObject.GetComponent<NPC>());
+                bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing = true;
             }
         }
         else
@@ -72,12 +72,12 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-    void AttackEnemy()
+    void AttackTarget()
     {
-        nearbyEnemy = Physics.OverlapSphere(enemyCheck.position, enemyCheckDistance, enemy);
-        if (nearbyEnemy.Length > 0)
+        enemyDetector = Physics.OverlapSphere(enemyCheck.position, enemyCheckDistance, enemy);
+        if (enemyDetector.Length > 0)
         {
-            nearbyEnemy[0].GetComponent<StatManager>().hp -= stats.attackPower;
+            enemyDetector[0].GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
         }
     }
 
@@ -85,7 +85,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            AttackEnemy();
+            AttackTarget();
 
         } else if (Input.GetMouseButtonDown(1))
         {

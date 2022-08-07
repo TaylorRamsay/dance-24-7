@@ -57,15 +57,15 @@ public class VisualInfluencer : MonoBehaviour
 
     void Update()
     {
-        print("------------Current Visual Influence Info (Chords)---------------");
-        print("Current time:" + currTime + "\n\tTotal time: " + totalTime);
+        //print("------------Current Visual Influence Info (Chords)---------------");
+        //print("Current time:" + currTime + "\n\tTotal time: " + totalTime);
 
         track.EventInstance.getTimelinePosition(out currTime);
         index = (int)(((float)currTime / (float)totalTime) * musicData.Count);
 
-        print("Current index: " + index);
-        print("List Size: " + musicData.Count);
-        print("Current List Item: " + musicData[index]);
+        //print("Current index: " + index);
+        //print("List Size: " + musicData.Count);
+        //print("Current List Item: " + musicData[index]);
 
         characterGlow = characterMaterial.GetColor("_Color");
         instrumentGlow = instrumentMaterial.GetColor("_Color");

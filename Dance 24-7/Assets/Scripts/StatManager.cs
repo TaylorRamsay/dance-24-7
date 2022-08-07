@@ -24,7 +24,7 @@ public class StatManager : MonoBehaviour
         return false;
     }
 
-    void ReceiveDamage(float attackPower)
+    public void ReceiveDamage(float attackPower)
     {
         float damageDealt = attackPower - defense;
         

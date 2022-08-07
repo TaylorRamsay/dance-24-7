@@ -6,19 +6,52 @@ public class CombatManager : MonoBehaviour
 {
 
     public ThirdPersonMovement player;
-    public bool activeCombat;
+    public bool activeCombat = false;
 
+    bool EnterCombatState()
+    {
+        if (player.agroEnemies.Count > 0)
+        {
+            activeCombat = true;
+            foreach (NPC x in player.bandMembers)
+            {
+                x.combatState = true;
+            }
+                
+            return true;
+        }
+        return false;
+    }
 
+    bool ExitCombatState()
+    {
+        if (player.agroEnemies.Count == 0 && activeCombat == true)
+        {
+            activeCombat = false;
+            foreach (NPC x in player.bandMembers)
+            {
+                x.combatState = false;
+                x.isFollowing = true;
+
+            }
+
+            return true;
+        }
+
+        return false;
+    }
 
 
     void Start()
     {
-        activeCombat = false;
+
     }
 
 
     void Update()
     {
-        
+
+        EnterCombatState();
+        ExitCombatState();
     }
 }

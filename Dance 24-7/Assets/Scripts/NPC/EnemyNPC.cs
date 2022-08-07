@@ -11,8 +11,8 @@ public class EnemyNPC : MonoBehaviour
     public GameObject npc;
     public StatManager stats;
 
-    public static Collider[] playerDetector;
-    public Transform playerCheck;
+    public static Collider[] targetDetector;
+    public Transform targetCheck;
     public Transform attackCheck;
     public float checkDistance;
     public LayerMask checkLayer;
@@ -31,8 +31,15 @@ public class EnemyNPC : MonoBehaviour
     {
         if (stats.hp <= 0)
         {
-            playerMovement.agroEnemies.Remove(this);
-            gameObject.SetActive(false);
+            
+            agro = false;
+            playerMovement.agroEnemies.Remove(gameObject.GetComponent<EnemyNPC>());
+
+            if(!playerMovement.agroEnemies.Contains(gameObject.GetComponent<EnemyNPC>()))
+            {
+                gameObject.SetActive(false);
+            }
+            
         }
     }
 
@@ -43,22 +50,23 @@ public class EnemyNPC : MonoBehaviour
         attackTimer -= Time.deltaTime;
 
         if (attackTimer <= 0f && attackDetector.Length > 0)
-        { 
-                player.GetComponent<StatManager>().hp -= stats.attackPower;
+        {
+            player.GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
                 attackTimer = attackTime;
         }
     }
 
 
-    void CheckForPlayer()
+    void CheckForTarget()
     {
-        playerDetector = Physics.OverlapSphere(playerCheck.position, checkDistance, checkLayer);
-        if (playerDetector.Length > 0)
+        targetDetector = Physics.OverlapSphere(targetCheck.position, checkDistance, checkLayer);
+        if (targetDetector.Length > 0 && stats.hp > 0)
         {
-            if (!playerMovement.agroEnemies.Contains(this))
+            if (!playerMovement.agroEnemies.Contains(gameObject.GetComponent<EnemyNPC>()))
             {
-                playerMovement.agroEnemies.Add(this);
+                playerMovement.agroEnemies.Add(gameObject.GetComponent<EnemyNPC>());
             }
+
             pursueTarget = true;
             agro = true;
             agroIdentifier.SetActive(true);
@@ -67,7 +75,7 @@ public class EnemyNPC : MonoBehaviour
 
         } else
         {
-            playerMovement.agroEnemies.Remove(this);
+            playerMovement.agroEnemies.Remove(gameObject.GetComponent<EnemyNPC>());
             pursueTarget = false;
             agro = false;
             agroIdentifier.SetActive(false);
@@ -84,7 +92,7 @@ public class EnemyNPC : MonoBehaviour
     void Update()
     {
         HealthCheck();
-        CheckForPlayer();
+        CheckForTarget();
         Attack();
 
     }

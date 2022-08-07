@@ -7,11 +7,39 @@ public class NPC : MonoBehaviour
 {
     public GameObject player;
     public ThirdPersonMovement playerMovement;
+    public StatManager stats;
     public NavMeshAgent navAgent;
     public GameObject npc;
     public bool isFollowing = false;
     public GameObject followIdentifier;
 
+    public bool combatState = false;
+    public static Collider[] enemyDetector;
+    public float attackTime;
+    private float attackTimer;
+    public Transform attackCheck;
+    public LayerMask checkLayer;
+
+    public float attackDistance;
+
+    void AttackTarget()
+    {
+        if (combatState)
+        {
+            isFollowing = false;
+            followIdentifier.SetActive(false);
+
+            enemyDetector = Physics.OverlapSphere(attackCheck.position, attackDistance, checkLayer);
+            attackTimer -= Time.deltaTime;
+
+            if (attackTimer <= 0f && enemyDetector.Length > 0)
+            {
+                enemyDetector[0].GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
+                attackTimer = attackTime;
+            }
+
+        }
+    }
 
     void Start()
     {
@@ -22,6 +50,7 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
+        AttackTarget();
         if (isFollowing)
         {
             followIdentifier.SetActive(true);
