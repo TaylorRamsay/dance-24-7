@@ -83,13 +83,17 @@ public class ThirdPersonMovement : MonoBehaviour
 
     void Combat()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            AttackTarget();
-
-        } else if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1))
         {
             stats.isDefending = true;
+        } else
+        {
+            stats.isDefending = false;
+        }
+
+        if (Input.GetMouseButtonDown(0) && stats.isDefending == false)
+        {
+            AttackTarget();
         }
     }
 
@@ -113,6 +117,42 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
+    void PlayerMovement()
+    {
+        // ====== MOVEMENT HANDLING ====== //
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
+        // Is there a more efficient way to do this??
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = runSpeed;
+        }
+        else
+        {
+            speed = walkSpeed;
+        }
+
+        if (direction.magnitude >= 0.1f)
+        {
+            // "targetAngle" stores the angle we want the player to face, Atan2 returns an angle starting at 0 and terminating at x,z(in this instance)
+            // Rad2Deg is used to convert from radians to usable degrees
+            // " + cam.eulerAngles.y" adds the current camera y-axis rotation to the "targetAngle" so player angle will be influenced by camera rotation
+            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+
+            // enables the player to smoothly turn between current angle and "targetAngle", rather than snapping
+            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+
+            // Rotates the player on the y-axis to face the current direction of movement.....Format: "Euler(x, y, z)"
+            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            // Multiplying by " * Vector3.forward" turns the rotation into a direction
+            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+
+            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
+    }
 
     private void Start()
     {
@@ -126,6 +166,7 @@ public class ThirdPersonMovement : MonoBehaviour
         UpdateHealthBar();
         RecruitBandMember();
         Combat();
+        PlayerMovement();
         Jump();
 
         if (stats.hp <= 0)
@@ -138,38 +179,6 @@ public class ThirdPersonMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
 
-        // ====== MOVEMENT HANDLING ====== //
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
-        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-        
-        
-        // Is there a more efficient way to do this??
-        if(Input.GetKey(KeyCode.LeftShift))
-        {
-            speed = runSpeed;
-        } else
-        {
-            speed = walkSpeed;
-        }
 
-        if(direction.magnitude >= 0.1f)
-        {
-            // "targetAngle" stores the angle we want the player to face, Atan2 returns an angle starting at 0 and terminating at x,z(in this instance)
-            // Rad2Deg is used to convert from radians to usable degrees
-            // " + cam.eulerAngles.y" adds the current camera y-axis rotation to the "targetAngle" so player angle will be influenced by camera rotation
-            float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-
-            // enables the player to smoothly turn between current angle and "targetAngle", rather than snapping
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            
-            // Rotates the player on the y-axis to face the current direction of movement.....Format: "Euler(x, y, z)"
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-
-            // Multiplying by " * Vector3.forward" turns the rotation into a direction
-            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
-        }
     }
 }

@@ -26,6 +26,14 @@ public class StatManager : MonoBehaviour
 
     public void ReceiveDamage(float attackPower)
     {
+        if (isDefending)
+        {
+            defense = 100;
+        } else
+        {
+            defense = 0;
+        }
+
         float damageDealt = attackPower - defense;
         
         if (damageDealt > 0)
