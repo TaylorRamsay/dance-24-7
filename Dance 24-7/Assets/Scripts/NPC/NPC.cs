@@ -21,20 +21,21 @@ public class NPC : MonoBehaviour
     public LayerMask checkLayer;
 
     public float attackDistance;
+    public GameObject weapon;
 
     void AttackTarget()
     {
         if (combatState)
         {
             isFollowing = false;
-            followIdentifier.SetActive(false);
+            //followIdentifier.SetActive(false);
 
-            enemyDetector = Physics.OverlapSphere(attackCheck.position, attackDistance, checkLayer);
+            //enemyDetector = Physics.OverlapSphere(attackCheck.position, attackDistance, checkLayer);
             attackTimer -= Time.deltaTime;
-
-            if (attackTimer <= 0f && enemyDetector.Length > 0)
+            if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f /* && enemyDetector.Length > 0*/)
             {
-                enemyDetector[0].GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
+                weapon.GetComponent<Weapon>().SwingWeapon(new Vector3(2, 0, 0));
+                //enemyDetector[0].GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
                 attackTimer = attackTime;
             }
 

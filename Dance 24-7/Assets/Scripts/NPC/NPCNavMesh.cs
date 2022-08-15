@@ -43,7 +43,11 @@ public class NPCNavMesh : MonoBehaviour
         {
             for (int i = 0; i < playerMovement.bandMembers.Count; i++)
             { 
-                playerMovement.bandMembers[i].navAgent.destination = playerMovement.agroEnemies[0].transform.position;
+                if (playerMovement.agroEnemies.Count != 0)
+                {
+                    playerMovement.bandMembers[i].navAgent.destination = playerMovement.agroEnemies[0].transform.position;
+                }
+                
                 
                 
             }

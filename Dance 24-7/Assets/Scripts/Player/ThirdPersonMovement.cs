@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ThirdPersonMovement : MonoBehaviour
@@ -157,7 +158,6 @@ public class ThirdPersonMovement : MonoBehaviour
     private void Start()
     {
         recruitPrompt.gameObject.SetActive(false);
-        stats.isDefending = false;
     }
 
 
@@ -171,7 +171,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if (stats.hp <= 0)
         {
-            gameObject.SetActive(false);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
         // Increments gravity value to player while not grounded, Time.deltaTime to keep frame rate independent

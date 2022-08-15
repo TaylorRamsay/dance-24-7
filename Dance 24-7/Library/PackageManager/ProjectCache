@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637957479965031403
-    m_Hash: 1943703964
+      ticks: 637957689145828682
+    m_Hash: 3225999956
   m_LockFileStatus:
     m_FilePath: C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637957479965199390
-    m_Hash: 552760672
+      ticks: 637957689145838701
+    m_Hash: 1622357175
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:

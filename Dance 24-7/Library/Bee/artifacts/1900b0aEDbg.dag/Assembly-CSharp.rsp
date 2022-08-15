@@ -376,6 +376,7 @@
 "Assets/Scripts/Player/ThirdPersonMovement.cs"
 "Assets/Scripts/RestartScene.cs"
 "Assets/Scripts/StatManager.cs"
+"Assets/Weapon.cs"
 -langversion:9.0
 
 /deterministic
