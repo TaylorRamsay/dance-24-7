@@ -16,7 +16,7 @@ public class NPC : MonoBehaviour
     public bool combatState = false;
     public static Collider[] enemyDetector;
     public float attackTime;
-    private float attackTimer;
+    public float attackTimer = 0;
     public Transform attackCheck;
     public LayerMask checkLayer;
 
@@ -29,16 +29,13 @@ public class NPC : MonoBehaviour
         {
             isFollowing = false;
             //followIdentifier.SetActive(false);
-
             //enemyDetector = Physics.OverlapSphere(attackCheck.position, attackDistance, checkLayer);
-            attackTimer -= Time.deltaTime;
-            if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f /* && enemyDetector.Length > 0*/)
+
+            if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f /*&& enemyDetector.Length > 0*/)
             {
-                weapon.GetComponent<Weapon>().SwingWeapon(new Vector3(2, 0, 0));
-                //enemyDetector[0].GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
+                
                 attackTimer = attackTime;
             }
-
         }
     }
 

@@ -417,7 +417,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.922807, y: 1}
+    m_SensorSize: {x: 1.8596492, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3257,12 +3257,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 293855467}
   m_LocalRotation: {x: 0.70710695, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -1, y: 0.018, z: 1.586}
-  m_LocalScale: {x: 0.32, y: 0.76, z: 0.32}
+  m_LocalPosition: {x: 0, y: 0.018001556, z: 1.5859985}
+  m_LocalScale: {x: 0.32, y: 0.76000005, z: 0.31999996}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1761599321}
-  m_RootOrder: 3
+  m_Father: {fileID: 1427620760}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!136 &293855469
 CapsuleCollider:
@@ -3341,9 +3341,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponWielder: {fileID: 1761599320}
+  rotationAxis: {fileID: 1427620759}
   objectTag: Enemy
-  endSwingPosition: {x: 2, y: 0, z: 0}
-  duration: 5
+  relativePosition: {x: 0, y: 0, z: 0}
+  targetRotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+  rotationTime: 0
+  speed: 5
 --- !u!54 &293855473
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4357,6 +4360,7 @@ MonoBehaviour:
   followIdentifier: {fileID: 880811203}
   combatState: 0
   attackTime: 1
+  attackTimer: 0
   attackCheck: {fileID: 1985701305}
   checkLayer:
     serializedVersion: 2
@@ -4821,6 +4825,7 @@ MonoBehaviour:
   followIdentifier: {fileID: 1450219939}
   combatState: 0
   attackTime: 1
+  attackTimer: 0
   attackCheck: {fileID: 1530015372}
   checkLayer:
     serializedVersion: 2
@@ -5301,6 +5306,7 @@ MonoBehaviour:
   followIdentifier: {fileID: 1063208484}
   combatState: 0
   attackTime: 1
+  attackTimer: 0
   attackCheck: {fileID: 16178058}
   checkLayer:
     serializedVersion: 2
@@ -5693,7 +5699,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.922807, y: 1}
+    m_SensorSize: {x: 1.8596492, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8425,7 +8431,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.922807, y: 1}
+    m_SensorSize: {x: 1.8596492, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8500,7 +8506,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.922807, y: 1}
+    m_SensorSize: {x: 1.8596492, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -9656,6 +9662,7 @@ MonoBehaviour:
   followIdentifier: {fileID: 1781682975}
   combatState: 0
   attackTime: 1
+  attackTimer: 0
   attackCheck: {fileID: 1994830266}
   checkLayer:
     serializedVersion: 2
@@ -9783,6 +9790,38 @@ MonoBehaviour:
   maxMp: 0
   attackPower: 10
   isDefending: 0
+--- !u!1 &1427620759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1427620760}
+  m_Layer: 6
+  m_Name: weaponRotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1427620760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427620759}
+  m_LocalRotation: {x: 0, y: -0.38268343, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 293855468}
+  m_Father: {fileID: 1761599321}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!1 &1450219939
 GameObject:
   m_ObjectHideFlags: 0
@@ -10782,7 +10821,7 @@ Transform:
   - {fileID: 1587722415}
   - {fileID: 305213185}
   - {fileID: 1780986981}
-  - {fileID: 293855468}
+  - {fileID: 1427620760}
   m_Father: {fileID: 1123291977}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10807,6 +10846,7 @@ MonoBehaviour:
   followIdentifier: {fileID: 305213184}
   combatState: 0
   attackTime: 1
+  attackTimer: 0
   attackCheck: {fileID: 1780986981}
   checkLayer:
     serializedVersion: 2

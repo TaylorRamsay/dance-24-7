@@ -5,9 +5,13 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     public GameObject weaponWielder;
+    public GameObject rotationAxis;
     public string objectTag;
-    public Vector3 endSwingPosition;
-    public float duration;
+
+    public Quaternion origRotation;
+    public Quaternion targetRotation;
+    public float rotationTime;
+    public float speed = 0.5f;
 
 
     void OnCollisionEnter(Collision collision)
@@ -18,33 +22,48 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    public IEnumerator SwingWeapon(Vector3 targetPosition, float duration = 5)
+    /*public IEnumerator SwingWeapon(float degreesPerSec)
     {
+        float duration = 1;
         float time = 0;
-        Vector3 startPosition = transform.position;
         while (time < duration)
         {
-            gameObject.transform.position = Vector3.Lerp(startPosition, startPosition + targetPosition, time / duration);
+            gameObject.transform.RotateAround(weaponWielder.transform.position, Vector3.up, degreesPerSec * time);
             time += Time.deltaTime;
-
-            print("Start position: " + startPosition);
-            print("Current position: " + gameObject.transform.position);
-            print("Target position: " + targetPosition);
-
-
+            print("WEAPON IS SWINGING");
             yield return null;
         }
-        gameObject.transform.position = startPosition + targetPosition;
-        //gameObject.transform.position = weaponWielder.transform.position;
+        while (weaponWielder.GetComponent<NPC>().attackTimer > 0)
+        {
+            weaponWielder.GetComponent<NPC>().attackTimer -= Time.deltaTime;
+        }   
+    }
+    */
+
+    public void SwingWeapon()
+    {
+        Transform from = rotationAxis.transform;
+        rotationTime = 0;
+
+        if (weaponWielder.GetComponent<NPC>().combatState)
+        {
+            print("I'm swinging");
+            rotationTime += Time.deltaTime * speed;
+            rotationAxis.transform.localRotation = Quaternion.Lerp(from.localRotation, targetRotation /*(0, 45, 0)*/, rotationTime);
+        }
+        if (from.localRotation == targetRotation)
+        {
+            rotationAxis.transform.localRotation = origRotation;
+        }
     }
 
     void Start()
     {
-        //StartCoroutine(SwingWeapon(endSwingPosition, duration));
+        origRotation = rotationAxis.transform.localRotation;
     }
 
     void Update()
     {
-        //SwingWeapon(endSwingPosition, 5f);
+        SwingWeapon();
     }
 }
