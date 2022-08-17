@@ -11,7 +11,8 @@ public class Weapon : MonoBehaviour
     public Quaternion origRotation;
     public Quaternion targetRotation;
     public float rotationTime;
-    public float speed = 0.5f;
+    public float speed = 1.5f;
+    public bool attackFlag = true;
 
 
     void OnCollisionEnter(Collision collision)
@@ -46,14 +47,15 @@ public class Weapon : MonoBehaviour
         rotationTime = 0;
 
         if (weaponWielder.GetComponent<NPC>().combatState)
-        {
-            print("I'm swinging");
+        { 
             rotationTime += Time.deltaTime * speed;
             rotationAxis.transform.localRotation = Quaternion.Lerp(from.localRotation, targetRotation /*(0, 45, 0)*/, rotationTime);
         }
         if (from.localRotation == targetRotation)
         {
             rotationAxis.transform.localRotation = origRotation;
+            weaponWielder.GetComponent<NPC>().attackTimer = weaponWielder.GetComponent<NPC>().attackTime;
+            attackFlag = false;
         }
     }
 
@@ -64,6 +66,10 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        SwingWeapon();
+        if (attackFlag)
+        {
+            SwingWeapon();
+        }
+        
     }
 }

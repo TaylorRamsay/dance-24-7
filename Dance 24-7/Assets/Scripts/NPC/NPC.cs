@@ -33,8 +33,7 @@ public class NPC : MonoBehaviour
 
             if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f /*&& enemyDetector.Length > 0*/)
             {
-                
-                attackTimer = attackTime;
+                weapon.GetComponent<Weapon>().attackFlag = true;
             }
         }
     }
@@ -42,13 +41,14 @@ public class NPC : MonoBehaviour
     void Start()
     {
         navAgent = GetComponent<NavMeshAgent>();
-        navAgent.stoppingDistance = 5;
+        navAgent.stoppingDistance = 4;
         followIdentifier.SetActive(false);
     }
 
     void Update()
     {
         AttackTarget();
+        attackTimer -= Time.deltaTime;
         if (isFollowing)
         {
             followIdentifier.SetActive(true);
