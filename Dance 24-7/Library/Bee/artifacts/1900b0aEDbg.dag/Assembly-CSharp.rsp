@@ -369,6 +369,9 @@
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/Sound.cs"
 "Assets/Scripts/Audio Scripts/VisualInfluencer.cs"
 "Assets/Scripts/Combat/CombatManager.cs"
+"Assets/Scripts/Combat/EnemyWeapon.cs"
+"Assets/Scripts/Combat/Weapon.cs"
+"Assets/Scripts/NPC/EnemyNavMesh.cs"
 "Assets/Scripts/NPC/EnemyNPC.cs"
 "Assets/Scripts/NPC/NPC.cs"
 "Assets/Scripts/NPC/NPCNavMesh.cs"
@@ -376,7 +379,6 @@
 "Assets/Scripts/Player/ThirdPersonMovement.cs"
 "Assets/Scripts/RestartScene.cs"
 "Assets/Scripts/StatManager.cs"
-"Assets/Weapon.cs"
 -langversion:9.0
 
 /deterministic

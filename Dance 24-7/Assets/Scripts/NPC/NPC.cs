@@ -15,16 +15,31 @@ public class NPC : MonoBehaviour
 
     // Combat Variables
     public bool combatState = false;
+    public bool attackFlag = false;
     public static Collider[] enemyDetector;
     public float attackTime;
     public float attackTimer = 0;
     public Transform attackCheck;
     public LayerMask checkLayer;
     public bool isTargeting = false;
+    public bool targeted = false;
     public EnemyNPC combatTarget;
 
     public float attackDistance;
     public GameObject weapon;
+
+    void HealthCheck()
+    {
+        if (stats.hp <= 0)
+        {
+            playerMovement.bandMembers.Remove(gameObject.GetComponent<NPC>());
+
+            if (!playerMovement.bandMembers.Contains(gameObject.GetComponent<NPC>()))
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
+            }
+        }
+    }
 
     void AttackTarget()
     {
@@ -36,7 +51,7 @@ public class NPC : MonoBehaviour
             if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f /*&& enemyDetector.Length > 0*/)
             {
                 playerMovement.GetComponent<NPCNavMesh>().EnemyTargeting(this);
-                weapon.GetComponent<Weapon>().attackFlag = true;
+                attackFlag = true;
             }
         }
     }
@@ -50,6 +65,7 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
+        HealthCheck();
         AttackTarget();
         attackTimer -= Time.deltaTime;
         if (isFollowing)
