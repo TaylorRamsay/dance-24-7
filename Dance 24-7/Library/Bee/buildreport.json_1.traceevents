@@ -1,598 +1,436 @@
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
 { "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
 { "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 0, "tid": 1, "ts": 1659548901694550, "dur": 481714, "ph": "X", "name": "Build Player", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1659548901694810, "dur": 3435, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1659548901698249, "dur": 40385, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1659548901738636, "dur": 244420, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1659548901983059, "dur": 192529, "ph": "X", "name": "Run Backend", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1659548902175590, "dur": 673, "ph": "X", "name": "Finish", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1659548902176799, "dur": 43, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
-{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
-{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
-{ "pid": 35942, "tid": 1, "ts": 1659548901844244, "dur": 117049, "ph": "X", "name": "BuildProgram", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1659548901845730, "dur": 47194, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1659548901944881, "dur": 4830, "ph": "X", "name": "OutputData.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1659548901949716, "dur": 11566, "ph": "X", "name": "Backend.Write", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1659548901950449, "dur": 9832, "ph": "X", "name": "JsonToString", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1659548901965763, "dur": 1360, "ph": "X", "name": "", "args": {} },
-{ "pid": 35942, "tid": 1, "ts": 1659548901965288, "dur": 1865, "ph": "X", "name": "Write chrome-trace events", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1659548902176974, "dur": 326, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1660330895444755, "dur": 87873, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1660330895445043, "dur": 3254, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1660330895448299, "dur": 83168, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1660330895531470, "dur": 1157, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1660330895533174, "dur": 31, "ph": "X", "name": "", "args": {} },
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1659548902029258, "dur":1861, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902031308, "dur":68, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
-,{ "pid":12345, "tid":0, "ts":1659548902031387, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
-,{ "pid":12345, "tid":0, "ts":1659548902031409, "dur":2215, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
-,{ "pid":12345, "tid":0, "ts":1659548902033665, "dur":742, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902034407, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902115091, "dur":669, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902115760, "dur":594, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902116354, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902116359, "dur":537, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902116896, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902116899, "dur":358, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902117257, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902117259, "dur":532, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902117791, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902117794, "dur":533, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902118327, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902118330, "dur":352, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902118682, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902118684, "dur":535, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902119219, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902119222, "dur":531, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902119753, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902119756, "dur":352, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902120108, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902120110, "dur":528, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902120638, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902120641, "dur":524, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902121165, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902121167, "dur":534, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902121701, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902121703, "dur":360, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902122063, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902122064, "dur":530, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902122594, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902122596, "dur":351, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902122947, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902122949, "dur":353, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902123302, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902123313, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902123401, "dur":1806, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1659548902032442, "dur":1978, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902034423, "dur":5655, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902040091, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1659548902040097, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902041701, "dur":672, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1659548902042378, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1659548902042435, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902042476, "dur":3799, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/app.info" }}
-,{ "pid":12345, "tid":1, "ts":1659548902046279, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1659548902046321, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902046328, "dur":3561, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":1, "ts":1659548902049964, "dur":283, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902050251, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902050258, "dur":3947, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902054276, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902054515, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902054521, "dur":4414, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902059000, "dur":282, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902059286, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902059293, "dur":4695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902064052, "dur":248, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902064303, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902064308, "dur":4588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902068958, "dur":261, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902069224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902069233, "dur":6499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902075801, "dur":512, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902076316, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902076322, "dur":5727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902082106, "dur":345, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902082456, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902082463, "dur":4933, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902087449, "dur":1784, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902089243, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902089286, "dur":5491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":1, "ts":1659548902094858, "dur":186, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/SFX.bank" }}
-,{ "pid":12345, "tid":1, "ts":1659548902095047, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902095060, "dur":3091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/SFX.bank" }}
-,{ "pid":12345, "tid":1, "ts":1659548902098237, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/level0.resS" }}
-,{ "pid":12345, "tid":1, "ts":1659548902098325, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1659548902098333, "dur":4813, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/level0.resS" }}
-,{ "pid":12345, "tid":1, "ts":1659548902103221, "dur":11914, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902032726, "dur":1708, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902034434, "dur":5729, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902040167, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1659548902040265, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902047393, "dur":3183, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1659548902050638, "dur":296, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902050938, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902050946, "dur":3697, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902054696, "dur":1483, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902056185, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902056194, "dur":5820, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902062060, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902062273, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902062279, "dur":4611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902066949, "dur":227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902067179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902067186, "dur":5742, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902072983, "dur":215, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902073201, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902073209, "dur":5656, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902078917, "dur":445, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902079368, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902079376, "dur":6821, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Internal.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902086264, "dur":3001, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902089290, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902089300, "dur":8142, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":2, "ts":1659548902097500, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/resources.assets" }}
-,{ "pid":12345, "tid":2, "ts":1659548902097557, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1659548902097563, "dur":3908, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/resources.assets" }}
-,{ "pid":12345, "tid":2, "ts":1659548902101554, "dur":13533, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659548902032709, "dur":1718, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659548902034427, "dur":5743, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659548902040171, "dur":549, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1659548902040723, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659548902041128, "dur":5610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1659548902046791, "dur":33555, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659548902080352, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1659548902080360, "dur":31195, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":3, "ts":1659548902111599, "dur":3497, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902032752, "dur":1687, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902034440, "dur":5716, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902040159, "dur":534, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1659548902040696, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902041129, "dur":5783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1659548902046973, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":4, "ts":1659548902047042, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902047159, "dur":7237, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":4, "ts":1659548902054456, "dur":245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902054705, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902054710, "dur":4488, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902059259, "dur":218, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902059480, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902059485, "dur":4653, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902064189, "dur":429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902064622, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902064630, "dur":5242, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902069937, "dur":273, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902070213, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902070220, "dur":7941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902078210, "dur":379, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902078592, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902078599, "dur":5499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Registration.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902084162, "dur":1122, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902085287, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902085293, "dur":5139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902090490, "dur":201, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/FMODUnityResonance.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902090694, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902090700, "dur":4634, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/FMODUnityResonance.dll" }}
-,{ "pid":12345, "tid":4, "ts":1659548902095383, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Master.strings.bank" }}
-,{ "pid":12345, "tid":4, "ts":1659548902095509, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902095518, "dur":5194, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Master.strings.bank" }}
-,{ "pid":12345, "tid":4, "ts":1659548902100762, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1659548902100983, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1659548902100988, "dur":2397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/boot.config" }}
-,{ "pid":12345, "tid":4, "ts":1659548902103428, "dur":11712, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902032841, "dur":1606, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902034447, "dur":5704, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902040154, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1659548902040231, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902042798, "dur":3734, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":5, "ts":1659548902046588, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1659548902046644, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902046650, "dur":3373, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":5, "ts":1659548902050084, "dur":235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902050322, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902050326, "dur":4706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902055127, "dur":442, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902055572, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902055579, "dur":4555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902060189, "dur":233, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902060426, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902060433, "dur":4510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902065000, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902065216, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902065224, "dur":5539, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902070808, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902071021, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902071028, "dur":6122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902077205, "dur":228, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902077436, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902077442, "dur":6344, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902083856, "dur":749, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902084608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902084614, "dur":4451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902089121, "dur":1014, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902090139, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902090145, "dur":6471, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Newtonsoft.Json.dll" }}
-,{ "pid":12345, "tid":5, "ts":1659548902096676, "dur":221, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1659548902096900, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902096906, "dur":2430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":5, "ts":1659548902099404, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":5, "ts":1659548902099460, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1659548902099468, "dur":3445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":5, "ts":1659548902102976, "dur":12183, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902032875, "dur":1576, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902034451, "dur":5695, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902040148, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1659548902040243, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902043495, "dur":3739, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":6, "ts":1659548902047288, "dur":206, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902047496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902047561, "dur":4518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902052127, "dur":319, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902052449, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902052454, "dur":3836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902056348, "dur":415, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902056766, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902056773, "dur":4666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902061484, "dur":257, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902061744, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902061749, "dur":3879, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902065674, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902066031, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902066038, "dur":6116, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902072265, "dur":306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902072575, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902072582, "dur":6313, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902078954, "dur":381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902079338, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902079344, "dur":6006, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902085398, "dur":315, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902085716, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902085722, "dur":4314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902090088, "dur":5785, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902095876, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1659548902095882, "dur":9510, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":6, "ts":1659548902105439, "dur":9672, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902032903, "dur":1554, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902034457, "dur":5684, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902040145, "dur":462, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1659548902040610, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902050293, "dur":2972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":7, "ts":1659548902053329, "dur":339, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902053672, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902053678, "dur":4524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902058261, "dur":219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902058483, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902058487, "dur":4642, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902063192, "dur":260, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902063455, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902063460, "dur":4713, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902068231, "dur":2022, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902070256, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902070262, "dur":8229, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902078538, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902078726, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902078731, "dur":5372, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Networking.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902084169, "dur":310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902084481, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902084487, "dur":4415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902088951, "dur":456, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902089410, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902089415, "dur":3456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902092936, "dur":18107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Plugins/x86_64/fmodstudio.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902111048, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1659548902111058, "dur":3951, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Plugins/x86_64/fmodstudio.dll" }}
-,{ "pid":12345, "tid":7, "ts":1659548902115047, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
-,{ "pid":12345, "tid":7, "ts":1659548902115049, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902032932, "dur":1531, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902034463, "dur":5671, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902040137, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1659548902040236, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902043043, "dur":4048, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1659548902047173, "dur":297, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902047474, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902047569, "dur":4444, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902052066, "dur":239, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902052308, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902052318, "dur":3922, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902056286, "dur":253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902056565, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902056572, "dur":4479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902061098, "dur":180, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902061281, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902061286, "dur":4604, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ProfilerModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902065943, "dur":230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902066177, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902066182, "dur":5984, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902072238, "dur":1253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902073498, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902073581, "dur":6555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902080196, "dur":192, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902080391, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902080396, "dur":5694, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Device.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902086144, "dur":335, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902086482, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902086492, "dur":4954, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902091513, "dur":601, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/FMODUnity.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902092156, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902092168, "dur":4848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/FMODUnity.dll" }}
-,{ "pid":12345, "tid":8, "ts":1659548902097075, "dur":247, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":8, "ts":1659548902097326, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1659548902097332, "dur":4253, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":8, "ts":1659548902101653, "dur":13514, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902032966, "dur":1502, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902034468, "dur":5660, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902040131, "dur":597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1659548902040732, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902041163, "dur":5666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1659548902046872, "dur":1597, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":9, "ts":1659548902048472, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902048477, "dur":4340, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":9, "ts":1659548902052878, "dur":269, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902053150, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902053156, "dur":4343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902057564, "dur":226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902057793, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902057799, "dur":4803, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902062639, "dur":309, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902062951, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902062956, "dur":4936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902067935, "dur":441, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902068379, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902068385, "dur":5618, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902074246, "dur":712, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902074962, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902074970, "dur":6080, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902081121, "dur":210, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902081334, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902081342, "dur":5758, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Configuration.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902087157, "dur":219, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902087379, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902087386, "dur":4535, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902091984, "dur":323, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/clipper_library.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902092310, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902092317, "dur":4201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/clipper_library.dll" }}
-,{ "pid":12345, "tid":9, "ts":1659548902096577, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":9, "ts":1659548902096637, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1659548902096660, "dur":8508, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":9, "ts":1659548902105225, "dur":9897, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902033054, "dur":1419, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902034473, "dur":5643, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902040121, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":10, "ts":1659548902040250, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902045864, "dur":3063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":10, "ts":1659548902048986, "dur":224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902049213, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902049222, "dur":4221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902053510, "dur":318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902053831, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902053837, "dur":4167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UNETModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902058063, "dur":291, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902058357, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902058363, "dur":4666, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902063079, "dur":223, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902063305, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902063310, "dur":3990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902067439, "dur":305, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902067749, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902067756, "dur":7345, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902075154, "dur":543, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902075742, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902075752, "dur":5327, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902081144, "dur":226, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902081374, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902081381, "dur":4727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Analytics.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902086155, "dur":746, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902086908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902086915, "dur":5927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902092933, "dur":3815, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Plugins/x86_64/resonanceaudio.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902096752, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1659548902097117, "dur":4588, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Plugins/x86_64/resonanceaudio.dll" }}
-,{ "pid":12345, "tid":10, "ts":1659548902101764, "dur":13389, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902033336, "dur":1143, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902034479, "dur":5643, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902040124, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":11, "ts":1659548902040248, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902044370, "dur":3576, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":11, "ts":1659548902048011, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902048252, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902048258, "dur":4661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902052973, "dur":274, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902053251, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902053258, "dur":4782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902058094, "dur":235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902058332, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902058340, "dur":4761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902063149, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902063394, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902063401, "dur":5501, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902068963, "dur":214, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902069180, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902069187, "dur":5208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902074450, "dur":1183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902075733, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902075743, "dur":5850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902081640, "dur":350, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902081994, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902082002, "dur":4956, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902087009, "dur":2615, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902089629, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902089638, "dur":7719, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":11, "ts":1659548902097410, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1659548902097476, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1659548902097481, "dur":14625, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1659548902112144, "dur":2946, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902033366, "dur":1119, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902034485, "dur":5625, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902040112, "dur":476, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1659548902040591, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902049097, "dur":3337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":12, "ts":1659548902052496, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902052742, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902052747, "dur":3153, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902055944, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902056189, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902056195, "dur":4348, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902060586, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902060753, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902060757, "dur":5519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902066345, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902066583, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902066589, "dur":6506, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902073150, "dur":414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902073568, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902073575, "dur":5927, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902079546, "dur":331, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902079879, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902079885, "dur":5131, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Environments.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902085063, "dur":288, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902085354, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902085358, "dur":4063, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902089463, "dur":253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902089718, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902089724, "dur":3465, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":12, "ts":1659548902093246, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":12, "ts":1659548902093462, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902093522, "dur":1806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
-,{ "pid":12345, "tid":12, "ts":1659548902095384, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Master.bank" }}
-,{ "pid":12345, "tid":12, "ts":1659548902095514, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902095520, "dur":5162, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Master.bank" }}
-,{ "pid":12345, "tid":12, "ts":1659548902100750, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":12, "ts":1659548902100814, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1659548902100828, "dur":2596, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":12, "ts":1659548902103476, "dur":11652, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902033446, "dur":1043, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902034489, "dur":5616, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902040108, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":13, "ts":1659548902040231, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902041552, "dur":5333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":13, "ts":1659548902046941, "dur":919, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7.exe" }}
-,{ "pid":12345, "tid":13, "ts":1659548902047864, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902047869, "dur":4353, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7.exe" }}
-,{ "pid":12345, "tid":13, "ts":1659548902052374, "dur":423, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902052802, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902052811, "dur":3757, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902056638, "dur":216, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902056857, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902056863, "dur":4831, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902061744, "dur":486, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902062234, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902062241, "dur":5192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902067482, "dur":211, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902067696, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902067703, "dur":5430, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902073184, "dur":392, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902073579, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902073593, "dur":6276, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902079940, "dur":214, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902080157, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902080162, "dur":5165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902085381, "dur":286, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902085670, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902085676, "dur":4454, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902090183, "dur":485, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902090671, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902090676, "dur":4977, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":13, "ts":1659548902095706, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Collision.bank" }}
-,{ "pid":12345, "tid":13, "ts":1659548902095813, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":13, "ts":1659548902095819, "dur":5570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Collision.bank" }}
-,{ "pid":12345, "tid":13, "ts":1659548902101453, "dur":13636, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902033509, "dur":984, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902034493, "dur":5608, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902040103, "dur":566, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":14, "ts":1659548902040671, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902041117, "dur":5598, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":14, "ts":1659548902046771, "dur":18961, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902065739, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902065748, "dur":12017, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902077824, "dur":224, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902078051, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902078057, "dur":5442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902083582, "dur":463, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902084097, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902084107, "dur":4838, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902088999, "dur":300, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/RadicalForge.Blockout.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902089325, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902089331, "dur":3293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/RadicalForge.Blockout.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902092737, "dur":205, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902092945, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902092953, "dur":3243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":14, "ts":1659548902096244, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":14, "ts":1659548902096297, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":14, "ts":1659548902096303, "dur":10176, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":14, "ts":1659548902106514, "dur":8601, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902033600, "dur":897, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902034497, "dur":5592, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902040092, "dur":611, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":15, "ts":1659548902040705, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902041174, "dur":5413, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":15, "ts":1659548902046642, "dur":834, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902047479, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902047589, "dur":4331, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902051993, "dur":284, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902052285, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902052294, "dur":3252, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902055600, "dur":220, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902055823, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902055828, "dur":4456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902060337, "dur":254, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902060595, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902060602, "dur":4379, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902065041, "dur":242, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902065286, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902065292, "dur":6054, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902071407, "dur":266, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902071677, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902071683, "dur":4061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902075809, "dur":737, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902076550, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902076556, "dur":6836, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902083447, "dur":200, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902083650, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902083659, "dur":4072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902087787, "dur":336, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902088126, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902088134, "dur":4024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902092223, "dur":435, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Cinemachine.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902092661, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902092668, "dur":3495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Cinemachine.dll" }}
-,{ "pid":12345, "tid":15, "ts":1659548902096213, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":15, "ts":1659548902096270, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902096276, "dur":2703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":15, "ts":1659548902099052, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/level0" }}
-,{ "pid":12345, "tid":15, "ts":1659548902099114, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":15, "ts":1659548902099126, "dur":3390, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/level0" }}
-,{ "pid":12345, "tid":15, "ts":1659548902102586, "dur":12561, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902033675, "dur":826, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902034502, "dur":5593, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902040098, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":16, "ts":1659548902040224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902041399, "dur":5106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":16, "ts":1659548902046556, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":16, "ts":1659548902046622, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902046629, "dur":2682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":16, "ts":1659548902049377, "dur":231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902049611, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902049617, "dur":3861, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902053529, "dur":253, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902053785, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902053791, "dur":4804, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902058637, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902058838, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902058926, "dur":5067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902064045, "dur":214, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902064262, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902064269, "dur":5592, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902069926, "dur":245, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902070174, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902070179, "dur":5738, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902075974, "dur":413, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902076390, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902076396, "dur":5925, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Threading.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902082381, "dur":3835, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902086220, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902086227, "dur":8733, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":16, "ts":1659548902095029, "dur":164, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Music.bank" }}
-,{ "pid":12345, "tid":16, "ts":1659548902095195, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":16, "ts":1659548902095202, "dur":14420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Music.bank" }}
-,{ "pid":12345, "tid":16, "ts":1659548902109667, "dur":5437, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1659548902129731, "dur":2029, "ph":"X", "name": "ProfilerWriteOutput" }
-,{ "pid": 0, "tid": 1, "ts": 1659548902177390, "dur": 1363, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
-{ "pid": 0, "tid": 1, "ts": 1659548902176775, "dur": 2010, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+,{ "pid":12345, "tid":0, "ts":1660330895478091, "dur":1514, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895479616, "dur":149, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1660330895479808, "dur":20, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1660330895479830, "dur":1638, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1660330895481505, "dur":769, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895482274, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895506312, "dur":363, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895506675, "dur":418, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895507093, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895507096, "dur":355, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895507451, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895507453, "dur":355, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895507808, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895507810, "dur":356, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895508166, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895508168, "dur":354, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895508522, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895508524, "dur":356, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895508880, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895508882, "dur":353, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895509235, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895509237, "dur":557, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895509795, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895509797, "dur":548, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895510345, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895510347, "dur":354, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895510701, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895510703, "dur":543, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895511246, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895511248, "dur":353, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895511601, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895511603, "dur":358, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895511961, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895511963, "dur":353, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895512316, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895512318, "dur":352, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895512670, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895512672, "dur":544, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895513216, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895513230, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895513252, "dur":2678, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1660330895480537, "dur":1749, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895482290, "dur":6428, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895488730, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1660330895488731, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895488804, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1660330895488806, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895488866, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489075, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489217, "dur":99, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489316, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489369, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489422, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489471, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489524, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489571, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489641, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489687, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489746, "dur":132, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489878, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489936, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895489987, "dur":236, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895490223, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895490273, "dur":346, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Postprocessing.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895490619, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895490668, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/FMODUnityResonance.dll" }}
+,{ "pid":12345, "tid":1, "ts":1660330895490853, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895490903, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1660330895490949, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1660330895492760, "dur":3959, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":1, "ts":1660330895496804, "dur":9543, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895480576, "dur":1726, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895482302, "dur":6511, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895488816, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":2, "ts":1660330895489051, "dur":131, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895489184, "dur":166, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1660330895489351, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895489410, "dur":414, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":2, "ts":1660330895489825, "dur":124, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895489950, "dur":471, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":2, "ts":1660330895490422, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895490474, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":2, "ts":1660330895490537, "dur":195, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895490733, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Plugins/x86_64/resonanceaudio.dll" }}
+,{ "pid":12345, "tid":2, "ts":1660330895490785, "dur":91, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895490877, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1660330895490971, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1660330895495320, "dur":2518, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/level0" }}
+,{ "pid":12345, "tid":2, "ts":1660330895497873, "dur":8451, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895480559, "dur":1736, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895482296, "dur":6427, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895488730, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":3, "ts":1660330895488811, "dur":162, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895488974, "dur":222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489196, "dur":93, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489290, "dur":68, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489358, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489412, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489463, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489513, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489575, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489621, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489672, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489720, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489778, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895489907, "dur":676, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":3, "ts":1660330895490584, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895490630, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":3, "ts":1660330895490679, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895490725, "dur":391, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":3, "ts":1660330895491116, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1660330895491154, "dur":15209, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895480650, "dur":1659, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895482309, "dur":6496, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895488809, "dur":97, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":4, "ts":1660330895488907, "dur":138, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489046, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489156, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489216, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489301, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489351, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489406, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489463, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489515, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489561, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489616, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489674, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489735, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895489793, "dur":273, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895490066, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895490120, "dur":327, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895490447, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895490493, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895490536, "dur":146, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895490683, "dur":409, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/FMODUnity.dll" }}
+,{ "pid":12345, "tid":4, "ts":1660330895491093, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1660330895491147, "dur":15221, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895480675, "dur":1641, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895482316, "dur":6503, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895488819, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1660330895488929, "dur":127, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489057, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7.exe" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489115, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489174, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489311, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489364, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489439, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489497, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489558, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489611, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489666, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489722, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489776, "dur":121, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489897, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489953, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895489994, "dur":482, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":5, "ts":1660330895490476, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895490525, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":5, "ts":1660330895490581, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895490747, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Master.strings.bank" }}
+,{ "pid":12345, "tid":5, "ts":1660330895490800, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895490846, "dur":230, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":5, "ts":1660330895491077, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1660330895491123, "dur":15254, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1660330895480713, "dur":1609, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1660330895482322, "dur":6475, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1660330895488800, "dur":353, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":6, "ts":1660330895489153, "dur":172, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1660330895489325, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1660330895489414, "dur":303, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1660330895489717, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1660330895489770, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1660330895489896, "dur":998, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":6, "ts":1660330895490894, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1660330895490954, "dur":136, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/boot.config" }}
+,{ "pid":12345, "tid":6, "ts":1660330895491091, "dur":35, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1660330895491126, "dur":15247, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895480744, "dur":1584, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895482328, "dur":6463, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895488795, "dur":306, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":7, "ts":1660330895489102, "dur":196, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895489298, "dur":593, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1660330895489892, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895489949, "dur":458, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":7, "ts":1660330895490408, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895490461, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":7, "ts":1660330895490513, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895490561, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":7, "ts":1660330895490617, "dur":149, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895490766, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":7, "ts":1660330895490941, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1660330895491856, "dur":3216, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":7, "ts":1660330895495132, "dur":11225, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895480784, "dur":1549, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895482333, "dur":6445, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895488781, "dur":279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489060, "dur":246, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489307, "dur":131, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489439, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489498, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489553, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489602, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489668, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489716, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489778, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895489919, "dur":285, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.TerrainTools.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490204, "dur":65, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490270, "dur":234, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490505, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490550, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490604, "dur":41, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490645, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490686, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490737, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Plugins/x86_64/fmodstudio.dll" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490791, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895490842, "dur":183, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":8, "ts":1660330895491025, "dur":38, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1660330895491064, "dur":15244, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895480852, "dur":1489, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895482341, "dur":6443, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895488787, "dur":121, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":9, "ts":1660330895488908, "dur":112, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489020, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489094, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489159, "dur":160, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489319, "dur":77, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489397, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489453, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489500, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489553, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489603, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489654, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489702, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489755, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489802, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895489945, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490015, "dur":213, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490228, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490273, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490336, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490384, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490438, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490521, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490585, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490635, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490685, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490737, "dur":196, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":9, "ts":1660330895490934, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1660330895491023, "dur":15286, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895480922, "dur":1425, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895482347, "dur":6423, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895488774, "dur":116, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1660330895488890, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489017, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489078, "dur":120, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489200, "dur":152, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489352, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489413, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489471, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489518, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489565, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489611, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489666, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489718, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489775, "dur":118, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895489894, "dur":776, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895490670, "dur":61, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895490732, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895490976, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1660330895495816, "dur":1948, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":10, "ts":1660330895497800, "dur":8536, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895481027, "dur":1325, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895482352, "dur":6395, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895488750, "dur":111, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1660330895488862, "dur":142, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489005, "dur":217, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489222, "dur":103, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489326, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489380, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489429, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489481, "dur":49, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489530, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489580, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489631, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489681, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489730, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489779, "dur":126, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895489905, "dur":332, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490237, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490287, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490334, "dur":99, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490433, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490484, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490531, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490581, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490628, "dur":208, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/RadicalForge.Blockout.dll" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490837, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490885, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":11, "ts":1660330895490940, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1660330895491573, "dur":4890, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":11, "ts":1660330895496515, "dur":9837, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895481056, "dur":1302, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895482358, "dur":6395, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895488755, "dur":388, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489143, "dur":163, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489307, "dur":129, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489436, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489494, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489546, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489594, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489644, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489694, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489746, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489801, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489938, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895489987, "dur":700, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":12, "ts":1660330895490687, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895490739, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/SFX.bank" }}
+,{ "pid":12345, "tid":12, "ts":1660330895490787, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895490835, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":12, "ts":1660330895490952, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1660330895493252, "dur":6509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":12, "ts":1660330895499794, "dur":6518, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895481244, "dur":1118, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895482362, "dur":6397, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895488764, "dur":280, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":13, "ts":1660330895489045, "dur":283, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895489329, "dur":168, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1660330895489497, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895489545, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1660330895489594, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895489643, "dur":246, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1660330895489889, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895489941, "dur":302, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490244, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490287, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490342, "dur":44, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490387, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490438, "dur":90, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490529, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490581, "dur":165, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490747, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Music.bank" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490799, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490847, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1660330895490955, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1660330895493647, "dur":12590, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":13, "ts":1660330895506274, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":13, "ts":1660330895506276, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895481358, "dur":1010, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895482368, "dur":6373, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895488744, "dur":317, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489061, "dur":159, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489220, "dur":93, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489314, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489377, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489431, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489483, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489530, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489579, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489632, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489680, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489730, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489778, "dur":123, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489902, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895489951, "dur":493, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":14, "ts":1660330895490445, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895490497, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":14, "ts":1660330895490552, "dur":211, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895490764, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Collision.bank" }}
+,{ "pid":12345, "tid":14, "ts":1660330895490815, "dur":46, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895490862, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/level0.resS" }}
+,{ "pid":12345, "tid":14, "ts":1660330895490967, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1660330895494869, "dur":2939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/level0.resS" }}
+,{ "pid":12345, "tid":14, "ts":1660330895497845, "dur":8484, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895481443, "dur":928, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895482371, "dur":6357, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895488732, "dur":346, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489079, "dur":215, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489294, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489401, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489453, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489501, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489552, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489604, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489655, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489703, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489751, "dur":153, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489904, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895489962, "dur":447, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":15, "ts":1660330895490409, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895490466, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":15, "ts":1660330895490518, "dur":200, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895490719, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/clipper_library.dll" }}
+,{ "pid":12345, "tid":15, "ts":1660330895490770, "dur":48, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895490818, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1660330895490948, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1660330895492241, "dur":6877, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":15, "ts":1660330895499154, "dur":7164, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895481509, "dur":868, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895482377, "dur":6357, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895488737, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1660330895488871, "dur":166, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489037, "dur":118, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489155, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489220, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489344, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489403, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489463, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489514, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489562, "dur":329, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895489892, "dur":291, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490183, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490235, "dur":198, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490433, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490481, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490531, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490657, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490707, "dur":47, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490755, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/StreamingAssets/Master.bank" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490808, "dur":45, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490854, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/resources.assets" }}
+,{ "pid":12345, "tid":16, "ts":1660330895490962, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1660330895494208, "dur":3473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/FSK8475/Desktop/d24-7/Dance 24-7_Data/resources.assets" }}
+,{ "pid":12345, "tid":16, "ts":1660330895497740, "dur":8602, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1660330895521657, "dur":1655, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1660330895533301, "dur": 1021, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1660330895533151, "dur": 1201, "ph": "X", "name": "Write chrome-trace events", "args": {} },

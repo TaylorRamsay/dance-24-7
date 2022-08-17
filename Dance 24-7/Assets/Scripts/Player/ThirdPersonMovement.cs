@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ThirdPersonMovement : MonoBehaviour
@@ -8,6 +10,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public CharacterController controller;
     public Transform cam;
+    public StatManager stats;
 
     // Player Movement Variables
     public float speed;
@@ -33,34 +36,37 @@ public class ThirdPersonMovement : MonoBehaviour
     public Transform bandMemberCheck;
     public float checkDistance = 1f;
     public LayerMask bandMember;
-    public static Collider[] nearbyBandMember;
+    public static Collider[] bandMemberDetector;
     [SerializeField] private TextMeshProUGUI recruitPrompt;
 
     // Combat Variables
-    public float hp;
-    public float mp;
-    public float attackPower;
-    public bool isDefending;
-
+    public CombatManager combat;
+    public static Collider[] enemyDetector;
+    public List<EnemyNPC> agroEnemies;
     public Transform enemyCheck;
     public float enemyCheckDistance;
     public LayerMask enemy;
-    public static Collider[] nearbyEnemy;
     [SerializeField] private TextMeshProUGUI attackPrompt;
+
+
+    void UpdateHealthBar()
+    {
+        stats.healthBar.fillAmount = Mathf.Clamp(stats.hp / stats.maxHp, 0, 1f);
+    }
 
     void RecruitBandMember()
     {
-        nearbyBandMember = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
+        bandMemberDetector = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
         
-        if (nearbyBandMember.Length > 0 && !nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing)
+        if (bandMemberDetector.Length > 0 && !bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing)
         {
             // display "Press E to recruit band member" button prompt
             recruitPrompt.gameObject.SetActive(true);
             
             if (Input.GetKeyDown(KeyCode.E))
             {
-                bandMembers.Add(nearbyBandMember[0].gameObject.GetComponent<NPC>());
-                nearbyBandMember[0].gameObject.GetComponent<NPC>().isFollowing = true;
+                bandMembers.Add(bandMemberDetector[0].gameObject.GetComponent<NPC>());
+                bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing = true;
             }
         }
         else
@@ -69,24 +75,28 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-    void AttackEnemy()
+    void AttackTarget()
     {
-        nearbyEnemy = Physics.OverlapSphere(enemyCheck.position, enemyCheckDistance, enemy);
-        if (nearbyEnemy.Length > 0)
+        enemyDetector = Physics.OverlapSphere(enemyCheck.position, enemyCheckDistance, enemy);
+        if (enemyDetector.Length > 0)
         {
-            nearbyEnemy[0].GetComponent<EnemyNPC>().hp -= attackPower;
+            enemyDetector[0].GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
         }
     }
 
     void Combat()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(1))
         {
-            AttackEnemy();
+            stats.isDefending = true;
+        } else
+        {
+            stats.isDefending = false;
+        }
 
-        } else if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0) && stats.isDefending == false)
         {
-            isDefending = true;
+            AttackTarget();
         }
     }
 
@@ -110,40 +120,24 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-
-    private void Start()
+    void PlayerMovement()
     {
-        recruitPrompt.gameObject.SetActive(false);
-        isDefending = false;
-    }
-
-    void Update()
-    {
-        RecruitBandMember();
-        Combat();
-        Jump();
-
-        // Increments gravity value to player while not grounded, Time.deltaTime to keep frame rate independent
-        velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
-
-
         // ====== MOVEMENT HANDLING ====== //
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
-        
-        
+
         // Is there a more efficient way to do this??
-        if(Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = runSpeed;
-        } else
+        }
+        else
         {
             speed = walkSpeed;
         }
 
-        if(direction.magnitude >= 0.1f)
+        if (direction.magnitude >= 0.1f)
         {
             // "targetAngle" stores the angle we want the player to face, Atan2 returns an angle starting at 0 and terminating at x,z(in this instance)
             // Rad2Deg is used to convert from radians to usable degrees
@@ -152,14 +146,49 @@ public class ThirdPersonMovement : MonoBehaviour
 
             // enables the player to smoothly turn between current angle and "targetAngle", rather than snapping
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            
-            // Rotates the player on the y-axis to face the current direction of movement.....Format: "Euler(x, y, z)"
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+
+            // Handles direction player faces inside/outside of combat
+            if (!combat.activeCombat)
+            {
+                // Rotates the player on the y-axis to face the current direction of movement.....Format: "Euler(x, y, z)"
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            } else
+            {
+                // Rotaties the player on the y-axis to face the current direction of the camera
+                transform.rotation = Quaternion.Euler(0f, cam.eulerAngles.y, 0f);
+            }
 
             // Multiplying by " * Vector3.forward" turns the rotation into a direction
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
 
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
+    }
+
+    private void Start()
+    {
+        recruitPrompt.gameObject.SetActive(false);
+    }
+
+
+    void Update()
+    {
+        UpdateHealthBar();
+        RecruitBandMember();
+        Combat();
+        PlayerMovement();
+        Jump();
+
+        if (stats.hp <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        // Increments gravity value to player while not grounded, Time.deltaTime to keep frame rate independent
+        velocity.y += gravity * Time.deltaTime;
+        controller.Move(velocity * Time.deltaTime);
+
+
+
     }
 }
