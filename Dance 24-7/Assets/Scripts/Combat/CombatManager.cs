@@ -16,6 +16,7 @@ public class CombatManager : MonoBehaviour
             foreach (NPC x in player.bandMembers)
             {
                 x.combatState = true;
+                x.navAgent.enabled = false;
             }
                 
             return true;
@@ -31,6 +32,7 @@ public class CombatManager : MonoBehaviour
             foreach (NPC x in player.bandMembers)
             {
                 x.combatState = false;
+                x.navAgent.enabled = true;
                 x.isFollowing = true;
 
             }

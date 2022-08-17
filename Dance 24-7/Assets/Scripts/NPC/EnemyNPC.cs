@@ -19,6 +19,7 @@ public class EnemyNPC : MonoBehaviour
 
     public bool pursueTarget = false;
     public bool agro = false;
+    public bool targeted = false;
     public GameObject agroIdentifier;
     public static Collider[] attackDetector;
     public float attackTime;
@@ -37,7 +38,7 @@ public class EnemyNPC : MonoBehaviour
 
             if(!playerMovement.agroEnemies.Contains(gameObject.GetComponent<EnemyNPC>()))
             {
-                gameObject.SetActive(false);
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
             }
             
         }

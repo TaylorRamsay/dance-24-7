@@ -39,6 +39,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public static Collider[] bandMemberDetector;
     [SerializeField] private TextMeshProUGUI recruitPrompt;
 
+    // Combat Variables
+    public CombatManager combat;
     public static Collider[] enemyDetector;
     public List<EnemyNPC> agroEnemies;
     public Transform enemyCheck;
@@ -145,8 +147,16 @@ public class ThirdPersonMovement : MonoBehaviour
             // enables the player to smoothly turn between current angle and "targetAngle", rather than snapping
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
 
-            // Rotates the player on the y-axis to face the current direction of movement.....Format: "Euler(x, y, z)"
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            // Handles direction player faces inside/outside of combat
+            if (!combat.activeCombat)
+            {
+                // Rotates the player on the y-axis to face the current direction of movement.....Format: "Euler(x, y, z)"
+                transform.rotation = Quaternion.Euler(0f, angle, 0f);
+            } else
+            {
+                // Rotaties the player on the y-axis to face the current direction of the camera
+                transform.rotation = Quaternion.Euler(0f, cam.eulerAngles.y, 0f);
+            }
 
             // Multiplying by " * Vector3.forward" turns the rotation into a direction
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;

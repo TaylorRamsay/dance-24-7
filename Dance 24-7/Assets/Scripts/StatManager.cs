@@ -15,7 +15,7 @@ public class StatManager : MonoBehaviour
     public float attackPower;
     public bool isDefending = false;
 
-    bool IsDefeated()
+    public bool IsDefeated()
     {
         if (hp <= 0)
         {

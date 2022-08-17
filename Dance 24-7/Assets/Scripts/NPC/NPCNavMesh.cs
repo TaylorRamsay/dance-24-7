@@ -8,7 +8,7 @@ public class NPCNavMesh : MonoBehaviour
 
     //private NavMeshAgent navMeshAgent;
     public GameObject player;
-    public ThirdPersonMovement playerMovement;
+    public ThirdPersonMovement playerManager;
     public CombatManager combat;
 
     void PlayerFollower(NPC firstBandMember)
@@ -20,43 +20,62 @@ public class NPCNavMesh : MonoBehaviour
     {
         if (!combat.activeCombat)
         {
-            for (int i = 0; i < playerMovement.bandMembers.Count; i++)
+            for (int i = 0; i < playerManager.bandMembers.Count; i++)
             {
-                if (playerMovement.bandMembers[i].isFollowing)
+                if (playerManager.bandMembers[i].isFollowing)
                 {
                     if (i == 0)
                     {
-                        PlayerFollower(playerMovement.bandMembers[i]);
+                        PlayerFollower(playerManager.bandMembers[i]);
                     }
                     else
                     {
-                        playerMovement.bandMembers[i].navAgent.destination = playerMovement.bandMembers[i - 1].transform.position;
+                        playerManager.bandMembers[i].navAgent.destination = playerManager.bandMembers[i - 1].transform.position;
                     }
                 }
             }
         }
     }
 
-    void EnemyFollower()
+    public void EnemyTargeting(NPC attacker)
     {
         if (combat.activeCombat)
         {
-            for (int i = 0; i < playerMovement.bandMembers.Count; i++)
-            { 
-                if (playerMovement.agroEnemies.Count != 0)
+            if (attacker.isTargeting == false)
+            {
+                for (int i = 0; i < playerManager.agroEnemies.Count; i++)
                 {
-                    playerMovement.bandMembers[i].navAgent.destination = playerMovement.agroEnemies[0].transform.position;
+                    if (playerManager.agroEnemies[i].GetComponent<EnemyNPC>().targeted == false)
+                    {
+                        attacker.combatTarget = playerManager.agroEnemies[i];
+                        attacker.isTargeting = true;
+                        playerManager.agroEnemies[i].GetComponent<EnemyNPC>().targeted = true;
+
+                        print(attacker + " is targeting " + attacker.combatTarget);
+
+                        goto after;
+                    } else if (i == playerManager.agroEnemies.Count - 1)
+                    {
+                        attacker.combatTarget = playerManager.agroEnemies[0];
+                        attacker.isTargeting = true;
+                        goto after;
+                    }
                 }
-                
-                
-                
+            } else
+            {
+                attacker.gameObject.transform.LookAt(attacker.combatTarget.transform);
+                if(attacker.combatTarget.GetComponent<StatManager>().IsDefeated())
+                {
+                    attacker.isTargeting = false;
+                }
             }
+        after:;
         }
     }
 
     private void Update()
     {
         Follow();
-        EnemyFollower();
+        //EnemyTargeting();
     }
 }

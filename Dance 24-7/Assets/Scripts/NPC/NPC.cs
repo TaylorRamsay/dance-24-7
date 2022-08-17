@@ -13,12 +13,15 @@ public class NPC : MonoBehaviour
     public bool isFollowing = false;
     public GameObject followIdentifier;
 
+    // Combat Variables
     public bool combatState = false;
     public static Collider[] enemyDetector;
     public float attackTime;
     public float attackTimer = 0;
     public Transform attackCheck;
     public LayerMask checkLayer;
+    public bool isTargeting = false;
+    public EnemyNPC combatTarget;
 
     public float attackDistance;
     public GameObject weapon;
@@ -29,10 +32,10 @@ public class NPC : MonoBehaviour
         {
             isFollowing = false;
             //followIdentifier.SetActive(false);
-            //enemyDetector = Physics.OverlapSphere(attackCheck.position, attackDistance, checkLayer);
-
+            //enemyDetector = Physics.OverlapSphere(attackCheck.position, attackDistance, checkLayer
             if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f /*&& enemyDetector.Length > 0*/)
             {
+                playerMovement.GetComponent<NPCNavMesh>().EnemyTargeting(this);
                 weapon.GetComponent<Weapon>().attackFlag = true;
             }
         }
