@@ -51,7 +51,7 @@ public class NPCNavMesh : MonoBehaviour
                         attacker.isTargeting = true;
                         playerManager.agroEnemies[i].GetComponent<EnemyNPC>().targeted = true;
 
-                        print(attacker + " is targeting " + attacker.combatTarget);
+                        //print(attacker + " is targeting " + attacker.combatTarget);
 
                         goto after;
                     } else if (i == playerManager.agroEnemies.Count - 1)
@@ -64,12 +64,12 @@ public class NPCNavMesh : MonoBehaviour
             } else
             {
                 attacker.gameObject.transform.LookAt(attacker.combatTarget.transform);
-                if(attacker.combatTarget.GetComponent<StatManager>().IsDefeated())
-                {
-                    attacker.isTargeting = false;
-                }
             }
         after:;
+        }
+        if (attacker.combatTarget.GetComponent<StatManager>().IsDefeated())
+        {
+            attacker.isTargeting = false;
         }
     }
 

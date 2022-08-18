@@ -54,7 +54,7 @@ public class EnemyWeapon : MonoBehaviour
         if (from.localRotation == targetRotation)
         {
             rotationAxis.transform.localRotation = origRotation;
-            weaponWielder.GetComponent<EnemyNPC>().attackTimer = weaponWielder.GetComponent<NPC>().attackTime;
+            weaponWielder.GetComponent<EnemyNPC>().attackTimer = weaponWielder.GetComponent<EnemyNPC>().attackTime;
             attackFlag = false;
         }
     }

@@ -12,6 +12,25 @@ public class EnemyNavMesh : MonoBehaviour
 
 
 
+    public void PlayerTargeting(EnemyNPC attacker)
+    {
+        if (combat.activeCombat)
+        {
+            if (attacker.isTargeting == false)
+            {
+                attacker.targetPlayer = playerManager;
+                attacker.targetingPlayer = true;
+            }
+            if (attacker.targetingPlayer == true)
+            {
+                attacker.gameObject.transform.LookAt(attacker.targetPlayer.transform);
+                if (attacker.targetPlayer.GetComponent<StatManager>().IsDefeated())
+                {
+                    attacker.targetingPlayer = false;
+                }
+            }
+        }
+    }
 
     public void NPCTargeting(EnemyNPC attacker)
     {
@@ -38,8 +57,10 @@ public class EnemyNavMesh : MonoBehaviour
                         goto after;
                     }
                 }
+
+                //PlayerTargeting(attacker);
             }
-            else
+            if (/*!attacker.targetingPlayer && */attacker.isTargeting == true)
             {
                 attacker.gameObject.transform.LookAt(attacker.combatTarget.transform);
                 if (attacker.combatTarget.GetComponent<StatManager>().IsDefeated())

@@ -30,6 +30,8 @@ public class EnemyNPC : MonoBehaviour
     public bool isTargeting = false;
     public bool targeted = false;
     public NPC combatTarget;
+    public ThirdPersonMovement targetPlayer;
+    public bool targetingPlayer = false;
 
     public float attackDistance;
     public GameObject weapon;
@@ -48,7 +50,8 @@ public class EnemyNPC : MonoBehaviour
 
             if(!playerMovement.agroEnemies.Contains(gameObject.GetComponent<EnemyNPC>()))
             {
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
+                //gameObject.GetComponent<MeshRenderer>().enabled = false;
+                gameObject.SetActive(false);
             }
             
         }
@@ -82,8 +85,8 @@ public class EnemyNPC : MonoBehaviour
             agro = true;
             combatState = true;
             agroIdentifier.SetActive(true);
-            transform.LookAt(player.transform);
-            navAgent.destination = player.transform.position;
+            //transform.LookAt(player.transform);
+            //navAgent.destination = player.transform.position;
 
         } else
         {
@@ -107,6 +110,10 @@ public class EnemyNPC : MonoBehaviour
         HealthCheck();
         CheckForTarget();
         AttackTarget();
+        if (isTargeting && playerMovement.bandMembers.Contains(combatTarget))
+        {
+            navAgent.destination = combatTarget.transform.position;
+        }
         attackTimer -= Time.deltaTime;
 
     }

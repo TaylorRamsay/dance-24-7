@@ -73,5 +73,9 @@ public class NPC : MonoBehaviour
             followIdentifier.SetActive(true);
             navAgent.speed = playerMovement.speed;
         }
+        if (isTargeting)
+        {
+            navAgent.destination = combatTarget.transform.position;
+        }
     }
 }
