@@ -449,7 +449,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9105263, y: 1}
+    m_SensorSize: {x: 1.683153, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3092,16 +3092,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 238652076}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dde03b9bad3c8364aa626280bd44966f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   track: {fileID: 238652081}
-  csvPath: Assets/CSV Music Data/Chira Stem Data/shaker/shaker.csv
+  csvPath: Assets/CSV Music Data/Chira Stem Data/shaker/shakerOutput.csv
   currentNPC: {fileID: 238652076}
-  characterMaterial: {fileID: 0}
-  instrumentMaterial: {fileID: 0}
+  characterMaterial: {fileID: 2100000, guid: 1e281fa1d89075446ab3e342e7ce8844, type: 2}
+  instrumentMaterial: {fileID: 2100000, guid: 1e281fa1d89075446ab3e342e7ce8844, type: 2}
   multiplier: 10
 --- !u!1 &269475012
 GameObject:
@@ -5670,6 +5670,7 @@ GameObject:
   - component: {fileID: 633598455}
   - component: {fileID: 633598460}
   - component: {fileID: 633598461}
+  - component: {fileID: 633598462}
   m_Layer: 6
   m_Name: bassDrumNPC
   m_TagString: Band Member
@@ -5777,7 +5778,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2868f4a9f86bce047865ac539894d300, type: 2}
+  - {fileID: 2100000, guid: 948f563daf860a64c99c5566d932212f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5849,6 +5850,24 @@ MonoBehaviour:
   maxMp: 0
   attackPower: 10
   isDefending: 0
+--- !u!114 &633598462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633598452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde03b9bad3c8364aa626280bd44966f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  track: {fileID: 1063208488}
+  csvPath: Assets/CSV Music Data/Chira Stem Data/bassDrum/BassDrum.csv
+  currentNPC: {fileID: 633598452}
+  characterMaterial: {fileID: 2100000, guid: 948f563daf860a64c99c5566d932212f, type: 2}
+  instrumentMaterial: {fileID: 2100000, guid: 948f563daf860a64c99c5566d932212f, type: 2}
+  multiplier: 20
 --- !u!1 &679786394
 GameObject:
   m_ObjectHideFlags: 0
@@ -6109,7 +6128,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9105263, y: 1}
+    m_SensorSize: {x: 1.683153, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8944,7 +8963,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243133068}
-  m_LocalRotation: {x: 0.20069121, y: 0.00000001499442, z: -0.0000000030717442, w: 0.97965455}
+  m_LocalRotation: {x: 0.2006912, y: -0.000000020926873, z: 0.0000000042870614, w: 0.97965455}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8989,7 +9008,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9105263, y: 1}
+    m_SensorSize: {x: 1.683153, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -9096,7 +9115,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9105263, y: 1}
+    m_SensorSize: {x: 1.683153, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11558,6 +11577,7 @@ GameObject:
   - component: {fileID: 1761599323}
   - component: {fileID: 1761599328}
   - component: {fileID: 1761599329}
+  - component: {fileID: 1761599330}
   m_Layer: 6
   m_Name: bellsNPC
   m_TagString: Band Member
@@ -11665,7 +11685,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2868f4a9f86bce047865ac539894d300, type: 2}
+  - {fileID: 2100000, guid: 513e051d47f83b74d957af8118ea5f11, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11737,6 +11757,24 @@ MonoBehaviour:
   maxMp: 0
   attackPower: 10
   isDefending: 0
+--- !u!114 &1761599330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761599320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde03b9bad3c8364aa626280bd44966f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  track: {fileID: 305213188}
+  csvPath: Assets/CSV Music Data/Chira Stem Data/bells/bellsOutput.csv
+  currentNPC: {fileID: 1761599320}
+  characterMaterial: {fileID: 2100000, guid: 513e051d47f83b74d957af8118ea5f11, type: 2}
+  instrumentMaterial: {fileID: 2100000, guid: 513e051d47f83b74d957af8118ea5f11, type: 2}
+  multiplier: 10
 --- !u!1 &1775381649
 GameObject:
   m_ObjectHideFlags: 0

@@ -63,9 +63,12 @@ public class VisualInfluencer : MonoBehaviour
         track.EventInstance.getTimelinePosition(out currTime);
         index = (int)(((float)currTime / (float)totalTime) * musicData.Count);
 
-        //print("Current index: " + index);
-        //print("List Size: " + musicData.Count);
-        //print("Current List Item: " + musicData[index]);
+        if (characterMaterial.name == "bassDrumMaterial")
+        {
+            print("Current index: " + index);
+            print("List Size: " + musicData.Count);
+            print("Current List Item: " + musicData[index]);
+        } 
 
         characterGlow = characterMaterial.GetColor("_Color");
         instrumentGlow = instrumentMaterial.GetColor("_Color");

@@ -24,8 +24,8 @@ public class CombatManager : MonoBehaviour
                 combatArena.transform.position = new Vector3(player.transform.position.x, .23f, player.transform.position.z);
             }
             combatArena.SetActive(true);
-            print(combatArena.transform.position);
-            print(player.transform.position);
+            //print(combatArena.transform.position);
+            //print(player.transform.position);
             return true;
         }
         return false;
