@@ -404,7 +404,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101084279}
-  m_LocalRotation: {x: 0.18283857, y: -0.000000008458164, z: 0.000000001572995, w: 0.983143}
+  m_LocalRotation: {x: 0.18283857, y: 0.0000000084581675, z: -0.0000000015729956, w: 0.983143}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.683153, y: 1}
+    m_SensorSize: {x: 2.0440457, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3098,7 +3098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   track: {fileID: 238652081}
-  csvPath: Assets/CSV Music Data/Chira Stem Data/shaker/shakerOutput.csv
+  csvPath: /CSVMusicData/ChiraStemData/shaker/shakerOutput.csv
   currentNPC: {fileID: 238652076}
   characterMaterial: {fileID: 2100000, guid: 1e281fa1d89075446ab3e342e7ce8844, type: 2}
   instrumentMaterial: {fileID: 2100000, guid: 1e281fa1d89075446ab3e342e7ce8844, type: 2}
@@ -4522,7 +4522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   track: {fileID: 880811209}
-  csvPath: Assets/CSV Music Data/Chira Stem Data/chords/chords(0-15).csv
+  csvPath: /CSVMusicData/ChiraStemData/chords/chords(0-15).csv
   currentNPC: {fileID: 506156383}
   characterMaterial: {fileID: 2100000, guid: 11bfeba00dc2ec64d8ce285429c94277, type: 2}
   instrumentMaterial: {fileID: 2100000, guid: 0b4ddbaae32c66747ad88ddd13c45560, type: 2}
@@ -5863,7 +5863,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   track: {fileID: 1063208488}
-  csvPath: Assets/CSV Music Data/Chira Stem Data/bassDrum/BassDrum.csv
+  csvPath: /CSVMusicData/ChiraStemData/bassDrum/BassDrum.csv
   currentNPC: {fileID: 633598452}
   characterMaterial: {fileID: 2100000, guid: 948f563daf860a64c99c5566d932212f, type: 2}
   instrumentMaterial: {fileID: 2100000, guid: 948f563daf860a64c99c5566d932212f, type: 2}
@@ -6083,7 +6083,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720078463}
-  m_LocalRotation: {x: 0.16497286, y: -0.000000016970626, z: 0.0000000028385865, w: 0.98629814}
+  m_LocalRotation: {x: 0.16497286, y: 0.000000016970619, z: -0.0000000028385854, w: 0.98629814}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6128,7 +6128,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.683153, y: 1}
+    m_SensorSize: {x: 2.0440457, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -7631,7 +7631,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.18283859, y: -0.000000008463965, z: 0.0000000015719372, w: 0.983143}
+  m_LocalRotation: {x: 0.18283859, y: 0.000000008463968, z: -0.0000000015719377, w: 0.983143}
   m_LocalPosition: {x: 0, y: 4.05, z: -9.470001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9008,7 +9008,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.683153, y: 1}
+    m_SensorSize: {x: 2.0440457, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -9115,7 +9115,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.683153, y: 1}
+    m_SensorSize: {x: 2.0440457, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10179,6 +10179,7 @@ GameObject:
   - component: {fileID: 1420874062}
   - component: {fileID: 1420874068}
   - component: {fileID: 1420874067}
+  - component: {fileID: 1420874069}
   m_Layer: 6
   m_Name: synthLeadNPC
   m_TagString: Band Member
@@ -10286,7 +10287,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2868f4a9f86bce047865ac539894d300, type: 2}
+  - {fileID: 2100000, guid: 797942b0cb313484baf68b5705863649, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10358,6 +10359,24 @@ MonoBehaviour:
   maxMp: 0
   attackPower: 10
   isDefending: 0
+--- !u!114 &1420874069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420874059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde03b9bad3c8364aa626280bd44966f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  track: {fileID: 1781682979}
+  csvPath: /CSVMusicData/ChiraStemData/synthLead/synthLeadOutput.csv
+  currentNPC: {fileID: 1420874059}
+  characterMaterial: {fileID: 2100000, guid: 797942b0cb313484baf68b5705863649, type: 2}
+  instrumentMaterial: {fileID: 2100000, guid: 797942b0cb313484baf68b5705863649, type: 2}
+  multiplier: 1
 --- !u!1 &1427620759
 GameObject:
   m_ObjectHideFlags: 0
@@ -10400,6 +10419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1446160533}
   - component: {fileID: 1446160532}
+  - component: {fileID: 1446160534}
   m_Layer: 0
   m_Name: NavigationManager
   m_TagString: Untagged
@@ -10437,6 +10457,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1446160534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446160531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ccf64fc0578b9942ad5f40816022897, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1450219939
 GameObject:
   m_ObjectHideFlags: 0
@@ -11770,7 +11802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   track: {fileID: 305213188}
-  csvPath: Assets/CSV Music Data/Chira Stem Data/bells/bellsOutput.csv
+  csvPath: /CSVMusicData/ChiraStemData/bells/bellsOutput.csv
   currentNPC: {fileID: 1761599320}
   characterMaterial: {fileID: 2100000, guid: 513e051d47f83b74d957af8118ea5f11, type: 2}
   instrumentMaterial: {fileID: 2100000, guid: 513e051d47f83b74d957af8118ea5f11, type: 2}
