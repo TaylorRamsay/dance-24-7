@@ -3102,7 +3102,7 @@ MonoBehaviour:
   currentNPC: {fileID: 238652076}
   characterMaterial: {fileID: 2100000, guid: 1e281fa1d89075446ab3e342e7ce8844, type: 2}
   instrumentMaterial: {fileID: 2100000, guid: 1e281fa1d89075446ab3e342e7ce8844, type: 2}
-  multiplier: 10
+  multiplier: 100
 --- !u!1 &269475012
 GameObject:
   m_ObjectHideFlags: 0
@@ -4900,6 +4900,7 @@ GameObject:
   - component: {fileID: 581693406}
   - component: {fileID: 581693411}
   - component: {fileID: 581693412}
+  - component: {fileID: 581693413}
   m_Layer: 6
   m_Name: windchimesNPC
   m_TagString: Band Member
@@ -5007,7 +5008,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2868f4a9f86bce047865ac539894d300, type: 2}
+  - {fileID: 2100000, guid: 122ed1cdd526d8748b74f2194779e264, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5079,6 +5080,24 @@ MonoBehaviour:
   maxMp: 0
   attackPower: 10
   isDefending: 0
+--- !u!114 &581693413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581693403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde03b9bad3c8364aa626280bd44966f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  track: {fileID: 1450219943}
+  csvPath: /CSVMusicData/ChiraStemData/windChimes/windChimesOutput.csv
+  currentNPC: {fileID: 581693403}
+  characterMaterial: {fileID: 2100000, guid: 122ed1cdd526d8748b74f2194779e264, type: 2}
+  instrumentMaterial: {fileID: 2100000, guid: 122ed1cdd526d8748b74f2194779e264, type: 2}
+  multiplier: 10
 --- !u!1 &587937917
 GameObject:
   m_ObjectHideFlags: 0
@@ -10376,7 +10395,7 @@ MonoBehaviour:
   currentNPC: {fileID: 1420874059}
   characterMaterial: {fileID: 2100000, guid: 797942b0cb313484baf68b5705863649, type: 2}
   instrumentMaterial: {fileID: 2100000, guid: 797942b0cb313484baf68b5705863649, type: 2}
-  multiplier: 1
+  multiplier: 10
 --- !u!1 &1427620759
 GameObject:
   m_ObjectHideFlags: 0
@@ -11806,7 +11825,7 @@ MonoBehaviour:
   currentNPC: {fileID: 1761599320}
   characterMaterial: {fileID: 2100000, guid: 513e051d47f83b74d957af8118ea5f11, type: 2}
   instrumentMaterial: {fileID: 2100000, guid: 513e051d47f83b74d957af8118ea5f11, type: 2}
-  multiplier: 10
+  multiplier: 50
 --- !u!1 &1775381649
 GameObject:
   m_ObjectHideFlags: 0

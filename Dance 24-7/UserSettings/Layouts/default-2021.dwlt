@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 421}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 61
+  controlID: 107
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 108
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 50
+  controlID: 109
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,8 +189,8 @@ MonoBehaviour:
     y: 0
     width: 219
     height: 655
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -337,9 +337,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 78860400
-      m_LastClickedID: 296568
-      m_ExpandedIDs: 4012feff9212feff1028feffbc2bfeff0e2cfeff8c41feff1c6cfeff6e6cfeffec81feff4e9afeff9e9afeff46aefeff02b8feff52b8fefffacbfeff0edffeff60dffeffdef4feffc800ffff1a01ffff9816ffffb828ffff0a29ffff883effffa441fffff641ffff7457ffff5e5bffffb05bffff2e71fffff074ffff4275ffffc08affff0c9cffff5e9cffffdcb1ffff70caffffc2caffff40e0ffffdafaffffd2a8000064af0000eeb60000b8170100421f0100500f0200185d0200905f0200a264020058ad0200d0af0200e2b402003ce80200221e03009a200300ac2503009c8a0300148d0300269203006c7e0400d47e04002284040062870400ac8b0400
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: dafaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -588,9 +588,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 474.13797, y: -51.918053, z: 100.28614}
+    m_Target: {x: 438.83575, y: -14.771444, z: 107.2871}
     speed: 2
-    m_Value: {x: 474.13797, y: -51.918053, z: 100.28614}
+    m_Value: {x: 438.83575, y: -14.771444, z: 107.2871}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -637,13 +637,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.33001933, y: -0.007391143, z: 0.0026440397, w: 0.94401985}
+    m_Target: {x: 0.1236098, y: -0.24188733, z: 0.031137535, w: 0.96197265}
     speed: 2
-    m_Value: {x: 0.33565268, y: -0.0073745963, z: 0.0026881532, w: 0.9419531}
+    m_Value: {x: -0.123609796, y: 0.24188733, z: -0.031137535, w: -0.9619726}
   m_Size:
-    m_Target: 50.784603
+    m_Target: 50.602047
     speed: 2
-    m_Value: 48.597706
+    m_Value: 50.602047
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -801,22 +801,22 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/TestMaterials
+    - Assets/StreamingAssets/CSVMusicData/ChiraStemData/windChimes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/TestMaterials
+  - Assets/StreamingAssets/CSVMusicData/ChiraStemData/windChimes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\FSK8475\Documents\GitHub\dance-24-7\Dance 24-7
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 837}
-    m_SelectedIDs: 28850000
-    m_LastClickedID: 34088
-    m_ExpandedIDs: 00000000528100005481000056810000588100005a8100005c8100005e81000060810000628100006481000066810000688100006a8100006c8100006e8100007681000000ca9a3b
+    scrollPos: {x: 0, y: 821}
+    m_SelectedIDs: 80810000
+    m_LastClickedID: 33152
+    m_ExpandedIDs: 000000005a8100005c8100005e81000060810000628100006481000066810000688100006a8100006c8100006e810000708100007281000074810000768100007e81000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -844,7 +844,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000528100005481000056810000588100005a8100005c8100005e81000060810000628100006481000066810000688100006a8100006c8100006e810000
+    m_ExpandedIDs: 000000005a8100005c8100005e81000060810000628100006481000066810000688100006a8100006c8100006e81000070810000728100007481000076810000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -871,7 +871,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000790000aa51010000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
