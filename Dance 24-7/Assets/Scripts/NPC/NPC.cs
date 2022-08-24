@@ -10,6 +10,7 @@ public class NPC : MonoBehaviour
     public StatManager stats;
     public NavMeshAgent navAgent;
     public GameObject npc;
+    public GameObject npcDirection;
     public bool isFollowing = false;
     public GameObject followIdentifier;
 
@@ -36,7 +37,14 @@ public class NPC : MonoBehaviour
 
             if (!playerMovement.bandMembers.Contains(gameObject.GetComponent<NPC>()))
             {
+                navAgent.enabled = false;
+                combatState = false;
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
+                gameObject.GetComponent<BoxCollider>().enabled = false;
+                npcDirection.SetActive(false);
+                weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                
+                //weapon.SetActive(false);
             }
         }
     }
@@ -53,6 +61,9 @@ public class NPC : MonoBehaviour
                 playerMovement.GetComponent<NPCNavMesh>().EnemyTargeting(this);
                 attackFlag = true;
             }
+        } else
+        {
+            attackFlag = false;
         }
     }
 
