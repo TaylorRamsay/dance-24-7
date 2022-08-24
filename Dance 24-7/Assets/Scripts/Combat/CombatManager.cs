@@ -17,15 +17,12 @@ public class CombatManager : MonoBehaviour
             foreach (NPC x in player.bandMembers)
             {
                 x.combatState = true;
-                //x.navAgent.enabled = false;
             }
             if (!combatArena.activeSelf)
             {
                 combatArena.transform.position = new Vector3(player.transform.position.x, .23f, player.transform.position.z);
             }
             combatArena.SetActive(true);
-            //print(combatArena.transform.position);
-            //print(player.transform.position);
             return true;
         }
         return false;

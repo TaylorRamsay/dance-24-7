@@ -23,24 +23,6 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    /*public IEnumerator SwingWeapon(float degreesPerSec)
-    {
-        float duration = 1;
-        float time = 0;
-        while (time < duration)
-        {
-            gameObject.transform.RotateAround(weaponWielder.transform.position, Vector3.up, degreesPerSec * time);
-            time += Time.deltaTime;
-            print("WEAPON IS SWINGING");
-            yield return null;
-        }
-        while (weaponWielder.GetComponent<NPC>().attackTimer > 0)
-        {
-            weaponWielder.GetComponent<NPC>().attackTimer -= Time.deltaTime;
-        }   
-    }
-    */
-
     public void SwingWeapon()
     {
         Transform from = rotationAxis.transform;
