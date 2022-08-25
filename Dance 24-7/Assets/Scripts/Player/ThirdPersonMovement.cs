@@ -39,6 +39,12 @@ public class ThirdPersonMovement : MonoBehaviour
     public static Collider[] bandMemberDetector;
     [SerializeField] private TextMeshProUGUI recruitPrompt;
 
+    // Revive Variables
+    public Transform reviveCheck;
+    public LayerMask instrument;
+    public static Collider[] reviveDetector;
+    [SerializeField] private TextMeshProUGUI revivePrompt;
+
     // Combat Variables
     public CombatManager combat;
     public List<EnemyNPC> agroEnemies;
@@ -54,7 +60,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         bandMemberDetector = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
         
-        if (bandMemberDetector.Length > 0 && !bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing)
+        if (!combat.activeCombat && bandMemberDetector.Length > 0 && !bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing)
         {
             // display "Press E to recruit band member" button prompt
             recruitPrompt.gameObject.SetActive(true);
@@ -68,6 +74,27 @@ public class ThirdPersonMovement : MonoBehaviour
         else
         {
             recruitPrompt.gameObject.SetActive(false);
+        }
+    }
+
+    void ReviveBandMember()
+    {
+        if (!combat.activeCombat)
+        {
+            reviveDetector = Physics.OverlapSphere(reviveCheck.position, checkDistance, instrument);
+
+            if (reviveDetector.Length > 0 && reviveDetector[0].GetComponent<Weapon>().weaponWielder.GetComponent<NPC>().stats.hp <= 0)
+            {
+                revivePrompt.gameObject.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    reviveDetector[0].GetComponent<Weapon>().weaponWielder.GetComponent<NPC>().EnableOnRessurection();
+                }
+            } else
+            {
+                revivePrompt.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -161,6 +188,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         UpdateHealthBar();
         RecruitBandMember();
+        ReviveBandMember();
         Combat();
         PlayerMovement();
         Jump();

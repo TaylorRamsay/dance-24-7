@@ -23,24 +23,17 @@ public class VisualInfluencer : MonoBehaviour
 
     void ReadCSV(ref List<float> csvList)
     {
-        //Debug.Log("Reading CSV");
-        //Debug.Log("CSV Path:" + Application.streamingAssetsPath + csvPath);
-        //Debug.Log("File Exists: " + File.Exists(Application.streamingAssetsPath + csvPath));
         if (File.Exists(Application.streamingAssetsPath + csvPath))
         {
-            //Debug.Log("File Exists");
             var lines = File.ReadLines(Application.streamingAssetsPath + csvPath);
             foreach (var line in lines)
             {
-                //Debug.Log("Reading Lines");
                 if (!string.IsNullOrWhiteSpace(line))
                 {
-                    //Debug.Log("Line read");
                     csvList.Add(float.Parse(line));
                 }
             }   
         }
-        //Debug.Log("CSV read successfully");
     }
 
     void Start()
@@ -72,6 +65,5 @@ public class VisualInfluencer : MonoBehaviour
 
         characterMaterial.SetColor("_EmissionColor", characterGlow);
         instrumentMaterial.SetColor("_EmissionColor", instrumentGlow);
-        
     }
 }

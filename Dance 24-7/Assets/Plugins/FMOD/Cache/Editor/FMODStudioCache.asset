@@ -49,9 +49,82 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 3543401252277980122}
+  - {fileID: -6804149197312924972}
   MinDistance: 1
   MaxDistance: 20
   Length: 48000
+--- !u!114 &-6804149197312924972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Chira - Synth Lead/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 108583605
+    data2: 2833089583
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6715256945160170761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Chira - Windchimes/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 108583605
+    data2: 2833089583
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3646297996760503650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Chira - Bass Drum/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 108583605
+    data2: 2833089583
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-2849680588266442496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,6 +174,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -2849680588266442496}
+  - {fileID: 8880241104146108486}
   MinDistance: 1
   MaxDistance: 20
   Length: 48000
@@ -136,7 +210,7 @@ MonoBehaviour:
   - {fileID: 4379858794130898270}
   StringsBanks:
   - {fileID: 5912290541296252076}
-  cacheTime: 637957434463211790
+  cacheTime: 637969688571658908
   cacheVersion: 131591
 --- !u!114 &974735280670895378
 MonoBehaviour:
@@ -180,10 +254,10 @@ MonoBehaviour:
   Path: ../FMOD - D247/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 637957434463201796
+  lastModified: 637969688571628904
   FileSizes:
   - Name: Desktop
-    Value: 4063552
+    Value: 4065312
   Exists: 1
 --- !u!114 &1765735869519286949
 MonoBehaviour:
@@ -210,6 +284,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 7322454234628889258}
+  - {fileID: -6715256945160170761}
   MinDistance: 1
   MaxDistance: 20
   Length: 48000
@@ -238,6 +313,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: 8373332316462475187}
+  - {fileID: -3646297996760503650}
   MinDistance: 1
   MaxDistance: 20
   Length: 48000
@@ -256,7 +332,7 @@ MonoBehaviour:
   Path: ../FMOD - D247/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 637957434463211790
+  lastModified: 637969688571658908
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -310,6 +386,7 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -9068491967240973590}
+  - {fileID: 8533401016694943541}
   MinDistance: 1
   MaxDistance: 20
   Length: 48000
@@ -355,7 +432,7 @@ MonoBehaviour:
   Path: ../FMOD - D247/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637957434462791701
+  lastModified: 637969688571039485
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -375,10 +452,10 @@ MonoBehaviour:
   Path: ../FMOD - D247/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637957434462791701
+  lastModified: 637969688571058724
   FileSizes:
   - Name: Desktop
-    Value: 1298
+    Value: 1348
   Exists: 1
 --- !u!114 &7322454234628889258
 MonoBehaviour:
@@ -443,10 +520,34 @@ MonoBehaviour:
   Path: ../FMOD - D247/Build/Desktop/Collision.bank
   Name: Collision
   StudioPath: bank:/Collision
-  lastModified: 637957434462781695
+  lastModified: 637969688571009484
   FileSizes:
   - Name: Desktop
     Value: 20640
+  Exists: 1
+--- !u!114 &8533401016694943541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Chira - Bells/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 108583605
+    data2: 2833089583
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &8596659609252121650
 MonoBehaviour:
@@ -475,3 +576,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 48000
+--- !u!114 &8880241104146108486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Chira - Chords/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 108583605
+    data2: 2833089583
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

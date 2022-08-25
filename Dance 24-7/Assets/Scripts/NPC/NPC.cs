@@ -33,18 +33,35 @@ public class NPC : MonoBehaviour
 
             if (!playerMovement.bandMembers.Contains(gameObject.GetComponent<NPC>()))
             {
-                navAgent.enabled = false;
-                combatState = false;
-                stats.attackPower = 0;
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
-                gameObject.GetComponent<BoxCollider>().enabled = false;
-                npcDirection.SetActive(false);
-                followIdentifier.GetComponent<MeshRenderer>().enabled = false;
-                weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                
-                //weapon.SetActive(false);
+                DisableOnDeath();
             }
         }
+    }
+
+    private void DisableOnDeath()
+    {
+        navAgent.enabled = false;
+        combatState = false;
+        stats.attackPower = 0;
+        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+        npcDirection.SetActive(false);
+        followIdentifier.GetComponent<MeshRenderer>().enabled = false;
+        weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+    }
+
+    public void EnableOnRessurection()
+    {
+        stats.hp = 20;
+
+        navAgent.enabled = true;
+        stats.attackPower = 10;
+        gameObject.GetComponent<MeshRenderer>().enabled = true;
+        gameObject.GetComponent<BoxCollider>().enabled =true;
+        npcDirection.SetActive(true);
+        followIdentifier.GetComponent<MeshRenderer>().enabled = true;
+        weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        //weapon.transform.localPosition.Set(0f, weapon.GetComponent<Weapon>().transform.position.y -.983f, weapon.GetComponent<Weapon>().transform.position.z + 1.333f);
     }
 
     void AttackTarget()
@@ -52,7 +69,6 @@ public class NPC : MonoBehaviour
         if (combatState)
         {
             isFollowing = false;
-            //followIdentifier.SetActive(false);
             if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f)
             {
                 playerMovement.GetComponent<NPCNavMesh>().EnemyTargeting(this);

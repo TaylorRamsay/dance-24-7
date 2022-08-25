@@ -44,7 +44,6 @@ public class EnemyNPC : MonoBehaviour
     {
         if (stats.hp <= 0)
         {
-            
             agro = false;
             playerMovement.agroEnemies.Remove(gameObject.GetComponent<EnemyNPC>());
 
