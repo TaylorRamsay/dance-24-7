@@ -23,10 +23,10 @@ public class ThirdPersonMovement : MonoBehaviour
     float turnSmoothVelocity;
 
     // Gravity + Jump Variables
-    public float gravity = -9.81f;
+    private float gravity = -9.81f;
     public float jumpHeight = 3f;
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    private float groundDistance = 0.4f;
     public LayerMask groundMask;
     Vector3 velocity;
     bool isGrounded;
@@ -39,14 +39,16 @@ public class ThirdPersonMovement : MonoBehaviour
     public static Collider[] bandMemberDetector;
     [SerializeField] private TextMeshProUGUI recruitPrompt;
 
+    // Revive Variables
+    public Transform reviveCheck;
+    public LayerMask instrument;
+    public static Collider[] reviveDetector;
+    [SerializeField] private TextMeshProUGUI revivePrompt;
+
     // Combat Variables
     public CombatManager combat;
-    public static Collider[] enemyDetector;
     public List<EnemyNPC> agroEnemies;
-    public Transform enemyCheck;
-    public float enemyCheckDistance;
-    public LayerMask enemy;
-    [SerializeField] private TextMeshProUGUI attackPrompt;
+    public Weapon playerWeapon;
 
 
     void UpdateHealthBar()
@@ -58,7 +60,7 @@ public class ThirdPersonMovement : MonoBehaviour
     {
         bandMemberDetector = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
         
-        if (bandMemberDetector.Length > 0 && !bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing)
+        if (!combat.activeCombat && bandMemberDetector.Length > 0 && !bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing)
         {
             // display "Press E to recruit band member" button prompt
             recruitPrompt.gameObject.SetActive(true);
@@ -75,12 +77,24 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-    void AttackTarget()
+    void ReviveBandMember()
     {
-        enemyDetector = Physics.OverlapSphere(enemyCheck.position, enemyCheckDistance, enemy);
-        if (enemyDetector.Length > 0)
+        if (!combat.activeCombat)
         {
-            enemyDetector[0].GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
+            reviveDetector = Physics.OverlapSphere(reviveCheck.position, checkDistance, instrument);
+
+            if (reviveDetector.Length > 0 && reviveDetector[0].GetComponent<Weapon>().weaponWielder.GetComponent<NPC>().stats.hp <= 0)
+            {
+                revivePrompt.gameObject.SetActive(true);
+
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    reviveDetector[0].GetComponent<Weapon>().weaponWielder.GetComponent<NPC>().EnableOnRessurection();
+                }
+            } else
+            {
+                revivePrompt.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -96,7 +110,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && stats.isDefending == false)
         {
-            AttackTarget();
+            playerWeapon.attackFlag = true;
         }
     }
 
@@ -170,15 +184,18 @@ public class ThirdPersonMovement : MonoBehaviour
         recruitPrompt.gameObject.SetActive(false);
     }
 
-
     void Update()
     {
         UpdateHealthBar();
         RecruitBandMember();
+        ReviveBandMember();
         Combat();
         PlayerMovement();
         Jump();
-
+        if (playerWeapon.attackFlag)
+        {
+            playerWeapon.PlayerSwingWeapon();
+        }
         if (stats.hp <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -187,8 +204,5 @@ public class ThirdPersonMovement : MonoBehaviour
         // Increments gravity value to player while not grounded, Time.deltaTime to keep frame rate independent
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-
-
-
     }
 }

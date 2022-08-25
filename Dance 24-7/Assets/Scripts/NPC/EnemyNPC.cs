@@ -8,52 +8,73 @@ public class EnemyNPC : MonoBehaviour
     public GameObject player;
     public ThirdPersonMovement playerMovement;
     public NavMeshAgent navAgent;
-    public GameObject npc;
     public StatManager stats;
+    public GameObject agroIdentifier;
 
+    public EnemyNavMesh navManager;
+
+    public static Collider[] attackDetector;
+    public float movementSpeed;
+
+
+    // Combat Variables
+    public bool combatState = false;
+    public bool attackFlag = false;
     public static Collider[] targetDetector;
+    public float attackTime;
+    public float attackTimer;
     public Transform targetCheck;
     public Transform attackCheck;
     public float checkDistance;
     public LayerMask checkLayer;
+    public bool isTargeting = false;
+    public bool targeted = false;
+    public NPC combatTarget;
+    public ThirdPersonMovement targetPlayer;
+    public bool targetingPlayer = false;
+
+    public float attackDistance;
+    public GameObject weapon;
 
     public bool pursueTarget = false;
     public bool agro = false;
-    public bool targeted = false;
-    public GameObject agroIdentifier;
-    public static Collider[] attackDetector;
-    public float attackTime;
-    private float attackTimer;
 
-    public float attackDistance;
-    public float movementSpeed;
 
     void HealthCheck()
     {
         if (stats.hp <= 0)
         {
-            
             agro = false;
             playerMovement.agroEnemies.Remove(gameObject.GetComponent<EnemyNPC>());
 
             if(!playerMovement.agroEnemies.Contains(gameObject.GetComponent<EnemyNPC>()))
             {
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
+                gameObject.SetActive(false);
+                navAgent.enabled = false;
             }
             
         }
     }
 
-    void Attack()
+    void AttackTarget()
     {
-        attackDetector = Physics.OverlapSphere(attackCheck.position, attackDistance, checkLayer);
-
-        attackTimer -= Time.deltaTime;
-
-        if (attackTimer <= 0f && attackDetector.Length > 0)
+        if (combatState)
         {
-            player.GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
+            if (attackTimer <= 0f)
+            {
+                navManager.Targeting(this);
+                attackFlag = true;
                 attackTimer = attackTime;
+            }
+            if (isTargeting && playerMovement.bandMembers.Contains(combatTarget) && navAgent.enabled == true)
+            {
+                navAgent.destination = combatTarget.transform.position;
+                gameObject.transform.LookAt(combatTarget.transform);
+            } else if (targetingPlayer)
+            {
+                navAgent.destination = targetPlayer.transform.position;
+                gameObject.transform.LookAt(targetPlayer.transform);
+            }
         }
     }
 
@@ -70,19 +91,21 @@ public class EnemyNPC : MonoBehaviour
 
             pursueTarget = true;
             agro = true;
+            combatState = true;
             agroIdentifier.SetActive(true);
-            transform.LookAt(player.transform);
-            navAgent.destination = player.transform.position;
+            //transform.LookAt(player.transform);
+            //navAgent.destination = player.transform.position;
 
         } else
         {
+            combatState = false;
             playerMovement.agroEnemies.Remove(gameObject.GetComponent<EnemyNPC>());
             pursueTarget = false;
             agro = false;
             agroIdentifier.SetActive(false);
         }
     }
-
+    
     void Start()
     {
         agroIdentifier.SetActive(false);
@@ -94,7 +117,8 @@ public class EnemyNPC : MonoBehaviour
     {
         HealthCheck();
         CheckForTarget();
-        Attack();
+        AttackTarget();
+        attackTimer -= Time.deltaTime;
 
     }
 }
