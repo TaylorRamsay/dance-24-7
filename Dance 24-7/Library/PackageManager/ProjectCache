@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637957689145828682
+      ticks: 637970489673063253
     m_Hash: 3225999956
   m_LockFileStatus:
     m_FilePath: C:/Users/FSK8475/Documents/GitHub/dance-24-7/Dance 24-7/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637957689145838701
+      ticks: 637970489673063253
     m_Hash: 1622357175
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -730,6 +730,7 @@ m_ResolvedPackages:
     - 4.0.3
     - 5.0.0-pre.2
     - 5.0.0-pre.3
+    - 5.0.0-pre.4
     compatible:
     - 4.0.3
     verified: 4.0.3
@@ -3298,6 +3299,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.5
     - 1.2.0-exp.6
     - 1.2.0-exp.7
+    - 1.2.0
     compatible:
     - 1.0.1
     - 1.1.0
@@ -3309,6 +3311,7 @@ m_ResolvedPackages:
     - 1.2.0-exp.5
     - 1.2.0-exp.6
     - 1.2.0-exp.7
+    - 1.2.0
     verified: 1.0.1
   dependencies:
   - name: com.unity.test-framework

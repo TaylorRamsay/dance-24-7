@@ -26,7 +26,7 @@ public class ThirdPersonMovement : MonoBehaviour
     private float gravity = -9.81f;
     public float jumpHeight = 3f;
     public Transform groundCheck;
-    private float groundDistance = 0.4f;
+    private float groundDistance = 0.1f;
     public LayerMask groundMask;
     Vector3 velocity;
     bool isGrounded;

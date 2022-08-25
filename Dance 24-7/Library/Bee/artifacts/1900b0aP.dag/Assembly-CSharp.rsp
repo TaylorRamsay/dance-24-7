@@ -318,6 +318,7 @@
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/AudioOnCollision.cs"
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/OldAudioManager.cs"
 "Assets/Scripts/Audio Scripts/Archived Audio Scripts/Sound.cs"
+"Assets/Scripts/Audio Scripts/BellsVisuals.cs"
 "Assets/Scripts/Audio Scripts/VisualInfluencer.cs"
 "Assets/Scripts/Combat/CombatBarrier.cs"
 "Assets/Scripts/Combat/CombatManager.cs"
