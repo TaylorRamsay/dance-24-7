@@ -17,16 +17,12 @@ public class NPC : MonoBehaviour
     // Combat Variables
     public bool combatState = false;
     public bool attackFlag = false;
-    public static Collider[] enemyDetector;
     public float attackTime;
     public float attackTimer = 0;
-    public Transform attackCheck;
-    public LayerMask checkLayer;
     public bool isTargeting = false;
     public bool targeted = false;
     public EnemyNPC combatTarget;
 
-    public float attackDistance;
     public GameObject weapon;
 
     void HealthCheck()
@@ -43,6 +39,7 @@ public class NPC : MonoBehaviour
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
                 gameObject.GetComponent<BoxCollider>().enabled = false;
                 npcDirection.SetActive(false);
+                followIdentifier.GetComponent<MeshRenderer>().enabled = false;
                 weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                 
                 //weapon.SetActive(false);
@@ -56,8 +53,7 @@ public class NPC : MonoBehaviour
         {
             isFollowing = false;
             //followIdentifier.SetActive(false);
-            //enemyDetector = Physics.OverlapSphere(attackCheck.position, attackDistance, checkLayer
-            if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f /*&& enemyDetector.Length > 0*/)
+            if ((playerMovement.agroEnemies.Count != 0) && attackTimer <= 0f)
             {
                 playerMovement.GetComponent<NPCNavMesh>().EnemyTargeting(this);
                 attackFlag = true;
@@ -80,12 +76,18 @@ public class NPC : MonoBehaviour
         HealthCheck();
         AttackTarget();
         attackTimer -= Time.deltaTime;
+        if (combatState)
+        {
+            weapon.GetComponent<Weapon>().SwingWeapon();
+        }
+
         if (isFollowing)
         {
             followIdentifier.SetActive(true);
             navAgent.speed = playerMovement.speed;
         }
-        if (isTargeting)
+
+        if (isTargeting && navAgent.enabled == true)
         {
             navAgent.destination = combatTarget.transform.position;
         }

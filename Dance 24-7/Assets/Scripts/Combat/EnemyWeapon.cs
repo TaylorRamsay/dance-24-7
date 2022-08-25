@@ -17,29 +17,11 @@ public class EnemyWeapon : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Band Member"))
+        if (collision.gameObject.CompareTag("Band Member") || collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<StatManager>().ReceiveDamage(weaponWielder.GetComponent<StatManager>().attackPower);
         }
     }
-
-    /*public IEnumerator SwingWeapon(float degreesPerSec)
-    {
-        float duration = 1;
-        float time = 0;
-        while (time < duration)
-        {
-            gameObject.transform.RotateAround(weaponWielder.transform.position, Vector3.up, degreesPerSec * time);
-            time += Time.deltaTime;
-            print("WEAPON IS SWINGING");
-            yield return null;
-        }
-        while (weaponWielder.GetComponent<NPC>().attackTimer > 0)
-        {
-            weaponWielder.GetComponent<NPC>().attackTimer -= Time.deltaTime;
-        }   
-    }
-    */
 
     public void SwingWeapon()
     {

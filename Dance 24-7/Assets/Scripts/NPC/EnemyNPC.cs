@@ -50,8 +50,8 @@ public class EnemyNPC : MonoBehaviour
 
             if(!playerMovement.agroEnemies.Contains(gameObject.GetComponent<EnemyNPC>()))
             {
-                //gameObject.GetComponent<MeshRenderer>().enabled = false;
                 gameObject.SetActive(false);
+                navAgent.enabled = false;
             }
             
         }
@@ -61,11 +61,20 @@ public class EnemyNPC : MonoBehaviour
     {
         if (combatState)
         {
-            if (/*(playerMovement.bandMembers.Count != 0) &&*/ attackTimer <= 0f)
+            if (attackTimer <= 0f)
             {
-                navManager.NPCTargeting(this);
+                navManager.Targeting(this);
                 attackFlag = true;
                 attackTimer = attackTime;
+            }
+            if (isTargeting && playerMovement.bandMembers.Contains(combatTarget) && navAgent.enabled == true)
+            {
+                navAgent.destination = combatTarget.transform.position;
+                gameObject.transform.LookAt(combatTarget.transform);
+            } else if (targetingPlayer)
+            {
+                navAgent.destination = targetPlayer.transform.position;
+                gameObject.transform.LookAt(targetPlayer.transform);
             }
         }
     }
@@ -110,10 +119,6 @@ public class EnemyNPC : MonoBehaviour
         HealthCheck();
         CheckForTarget();
         AttackTarget();
-        if (isTargeting && playerMovement.bandMembers.Contains(combatTarget))
-        {
-            navAgent.destination = combatTarget.transform.position;
-        }
         attackTimer -= Time.deltaTime;
 
     }

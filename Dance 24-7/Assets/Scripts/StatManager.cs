@@ -5,13 +5,10 @@ using UnityEngine.UI;
 
 public class StatManager : MonoBehaviour
 {
-
     public Image healthBar;
     public float hp;
     public float maxHp;
     public float defense;
-    public float mp;
-    public float maxMp;
     public float attackPower;
     public bool isDefending = false;
 
@@ -39,14 +36,6 @@ public class StatManager : MonoBehaviour
         if (damageDealt > 0)
         {
             hp -= damageDealt;
-        }
-    }
-
-    void UseAbility(float mpCost)
-    {
-        if (mpCost <= mp)
-        {
-            mp -= mpCost;
         }
     }
 

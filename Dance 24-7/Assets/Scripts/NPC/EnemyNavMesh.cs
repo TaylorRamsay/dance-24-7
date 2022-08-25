@@ -10,34 +10,17 @@ public class EnemyNavMesh : MonoBehaviour
     public ThirdPersonMovement playerManager;
     public CombatManager combat;
 
-
-
-    public void PlayerTargeting(EnemyNPC attacker)
+    public void Targeting(EnemyNPC attacker)
     {
         if (combat.activeCombat)
         {
-            if (attacker.isTargeting == false)
+            if (attacker.isTargeting == false && !attacker.targetingPlayer)
             {
-                attacker.targetPlayer = playerManager;
-                attacker.targetingPlayer = true;
-            }
-            if (attacker.targetingPlayer == true)
-            {
-                attacker.gameObject.transform.LookAt(attacker.targetPlayer.transform);
-                if (attacker.targetPlayer.GetComponent<StatManager>().IsDefeated())
+                if (playerManager.bandMembers.Count == 0)
                 {
-                    attacker.targetingPlayer = false;
+                    attacker.targetPlayer = playerManager;
+                    attacker.targetingPlayer = true;
                 }
-            }
-        }
-    }
-
-    public void NPCTargeting(EnemyNPC attacker)
-    {
-        if (combat.activeCombat)
-        {
-            if (attacker.isTargeting == false)
-            {
                 for (int i = 0; i < playerManager.bandMembers.Count; i++)
                 {
                     if (playerManager.bandMembers[i].GetComponent<NPC>().targeted == false)
@@ -45,30 +28,21 @@ public class EnemyNavMesh : MonoBehaviour
                         attacker.combatTarget = playerManager.bandMembers[i];
                         attacker.isTargeting = true;
                         playerManager.bandMembers[i].GetComponent<NPC>().targeted = true;
-
-                        print(attacker + " is targeting " + attacker.combatTarget);
-
-                        goto after;
                     }
                     else if (i == playerManager.bandMembers.Count - 1)
-                    {
-                        attacker.combatTarget = playerManager.bandMembers[0];
-                        attacker.isTargeting = true;
-                        goto after;
+                    { 
+                        attacker.targetPlayer = playerManager;
+                        attacker.targetingPlayer = true;
                     }
                 }
-
-                //PlayerTargeting(attacker);
             }
-            if (/*!attacker.targetingPlayer && */attacker.isTargeting == true)
+            if (attacker.isTargeting)
             {
-                attacker.gameObject.transform.LookAt(attacker.combatTarget.transform);
                 if (attacker.combatTarget.GetComponent<StatManager>().IsDefeated())
                 {
                     attacker.isTargeting = false;
                 }
             }
-        after:;
         }
     }
 

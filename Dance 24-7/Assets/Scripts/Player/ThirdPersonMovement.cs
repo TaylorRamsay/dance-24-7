@@ -23,10 +23,10 @@ public class ThirdPersonMovement : MonoBehaviour
     float turnSmoothVelocity;
 
     // Gravity + Jump Variables
-    public float gravity = -9.81f;
+    private float gravity = -9.81f;
     public float jumpHeight = 3f;
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    private float groundDistance = 0.4f;
     public LayerMask groundMask;
     Vector3 velocity;
     bool isGrounded;
@@ -41,12 +41,8 @@ public class ThirdPersonMovement : MonoBehaviour
 
     // Combat Variables
     public CombatManager combat;
-    public static Collider[] enemyDetector;
     public List<EnemyNPC> agroEnemies;
-    public Transform enemyCheck;
-    public float enemyCheckDistance;
-    public LayerMask enemy;
-    [SerializeField] private TextMeshProUGUI attackPrompt;
+    public Weapon playerWeapon;
 
 
     void UpdateHealthBar()
@@ -75,15 +71,6 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
-    void AttackTarget()
-    {
-        enemyDetector = Physics.OverlapSphere(enemyCheck.position, enemyCheckDistance, enemy);
-        if (enemyDetector.Length > 0)
-        {
-            enemyDetector[0].GetComponent<StatManager>().ReceiveDamage(stats.attackPower);
-        }
-    }
-
     void Combat()
     {
         if (Input.GetMouseButton(1))
@@ -96,7 +83,7 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && stats.isDefending == false)
         {
-            AttackTarget();
+            playerWeapon.attackFlag = true;
         }
     }
 
@@ -170,7 +157,6 @@ public class ThirdPersonMovement : MonoBehaviour
         recruitPrompt.gameObject.SetActive(false);
     }
 
-
     void Update()
     {
         UpdateHealthBar();
@@ -178,7 +164,10 @@ public class ThirdPersonMovement : MonoBehaviour
         Combat();
         PlayerMovement();
         Jump();
-
+        if (playerWeapon.attackFlag)
+        {
+            playerWeapon.PlayerSwingWeapon();
+        }
         if (stats.hp <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -187,8 +176,5 @@ public class ThirdPersonMovement : MonoBehaviour
         // Increments gravity value to player while not grounded, Time.deltaTime to keep frame rate independent
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
-
-
-
     }
 }

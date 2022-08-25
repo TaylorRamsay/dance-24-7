@@ -23,6 +23,23 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    public void PlayerSwingWeapon()
+    {
+        Transform from = rotationAxis.transform;
+        rotationTime = 0;
+
+        if (attackFlag)
+        {
+            rotationTime += Time.deltaTime * speed;
+            rotationAxis.transform.localRotation = Quaternion.Lerp(from.localRotation, targetRotation /*(0, 45, 0)*/, rotationTime);
+        }
+        if (from.localRotation == targetRotation)
+        {
+            rotationAxis.transform.localRotation = origRotation;
+            attackFlag = false;
+        }
+    }
+
     public void SwingWeapon()
     {
         Transform from = rotationAxis.transform;
@@ -41,24 +58,6 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    public void EnemySwingWeapon()
-    {
-        Transform from = rotationAxis.transform;
-        rotationTime = 0;
-
-        if (weaponWielder.GetComponent<EnemyNPC>().combatState)
-        {
-            rotationTime += Time.deltaTime * speed;
-            rotationAxis.transform.localRotation = Quaternion.Lerp(from.localRotation, targetRotation /*(0, 45, 0)*/, rotationTime);
-        }
-        if (from.localRotation == targetRotation)
-        {
-            rotationAxis.transform.localRotation = origRotation;
-            weaponWielder.GetComponent<EnemyNPC>().attackTimer = weaponWielder.GetComponent<NPC>().attackTime;
-            attackFlag = false;
-        }
-    }
-
     void Start()
     {
         origRotation = rotationAxis.transform.localRotation;
@@ -66,9 +65,10 @@ public class Weapon : MonoBehaviour
 
     void Update()
     {
-        if (weaponWielder.GetComponent<NPC>().attackFlag)
+        /*if (weaponWielder.GetComponent<NPC>().attackFlag)
         {
             SwingWeapon();
         }
+        */
     }
 }
