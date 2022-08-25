@@ -5,36 +5,46 @@ using UnityEngine.AI;
 
 public class CombatBarrier : MonoBehaviour
 {
-    private Color currColor;
-
-    public bool isTransparent;
-    public float currentTransparency;
+    public Color currColor;
+    public Material currMaterial;
     public float minTransparency;
     public float maxTransparency;
     public Color minTransColor;
     public Color maxTransColor;
+    public float opacityTime;
+    public float speed = 1;
+    public Color from;
 
     void Start()
     {
-        currColor = gameObject.GetComponent<Material>().color;
-        currentTransparency = 25;
-        minTransColor = new Color(currColor.r, currColor.g, currColor.b, minTransparency);
-        maxTransColor = new Color(currColor.r, currColor.g, currColor.b, maxTransparency);
-
+        currColor = minTransColor;
+        from = currMaterial.color;
     }
 
     void Update()
     {
-        if (gameObject.GetComponent<NavMeshObstacle>().enabled == true)
+        opacityTime = 0;
+        if (gameObject.activeSelf)
         {
-            while (currentTransparency < maxTransparency)
+            if (currMaterial.color.a < maxTransColor.a)
             {
-                gameObject.GetComponent<Material>().color = Color.Lerp(minTransColor, maxTransColor, 1);
+                opacityTime += Time.deltaTime * speed;
+                //currentTransparency = Mathf.Lerp(minTransparency, maxTransparency, 1);
+                print("Increasing");
+                print(from);
+                //SetColor
+                currMaterial.color = Color.Lerp(from, maxTransColor, opacityTime);
+                print(currMaterial.color);
             }
-            while (currentTransparency > minTransparency)
+            if (currMaterial.color.a > minTransColor.a)
             {
-                gameObject.GetComponent<Material>().color = Color.Lerp(maxTransColor, minTransColor, 1);
+                opacityTime -= Time.deltaTime * speed;
+                //currentTransparency = Mathf.Lerp(maxTransparency, minTransparency, 1);
+                print("Decreasing");
+                //SetColor
+                currMaterial.color = Color.Lerp(from, minTransColor, opacityTime);
             }
         }
+        
     }
 }

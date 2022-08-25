@@ -39,6 +39,7 @@ public class NPC : MonoBehaviour
             {
                 navAgent.enabled = false;
                 combatState = false;
+                stats.attackPower = 0;
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
                 gameObject.GetComponent<BoxCollider>().enabled = false;
                 npcDirection.SetActive(false);

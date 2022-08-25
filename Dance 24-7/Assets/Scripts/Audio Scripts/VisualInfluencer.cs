@@ -55,7 +55,7 @@ public class VisualInfluencer : MonoBehaviour
 
         index = (int)(((float)currTime / (float)totalTime) * musicData.Count);
 
-        if (characterMaterial.name == "bells")
+       /* if (characterMaterial.name == "bells")
         {
             Debug.Log("List Size: " + musicData.Count);
             Debug.Log("Current Track time: " + currTime);
@@ -63,7 +63,7 @@ public class VisualInfluencer : MonoBehaviour
             Debug.Log("Current Index: " + index);
             Debug.Log("Character Emission color: " + characterMaterial.GetColor("_EmissionColor"));
         }
-        
+        */
         characterGlow = characterMaterial.GetColor("_Color");
         instrumentGlow = instrumentMaterial.GetColor("_Color");
 

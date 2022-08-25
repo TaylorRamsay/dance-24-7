@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - CombatBarrier
     - CombatManager
     - ConsoleToGUI
     - EnemyNPC
@@ -222,109 +223,111 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1868}
+      Script: {instanceID: 1870}
     - Class: 114
-      Script: {instanceID: 2070}
+      Script: {instanceID: 2072}
     - Class: 114
-      Script: {instanceID: 2146}
+      Script: {instanceID: 2148}
     - Class: 114
-      Script: {instanceID: 2338}
+      Script: {instanceID: 2340}
     - Class: 114
-      Script: {instanceID: 2416}
+      Script: {instanceID: 2418}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 2538}
     - Class: 114
-      Script: {instanceID: 2604}
+      Script: {instanceID: 2606}
     - Class: 114
-      Script: {instanceID: 2840}
+      Script: {instanceID: 2842}
     - Class: 114
-      Script: {instanceID: 3038}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 3086}
+      Script: {instanceID: 3088}
     - Class: 114
-      Script: {instanceID: 3202}
+      Script: {instanceID: 3204}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 3212}
     - Class: 114
-      Script: {instanceID: 3250}
+      Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 3368}
+      Script: {instanceID: 3370}
     - Class: 114
-      Script: {instanceID: 3378}
+      Script: {instanceID: 3380}
     - Class: 114
-      Script: {instanceID: 3426}
+      Script: {instanceID: 3428}
     - Class: 114
-      Script: {instanceID: 3668}
+      Script: {instanceID: 3670}
     - Class: 114
-      Script: {instanceID: 4300}
+      Script: {instanceID: 4302}
     - Class: 114
-      Script: {instanceID: 4398}
+      Script: {instanceID: 4400}
     - Class: 114
-      Script: {instanceID: 4680}
+      Script: {instanceID: 4682}
     - Class: 114
-      Script: {instanceID: 4980}
+      Script: {instanceID: 4982}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 5010}
     - Class: 114
-      Script: {instanceID: 5312}
+      Script: {instanceID: 5314}
     - Class: 114
-      Script: {instanceID: 5446}
+      Script: {instanceID: 5448}
     - Class: 114
-      Script: {instanceID: 5628}
+      Script: {instanceID: 5630}
     - Class: 114
-      Script: {instanceID: 5738}
+      Script: {instanceID: 5740}
     - Class: 114
-      Script: {instanceID: 5812}
+      Script: {instanceID: 5814}
     - Class: 114
-      Script: {instanceID: 5962}
+      Script: {instanceID: 5964}
     - Class: 114
-      Script: {instanceID: 6136}
+      Script: {instanceID: 6138}
     - Class: 114
-      Script: {instanceID: 6198}
+      Script: {instanceID: 6200}
     - Class: 114
-      Script: {instanceID: 6452}
+      Script: {instanceID: 6268}
     - Class: 114
-      Script: {instanceID: 6714}
+      Script: {instanceID: 6456}
     - Class: 114
-      Script: {instanceID: 6716}
+      Script: {instanceID: 6718}
     - Class: 114
-      Script: {instanceID: 6738}
+      Script: {instanceID: 6720}
     - Class: 114
-      Script: {instanceID: 6862}
+      Script: {instanceID: 6742}
     - Class: 114
-      Script: {instanceID: 6904}
+      Script: {instanceID: 6866}
     - Class: 114
-      Script: {instanceID: 7018}
+      Script: {instanceID: 6908}
     - Class: 114
-      Script: {instanceID: 7030}
+      Script: {instanceID: 7022}
     - Class: 114
-      Script: {instanceID: 7108}
+      Script: {instanceID: 7034}
     - Class: 114
       Script: {instanceID: 7112}
     - Class: 114
-      Script: {instanceID: 7826}
+      Script: {instanceID: 7116}
     - Class: 114
-      Script: {instanceID: 8422}
+      Script: {instanceID: 7830}
     - Class: 114
-      Script: {instanceID: 8738}
+      Script: {instanceID: 8426}
     - Class: 114
-      Script: {instanceID: 8788}
+      Script: {instanceID: 8742}
     - Class: 114
-      Script: {instanceID: 8970}
+      Script: {instanceID: 8792}
     - Class: 114
-      Script: {instanceID: 9230}
+      Script: {instanceID: 8974}
     - Class: 114
-      Script: {instanceID: 9426}
+      Script: {instanceID: 9234}
     - Class: 114
-      Script: {instanceID: 9504}
+      Script: {instanceID: 9430}
     - Class: 114
-      Script: {instanceID: 9600}
+      Script: {instanceID: 9508}
     - Class: 114
       Script: {instanceID: 9604}
     - Class: 114
       Script: {instanceID: 9608}
     - Class: 114
-      Script: {instanceID: 9720}
+      Script: {instanceID: 9612}
+    - Class: 114
+      Script: {instanceID: 9724}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -1264,6 +1267,12 @@ ScriptsOnlyBuild:
     className: DepthOfField
   - hash:
       serializedVersion: 2
+      Hash: d47771279359509c9de342815b37ad11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CombatBarrier
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1390,7 +1399,7 @@ ScriptsOnlyBuild:
     className: CinemachineClearShot
   - hash:
       serializedVersion: 2
-      Hash: 3fd0402a55bf06eccb1c00379f16f009
+      Hash: dcf9c15ec4b2abe6047d1d992569e007
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPC
@@ -1871,4 +1880,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/FSK8475/Desktop/Dance 24-7.exe
+  playerPath: C:/Users/CDK345/Desktop/Test/Dance 24-7.exe
