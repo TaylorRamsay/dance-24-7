@@ -182,6 +182,7 @@ public class ThirdPersonMovement : MonoBehaviour
     private void Start()
     {
         recruitPrompt.gameObject.SetActive(false);
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()

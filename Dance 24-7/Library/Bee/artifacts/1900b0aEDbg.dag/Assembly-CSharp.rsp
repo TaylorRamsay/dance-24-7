@@ -374,6 +374,8 @@
 "Assets/Scripts/Combat/CombatManager.cs"
 "Assets/Scripts/Combat/EnemyWeapon.cs"
 "Assets/Scripts/Combat/Weapon.cs"
+"Assets/Scripts/Level/DemoAreaBoundary.cs"
+"Assets/Scripts/Level/Pause.cs"
 "Assets/Scripts/NPC/EnemyNavMesh.cs"
 "Assets/Scripts/NPC/EnemyNPC.cs"
 "Assets/Scripts/NPC/NPC.cs"

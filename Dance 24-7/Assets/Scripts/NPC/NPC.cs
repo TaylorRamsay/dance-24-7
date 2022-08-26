@@ -42,18 +42,19 @@ public class NPC : MonoBehaviour
     {
         navAgent.enabled = false;
         combatState = false;
+        combatTarget = null;
+        isTargeting = false;
         stats.attackPower = 0;
         gameObject.GetComponent<MeshRenderer>().enabled = false;
         gameObject.GetComponent<BoxCollider>().enabled = false;
         npcDirection.SetActive(false);
         followIdentifier.GetComponent<MeshRenderer>().enabled = false;
-        weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        //weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
     }
 
     public void EnableOnRessurection()
     {
         stats.hp = 20;
-
         navAgent.enabled = true;
         stats.attackPower = 10;
         gameObject.GetComponent<MeshRenderer>().enabled = true;
