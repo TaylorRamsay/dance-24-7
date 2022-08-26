@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +10,7 @@ public class StatManager : MonoBehaviour
     public float attackPower;
     public bool isDefending = false;
 
+    // When hp reaches 0, returns true which marks the cooresponding character as defeated, disabling specific components
     public bool IsDefeated()
     {
         if (hp <= 0)
@@ -21,6 +20,7 @@ public class StatManager : MonoBehaviour
         return false;
     }
 
+    // Used to calculate the amount of damage taken when attacked, currently receives full damage if not blocking, or 0 damage if blocking
     public void ReceiveDamage(float attackPower)
     {
         if (isDefending)
@@ -39,12 +39,6 @@ public class StatManager : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         IsDefeated();

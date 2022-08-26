@@ -12,10 +12,8 @@ public class EnemyNPC : MonoBehaviour
     public GameObject agroIdentifier;
 
     public EnemyNavMesh navManager;
-
     public static Collider[] attackDetector;
     public float movementSpeed;
-
 
     // Combat Variables
     public bool combatState = false;
@@ -39,7 +37,7 @@ public class EnemyNPC : MonoBehaviour
     public bool pursueTarget = false;
     public bool agro = false;
 
-
+    // If hp is below 0, enemy is removed from agroEnemies list, relevant combat flags set to false, and game object is disabled
     void HealthCheck()
     {
         if (stats.hp <= 0)
@@ -49,6 +47,10 @@ public class EnemyNPC : MonoBehaviour
 
             if(!playerMovement.agroEnemies.Contains(gameObject.GetComponent<EnemyNPC>()))
             {
+                if(isTargeting == true)
+                {
+                    combatTarget.targeted = false;
+                }
                 gameObject.SetActive(false);
                 navAgent.enabled = false;
             }
@@ -56,6 +58,8 @@ public class EnemyNPC : MonoBehaviour
         }
     }
 
+    // Determines the frequency at which an enemy will swing its weapon, specified by attackTime, also updates the objects navAgent and object transform
+    // to pursue and face its target
     void AttackTarget()
     {
         if (combatState)
@@ -78,7 +82,8 @@ public class EnemyNPC : MonoBehaviour
         }
     }
 
-
+    // Checks if a target is within a sphere of detection using an OverlapSphere, if player is detected the enemy will be added to the
+    // agroEnemies list and set cooresponding combat flags to true
     void CheckForTarget()
     {
         targetDetector = Physics.OverlapSphere(targetCheck.position, checkDistance, checkLayer);
@@ -93,9 +98,6 @@ public class EnemyNPC : MonoBehaviour
             agro = true;
             combatState = true;
             agroIdentifier.SetActive(true);
-            //transform.LookAt(player.transform);
-            //navAgent.destination = player.transform.position;
-
         } else
         {
             combatState = false;
@@ -119,6 +121,5 @@ public class EnemyNPC : MonoBehaviour
         CheckForTarget();
         AttackTarget();
         attackTimer -= Time.deltaTime;
-
     }
 }

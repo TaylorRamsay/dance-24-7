@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -16,10 +14,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float speed;
     public float walkSpeed = 6f;
     public float runSpeed = 10f;
-
-    // Represents the time it takes for the player to turn
     public float turnSmoothTime = 0.1f;
-    // Used to hold the velocity at which the player will turn from current facing angle to target angle
     float turnSmoothVelocity;
 
     // Gravity + Jump Variables
@@ -51,18 +46,20 @@ public class ThirdPersonMovement : MonoBehaviour
     public Weapon playerWeapon;
 
 
+    // Updates the visual appearance of the health bar based on current health vs total health
     void UpdateHealthBar()
     {
         stats.healthBar.fillAmount = Mathf.Clamp(stats.hp / stats.maxHp, 0, 1f);
     }
 
+    // Uses a collision detector to display a message indicating if an NPC is currently recruitable
+    // If recruited the NPC is added to the bandMembers list
     void RecruitBandMember()
     {
         bandMemberDetector = Physics.OverlapSphere(bandMemberCheck.position, checkDistance, bandMember);
         
         if (!combat.activeCombat && bandMemberDetector.Length > 0 && !bandMemberDetector[0].gameObject.GetComponent<NPC>().isFollowing)
         {
-            // display "Press E to recruit band member" button prompt
             recruitPrompt.gameObject.SetActive(true);
             
             if (Input.GetKeyDown(KeyCode.E))
@@ -77,6 +74,7 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
+    // Functions similarly to RecruitBandMember() but is used to revive defeated NPC characters
     void ReviveBandMember()
     {
         if (!combat.activeCombat)
@@ -98,6 +96,8 @@ public class ThirdPersonMovement : MonoBehaviour
         }
     }
 
+    // Reads mouse input (left/right click) to determine if attacking or defending
+    // If attacking, attackFlag is marked true which signals Weapon class activate swinging animation
     void Combat()
     {
         if (Input.GetMouseButton(1))
@@ -115,33 +115,27 @@ public class ThirdPersonMovement : MonoBehaviour
     }
 
 
+    // When player game object is within certain radius of the ground, jump is made an available action
     void Jump()
     {
-        // ====== GRAVITY + JUMP HANDLING ====== //
-        // Creates a sphere at "groundCheck.position" with radius "groundDistance" to check for collision with objects specified as "groundMask"
-        // Returns True if collision exists, False if collision does not exist
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
-        // Applys a constant low gravity velocity of -2f if grounded
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
-
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
 
+    // Enables character control via keyboard + mouse input
     void PlayerMovement()
     {
-        // ====== MOVEMENT HANDLING ====== //
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-        // Is there a more efficient way to do this??
         if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = runSpeed;
@@ -153,28 +147,18 @@ public class ThirdPersonMovement : MonoBehaviour
 
         if (direction.magnitude >= 0.1f)
         {
-            // "targetAngle" stores the angle we want the player to face, Atan2 returns an angle starting at 0 and terminating at x,z(in this instance)
-            // Rad2Deg is used to convert from radians to usable degrees
-            // " + cam.eulerAngles.y" adds the current camera y-axis rotation to the "targetAngle" so player angle will be influenced by camera rotation
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-
-            // enables the player to smoothly turn between current angle and "targetAngle", rather than snapping
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
 
-            // Handles direction player faces inside/outside of combat
             if (!combat.activeCombat)
             {
-                // Rotates the player on the y-axis to face the current direction of movement.....Format: "Euler(x, y, z)"
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
             } else
             {
-                // Rotaties the player on the y-axis to face the current direction of the camera
                 transform.rotation = Quaternion.Euler(0f, cam.eulerAngles.y, 0f);
             }
 
-            // Multiplying by " * Vector3.forward" turns the rotation into a direction
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
     }
@@ -193,6 +177,7 @@ public class ThirdPersonMovement : MonoBehaviour
         Combat();
         PlayerMovement();
         Jump();
+
         if (playerWeapon.attackFlag)
         {
             playerWeapon.PlayerSwingWeapon();
@@ -202,7 +187,6 @@ public class ThirdPersonMovement : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        // Increments gravity value to player while not grounded, Time.deltaTime to keep frame rate independent
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
     }

@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyNavMesh : MonoBehaviour
 {
-
-    //private NavMeshAgent navMeshAgent;
     public GameObject player;
     public ThirdPersonMovement playerManager;
     public CombatManager combat;
 
+    // This is responsible for which game object an enemy NPC will target during combat
+    // An enemy will target the player during two circumstances, there are no other NPCs to target, or the present NPCs are already targeted by other enemies
     public void Targeting(EnemyNPC attacker)
     {
         if (combat.activeCombat)
@@ -44,11 +42,5 @@ public class EnemyNavMesh : MonoBehaviour
                 }
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

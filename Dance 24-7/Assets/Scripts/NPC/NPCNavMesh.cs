@@ -1,21 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.AI;
 
 public class NPCNavMesh : MonoBehaviour
 {
 
-    //private NavMeshAgent navMeshAgent;
     public GameObject player;
     public ThirdPersonMovement playerManager;
     public CombatManager combat;
 
+    // Helper function for Follow() to instruct first index of bandMembers list to follow player
     void PlayerFollower(NPC firstBandMember)
     {
         firstBandMember.gameObject.GetComponent<NPC>().navAgent.destination = player.transform.position;
     }
 
+
+    // Manages how NPCs inside bandMembers list follow each other
     void Follow()
     {
         if (!combat.activeCombat)
@@ -37,6 +36,8 @@ public class NPCNavMesh : MonoBehaviour
         }
     }
 
+    // Decision making process used to determine enemy target during combat state, targets first available enemy in 
+    // agroEnemies that is not currently being targeted by another NPC, if all enemies are targeted, it will target enemy at index 0
     public void EnemyTargeting(NPC attacker)
     {
         if (combat.activeCombat)
@@ -50,8 +51,6 @@ public class NPCNavMesh : MonoBehaviour
                         attacker.combatTarget = playerManager.agroEnemies[i];
                         attacker.isTargeting = true;
                         playerManager.agroEnemies[i].GetComponent<EnemyNPC>().targeted = true;
-
-                        //print(attacker + " is targeting " + attacker.combatTarget);
 
                         goto after;
                     } else if (i == playerManager.agroEnemies.Count - 1)
@@ -76,6 +75,5 @@ public class NPCNavMesh : MonoBehaviour
     private void Update()
     {
         Follow();
-        //EnemyTargeting();
     }
 }

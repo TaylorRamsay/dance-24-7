@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using System;
 
 public class VisualInfluencer : MonoBehaviour
 {
@@ -21,6 +19,8 @@ public class VisualInfluencer : MonoBehaviour
     private int index = 0;
     public float multiplier = 1;
 
+    // Reads audio data stored in .csv file created from .wav-file-extractor python scripts, audio is stored csvList to influence visual appearance of
+    // in-game objects
     void ReadCSV(ref List<float> csvList)
     {
         if (File.Exists(Application.streamingAssetsPath + csvPath))
@@ -42,21 +42,14 @@ public class VisualInfluencer : MonoBehaviour
         track.EventDescription.getLength(out totalTime);
     }
 
+    // This is where the processing of audio data happens, the data read from csvList is used to change the emission (glow) intensity of a game object
+    // Index is based on a ratio calculated on current track time over total track time
     void Update()
     {
         track.EventInstance.getTimelinePosition(out currTime);
 
         index = (int)(((float)currTime / (float)totalTime) * musicData.Count);
 
-       /* if (characterMaterial.name == "bells")
-        {
-            Debug.Log("List Size: " + musicData.Count);
-            Debug.Log("Current Track time: " + currTime);
-            Debug.Log("Total track time: " + totalTime);
-            Debug.Log("Current Index: " + index);
-            Debug.Log("Character Emission color: " + characterMaterial.GetColor("_EmissionColor"));
-        }
-        */
         characterGlow = characterMaterial.GetColor("_Color");
         instrumentGlow = instrumentMaterial.GetColor("_Color");
 
