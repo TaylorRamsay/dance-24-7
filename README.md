@@ -7,11 +7,19 @@ Locate the .zip file "d24-7.zip" and download it to a machine running Windows. U
 <br/> 
 ### Controls:
 Movement - wasd
+<br/> 
 Camera - mouse
+<br/> 
 Interact - e
+<br/> 
 Jump - space
+<br/> 
 Run - shift
+<br/> 
 Attack - left mouse
+<br/> 
 Defend - right mouse
+<br/> 
 Restart - r
+<br/> 
 Quit game - esc
