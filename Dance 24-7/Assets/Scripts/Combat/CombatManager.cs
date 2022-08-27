@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CombatManager : MonoBehaviour
 {
-
     public ThirdPersonMovement player;
     public bool activeCombat = false;
     public GameObject combatArena;
 
+    // When the number of enemies in agroEnemies list is greater than 0, game combat state is set to true, all objects listening
+    // for state change react accordingly
     bool EnterCombatState()
     {
         if (player.agroEnemies.Count > 0)
@@ -28,6 +29,7 @@ public class CombatManager : MonoBehaviour
         return false;
     }
 
+    // Functions inversely to EnterCombatState(), when agroEnemies list is 0, game combat state is set to false
     bool ExitCombatState()
     {
         if (player.agroEnemies.Count == 0 && activeCombat == true)

@@ -1,9 +1,11 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BellsVisuals
     - CombatBarrier
     - CombatManager
     - ConsoleToGUI
+    - DemoAreaBoundary
     - EnemyNPC
     - EnemyNavMesh
     - EnemyWeapon
@@ -70,30 +72,15 @@ ScriptsOnlyBuild:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TerrainTools.Editor.dll:
     - UnityEditor.TerrainTools.BillowNoise
-    - UnityEditor.TerrainTools.BridgeTool
-    - UnityEditor.TerrainTools.CloneBrushTool
-    - UnityEditor.TerrainTools.ContrastTool
     - UnityEditor.TerrainTools.FbmFractalType
     - UnityEditor.TerrainTools.NoiseBlitShaderGenerator
     - UnityEditor.TerrainTools.NoiseFillShaderGenerator
-    - UnityEditor.TerrainTools.NoiseHeightTool
     - UnityEditor.TerrainTools.NoneFractalType
-    - UnityEditor.TerrainTools.PaintHeightTool
-    - UnityEditor.TerrainTools.PaintHolesTool
-    - UnityEditor.TerrainTools.PaintTextureTool
     - UnityEditor.TerrainTools.PerlinNoise
     - UnityEditor.TerrainTools.RidgeNoise
-    - UnityEditor.TerrainTools.SetHeightTool
-    - UnityEditor.TerrainTools.SharpenPeaksTool
-    - UnityEditor.TerrainTools.SlopeFlattenTool
-    - UnityEditor.TerrainTools.SmoothHeightTool
-    - UnityEditor.TerrainTools.StampTool
     - UnityEditor.TerrainTools.StrataFractalType
-    - UnityEditor.TerrainTools.TerraceErosion
-    - UnityEditor.TerrainTools.ThermalErosionTool
     - UnityEditor.TerrainTools.ValueNoise
     - UnityEditor.TerrainTools.VoronoiNoise
-    - UnityEditor.TerrainTools.WindErosionTool
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -212,10 +199,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
     - Class: 102
       Script: {instanceID: 0}
     - Class: 104
@@ -285,49 +268,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 6266}
     - Class: 114
-      Script: {instanceID: 6454}
+      Script: {instanceID: 6456}
     - Class: 114
-      Script: {instanceID: 6716}
+      Script: {instanceID: 6464}
     - Class: 114
-      Script: {instanceID: 6718}
+      Script: {instanceID: 6720}
     - Class: 114
-      Script: {instanceID: 6740}
+      Script: {instanceID: 6722}
     - Class: 114
-      Script: {instanceID: 6864}
+      Script: {instanceID: 6744}
     - Class: 114
-      Script: {instanceID: 6906}
+      Script: {instanceID: 6868}
     - Class: 114
-      Script: {instanceID: 7020}
+      Script: {instanceID: 6910}
     - Class: 114
-      Script: {instanceID: 7032}
+      Script: {instanceID: 7024}
     - Class: 114
-      Script: {instanceID: 7110}
+      Script: {instanceID: 7036}
     - Class: 114
       Script: {instanceID: 7114}
     - Class: 114
-      Script: {instanceID: 7828}
+      Script: {instanceID: 7118}
     - Class: 114
-      Script: {instanceID: 8424}
+      Script: {instanceID: 7390}
     - Class: 114
-      Script: {instanceID: 8740}
+      Script: {instanceID: 7834}
     - Class: 114
-      Script: {instanceID: 8790}
+      Script: {instanceID: 8430}
     - Class: 114
-      Script: {instanceID: 8972}
+      Script: {instanceID: 8746}
     - Class: 114
-      Script: {instanceID: 9232}
+      Script: {instanceID: 8796}
     - Class: 114
-      Script: {instanceID: 9428}
+      Script: {instanceID: 8978}
     - Class: 114
-      Script: {instanceID: 9506}
+      Script: {instanceID: 9238}
     - Class: 114
-      Script: {instanceID: 9602}
+      Script: {instanceID: 9434}
     - Class: 114
-      Script: {instanceID: 9606}
+      Script: {instanceID: 9512}
     - Class: 114
-      Script: {instanceID: 9610}
+      Script: {instanceID: 9608}
     - Class: 114
-      Script: {instanceID: 9722}
+      Script: {instanceID: 9612}
+    - Class: 114
+      Script: {instanceID: 9616}
+    - Class: 114
+      Script: {instanceID: 9728}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -363,6 +350,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 238
+      Script: {instanceID: 0}
+    - Class: 1953259897
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -619,7 +608,7 @@ ScriptsOnlyBuild:
     className: CinemachinePipeline
   - hash:
       serializedVersion: 2
-      Hash: 65a034425b881ca2a6e03b1f5d1199c9
+      Hash: 5d02edd88343a03c70a21fc2bb364721
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ThirdPersonMovement
@@ -1274,6 +1263,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pause
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameInvisibleMessageListener
@@ -1301,6 +1296,12 @@ ScriptsOnlyBuild:
     assemblyName: FMODUnity.dll
     namespaceName: FMODUnity
     className: PlatformIOS
+  - hash:
+      serializedVersion: 2
+      Hash: bb54b3e4d259829f59f36970077e593e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BellsVisuals
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1439,6 +1440,12 @@ ScriptsOnlyBuild:
     assemblyName: RadicalForge.Blockout.dll
     namespaceName: RadicalForge.Gameplay
     className: CameraForceDepthRender
+  - hash:
+      serializedVersion: 2
+      Hash: 899764d5c9207a2350f2fe58244c09ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DemoAreaBoundary
   - hash:
       serializedVersion: 2
       Hash: e09e8bebc0fcd32bb8af1287a6b44816

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -25,6 +23,7 @@ public class NPC : MonoBehaviour
 
     public GameObject weapon;
 
+    // If hp reaches 0, NPC is removed from bandMembers list and calls DisableOnDeath() function to set into death state
     void HealthCheck()
     {
         if (stats.hp <= 0)
@@ -38,22 +37,26 @@ public class NPC : MonoBehaviour
         }
     }
 
+    // Sets NPC into defeat state
     private void DisableOnDeath()
     {
         navAgent.enabled = false;
         combatState = false;
+        combatTarget = null;
+        targeted = false;
+        isTargeting = false;
         stats.attackPower = 0;
         gameObject.GetComponent<MeshRenderer>().enabled = false;
         gameObject.GetComponent<BoxCollider>().enabled = false;
         npcDirection.SetActive(false);
         followIdentifier.GetComponent<MeshRenderer>().enabled = false;
-        weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        //weapon.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
     }
 
+    // Enables components disabled during death state
     public void EnableOnRessurection()
     {
         stats.hp = 20;
-
         navAgent.enabled = true;
         stats.attackPower = 10;
         gameObject.GetComponent<MeshRenderer>().enabled = true;
@@ -64,6 +67,7 @@ public class NPC : MonoBehaviour
         //weapon.transform.localPosition.Set(0f, weapon.GetComponent<Weapon>().transform.position.y -.983f, weapon.GetComponent<Weapon>().transform.position.z + 1.333f);
     }
 
+    // If in a combat state, stops following player and calls EnemyTargeting() from NPCNavMesh to determing combat target
     void AttackTarget()
     {
         if (combatState)

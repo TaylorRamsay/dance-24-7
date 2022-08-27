@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyWeapon : MonoBehaviour
@@ -15,6 +13,7 @@ public class EnemyWeapon : MonoBehaviour
     public bool attackFlag = true;
 
 
+    // When object with specified tag makes contact with weapon object, ReceiveDamage() function is called on collision object, damage statistics calculated in StatManager
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Band Member") || collision.gameObject.CompareTag("Player"))
@@ -23,6 +22,7 @@ public class EnemyWeapon : MonoBehaviour
         }
     }
 
+    // When called, weapon object is rotated based on targetRotation and speed (rotationTime)
     public void SwingWeapon()
     {
         Transform from = rotationAxis.transform;

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -15,6 +13,8 @@ public class Weapon : MonoBehaviour
     public bool attackFlag = true;
 
 
+    // When a game object containing the specified tag collidse with the weapon object it calls the collision objects ReceiveDamage() function which is calculated in the 
+    // objects StatManager
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -23,6 +23,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    // When called from within the player class, the player weapon will swing according to the specified rotation (targetRotation) and speed (rotationTime)
     public void PlayerSwingWeapon()
     {
         Transform from = rotationAxis.transform;
@@ -40,6 +41,7 @@ public class Weapon : MonoBehaviour
         }
     }
 
+    // Functions Identically to PlayerSwingWeapon() with the exception that it is specific to the NPC class
     public void SwingWeapon()
     {
         Transform from = rotationAxis.transform;
@@ -61,14 +63,5 @@ public class Weapon : MonoBehaviour
     void Start()
     {
         origRotation = rotationAxis.transform.localRotation;
-    }
-
-    void Update()
-    {
-        /*if (weaponWielder.GetComponent<NPC>().attackFlag)
-        {
-            SwingWeapon();
-        }
-        */
     }
 }
